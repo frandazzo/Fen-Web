@@ -1,0 +1,293 @@
+﻿body
+{
+
+}
+
+#immagine_Home
+{
+    border: 2px solid #938E8B;
+    width: 518px;
+    height: 239px;
+}
+
+.Tabella_News
+{
+	width: 100%; 
+    border-width: 4px 4px 16px 4px;
+    border-color: #938E8B;
+    border-style: none;
+    margin-top: 14px;
+   
+}
+
+.label_news
+{
+	color: #74949E;
+	font-family: Arial;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.titolo_news
+{
+	color: #74949E;
+	font-family: Arial;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.contenuto_news
+{
+	color: #938E8B;
+	font-family: Arial;
+	font-size: 11px;
+	margin-bottom: 11px;
+	
+}
+
+.piede_news
+{
+	padding-top: 4px;
+	color: #938E8B;
+	font-family: Arial;
+	font-size: 10px;
+	font-weight: bold;
+	font-style: italic;
+	/*float: right;*/
+	
+}
+.label_login
+{
+	color: #2F2E2D;
+	font-family: Arial;
+	font-size: 12px;
+	
+}
+
+.piedeLogin
+{
+	color: #2F2E2D;
+	font-family: Arial;
+	font-size: 11px;
+	
+}
+  
+div.centra_login
+{
+ min-height: 10em;
+ display: table-cell;
+ vertical-align: middle;
+ }
+ 
+.div_login
+{
+	text-align: center;
+    position: absolute;
+}
+
+.table_login
+{
+	border: 0;
+	text-align:center;
+	padding: 0;
+	text-align: left;
+	
+}
+
+.Accedi
+{
+	width: 145px;
+	height: 145px;
+	border: none;
+}
+
+#TrLoginDistanza
+{
+	height: 110px;
+}
+
+.TdLoginDistanza
+{
+	width: 90px;
+}
+
+.lblTitoloChild
+{
+	font-weight: bold;
+	font-family: Arial; 
+    Font-Size: 24pt;
+}
+
+.listBoxRuoli1
+{
+	width: 175px;
+	height: 100px;
+	float: left;
+}
+
+.listBoxRuoli
+{
+	width: 175px;
+	height: 100px;
+}
+
+.divLeft
+{
+	float: left;
+	/*width:30px;*/
+}
+
+#divTabellaPricipale
+{
+	width: 500px;
+}
+
+#contenutoPrincipaleCentrato
+{
+	position: relative;
+	margin-left: 122px;
+}
+
+#contenutoPrincipaleCentratoDownl
+{
+	position: relative;
+	margin-left: 90px;
+}
+
+#contenutoPrincipaleCentratoDettImp
+{
+	position: relative;
+	margin-left: 136px;
+
+}
+
+#contenutoPrincipaleCentratoDettLav
+{
+	position: relative;
+	margin-left: 135px;
+
+}
+
+#contenutoPrincipaleVisCode
+{
+	position: relative;
+	margin-left: 147px;
+}
+
+#contenutoPrincipaleGesDow
+{
+	position: relative;
+	margin-left: 147px;
+}
+
+#contenutoPrincipaleCodFisc
+{
+	position: relative;
+	margin-left: 65px;
+}
+
+#contenutoRicercaNews
+{
+	position: relative;
+	margin-left: 65px;
+}
+
+.TdPassDistanza
+{
+	width: 116px;
+	height: 30px;
+}
+
+#TrPassDistanza
+{
+	height: 105px;
+}
+
+.TdRicerca
+{
+	height: 30px;
+}
+
+#TdRicerca
+{
+	height: 30px;
+}
+
+#tabellaRicerca
+{
+	text-align: left;
+}
+
+#tabellaRicercaAvanzata
+{
+	text-align: left;
+}
+
+#TrPassDimenticata
+{
+	height: 155px;
+}
+
+.TdPassDimDistanza
+{
+	width: 166px;
+}
+
+.labelDettaglio
+{
+	font-weight: bold;
+}
+
+.divDocumIscriz
+{
+	 overflow: auto;
+}
+
+#buttonGesDown
+{
+	margin-left: -54px;
+}
+
+#divBtnDettaglioImport
+{
+	text-align: center;
+	width: 390px;
+	margin-left: 90px;
+}
+
+.menuContentUp
+{
+	color:White;
+	padding-bottom:6px;
+	padding-top:12px;
+}
+
+.menuContentBottom
+{
+	/*color:White;
+	padding-bottom:12px;
+	padding-top:6px;*/
+	color:#000066;
+	padding-bottom:6px;
+	padding-top:6px;
+
+    background-color : #938E8B;
+}
+
+.modalBackground
+{
+    background-color:Teal;
+    filter:alpha(opacity=70);
+    opacity:0.7;
+}
+
+.tdBilBorder
+{
+	border: 1px solid;
+}
+
+.TdRicercaDx
+{
+	height: 30px;
+	text-align: right;
+}

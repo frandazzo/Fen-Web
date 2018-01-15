@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ImportOptions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Validatore="Feneal" ErrorLogDir="C:/" NomeCoda="Queue" MailServer="smtp.gmail.com" MailAccount="fg.randazzo@gmail.com" MailPassword="vivalafica" MailFrom="fenealgest@web.it" MailAdministrator="fg.randazzo@hotmail.it" xmlns="www.fenealgestweb.it" />

@@ -1,0 +1,999 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2BF18E3D-ABAF-4A4B-BA72-07A4BD4503A0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WIN.WEBCONNECTOR</RootNamespace>
+    <AssemblyName>WIN.WEBCONNECTOR</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <ApplicationIcon>Fenealgest.ico</ApplicationIcon>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <PublishUrl>http://localhost/WIN.WEBCONNECTOR/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Charts.v13.2.Core, Version=13.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.PivotGrid.v13.2.Core, Version=13.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v13.2.Core, Version=13.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Data.v13.2, Version=13.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Sparkline.v13.2.Core, Version=13.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v13.2, Version=13.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v13.2.UI, Version=13.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v13.2, Version=13.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v13.2, Version=13.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v13.2, Version=13.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v13.2, Version=13.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v13.2, Version=13.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraNavBar.v13.2, Version=13.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v13.2, Version=13.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Office.v13.2.Core, Version=13.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v13.2.Core, Version=13.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v13.2, Version=13.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v13.2.Extensions, Version=13.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraRichEdit.v13.2, Version=13.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeList.v13.2, Version=13.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WIN.TECHNICAL.SECURITY">
+      <HintPath>..\..\..\..\WIN.EXTERNAL_COMPONENTS\WIN.TECHNICAL.SECURITY.dll</HintPath>
+    </Reference>
+    <Reference Include="WIN.TECHNICAL.VB.GUI.UTILITY">
+      <HintPath>..\..\..\..\WIN.EXTERNAL_COMPONENTS\WIN.TECHNICAL.VB.GUI.UTILITY.dll</HintPath>
+    </Reference>
+    <Reference Include="WIN.TECHNICAL.VB.PERSISTENCE, Version=4.9.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\WIN.FENGEST_NAZIONALE.DLLs\WIN.TECHNICAL.VB.PERSISTENCE.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Commands\BackgroundExportDataFromFile.cs" />
+    <Compile Include="Commands\BackgroundSearchWorkersCommand.cs" />
+    <Compile Include="Commands\CommandFactory.cs" />
+    <Compile Include="Commands\ExportDataCommand.cs" />
+    <Compile Include="Commands\QueryWorkerByAziendaCommand.cs" />
+    <Compile Include="Commands\QueryWorkerCommand.cs" />
+    <Compile Include="Commands\QueryWorkerListCommand.cs" />
+    <Compile Include="Commands\SearchWorkerCommand.cs" />
+    <Compile Include="Commands\SendFileForIqaOrLiberi.cs" />
+    <Compile Include="controls\DatiStrutturaControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controls\DatiStrutturaControl.Designer.cs">
+      <DependentUpon>DatiStrutturaControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="controls\IPrintableAndSearchable.cs" />
+    <Compile Include="controls\OrganismiRegionaliControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controls\OrganismiRegionaliControl.Designer.cs">
+      <DependentUpon>OrganismiRegionaliControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="controls\OrganismiTerritorialiControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controls\OrganismiTerritorialiControl.Designer.cs">
+      <DependentUpon>OrganismiTerritorialiControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="controls\RapprersentanzeControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controls\RapprersentanzeControl.Designer.cs">
+      <DependentUpon>RapprersentanzeControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="controls\RappresentantiControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controls\RappresentantiControl.Designer.cs">
+      <DependentUpon>RappresentantiControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="controls\ReportDatiCasseEdiuli.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controls\ReportDatiCasseEdiuli.Designer.cs">
+      <DependentUpon>ReportDatiCasseEdiuli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="controls\ReportRisorseUmane.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controls\ReportRisorseUmane.Designer.cs">
+      <DependentUpon>ReportRisorseUmane.cs</DependentUpon>
+    </Compile>
+    <Compile Include="controls\RisorseUmaneControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controls\RisorseUmaneControl.Designer.cs">
+      <DependentUpon>RisorseUmaneControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="corporatesFeneal\CorporateCredential.cs" />
+    <Compile Include="corporatesFeneal\CorporateCredentialMapper.cs" />
+    <Compile Include="corporatesFeneal\Credential.cs" />
+    <Compile Include="FileReaders\ExceInpsPathReaderFactory.cs" />
+    <Compile Include="FileReaders\ExcelInpsPathReader.cs" />
+    <Compile Include="FileReaders\ExcelInpsReader.cs" />
+    <Compile Include="FileReaders\ExcelInpsRecordReader.cs" />
+    <Compile Include="FileReaders\ExcelInpsTemplateFileReader.cs" />
+    <Compile Include="FileReaders\ExcelIQAReader.cs" />
+    <Compile Include="FileReaders\ExcelIQARecordReader.cs" />
+    <Compile Include="FileReaders\ExcelLiberiReader.cs" />
+    <Compile Include="FileReaders\ExcelLiberiRecordReader.cs" />
+    <Compile Include="FileReaders\HashTableFromInpsTemplateConverter.cs" />
+    <Compile Include="FileReaders\IInpsReader.cs" />
+    <Compile Include="FileReaders\ILiberiReader.cs" />
+    <Compile Include="FileReaders\IIQAReader.cs" />
+    <Compile Include="FileReaders\SendFileImportReaderFactory.cs" />
+    <Compile Include="FileReaders\XmlInpsReader.cs" />
+    <Compile Include="FileReaders\XmlIQAReader.cs" />
+    <Compile Include="FileReaders\XmlLiberiReader.cs" />
+    <Compile Include="FrmAnnoIscrizione.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAnnoIscrizione.Designer.cs">
+      <DependentUpon>FrmAnnoIscrizione.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCongressPresence.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCongressPresence.Designer.cs">
+      <DependentUpon>FrmCongressPresence.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCrossLiberiDataWithLiberiFile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCrossLiberiDataWithLiberiFile.Designer.cs">
+      <DependentUpon>FrmCrossLiberiDataWithLiberiFile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNomeAzienda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNomeAzienda.Designer.cs">
+      <DependentUpon>FrmNomeAzienda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmsendFiles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmsendFiles.Designer.cs">
+      <DependentUpon>FrmsendFiles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmViewDataForAzienda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmViewDataForAzienda.Designer.cs">
+      <DependentUpon>FrmViewDataForAzienda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmViewInps.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmViewInps.Designer.cs">
+      <DependentUpon>FrmViewInps.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmViewIQA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmViewIQA.Designer.cs">
+      <DependentUpon>FrmViewIQA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmViewLiberi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmViewLiberi.Designer.cs">
+      <DependentUpon>FrmViewLiberi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegionalForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegionalForm1.Designer.cs">
+      <DependentUpon>RegionalForm1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRegionCredential.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRegionCredential.Designer.cs">
+      <DependentUpon>FrmRegionCredential.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Credential\CredentialValidator.cs" />
+    <Compile Include="Credential\CredentialDB.cs" />
+    <Compile Include="DTOTranslator.cs" />
+    <Compile Include="ExcelExport\Exporter.cs" />
+    <Compile Include="FileReaders\ExcelFiscalCodeReader.cs" />
+    <Compile Include="FileReaders\ExcelFiscalCodeRecordReader.cs" />
+    <Compile Include="FileReaders\ExcelReader.cs" />
+    <Compile Include="FileReaders\ExcelRecordReader.cs" />
+    <Compile Include="FileReaders\ExportReaderFactory.cs" />
+    <Compile Include="FileReaders\IExportReader.cs" />
+    <Compile Include="FileReaders\InputHeader.cs" />
+    <Compile Include="FileReaders\XmlReader.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCalcolaCodiceFisclae.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCalcolaCodiceFisclae.Designer.cs">
+      <DependentUpon>FrmCalcolaCodiceFisclae.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmChangeExportParameters.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmChangeExportParameters.Designer.cs">
+      <DependentUpon>FrmChangeExportParameters.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCredential.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCredential.Designer.cs">
+      <DependentUpon>FrmCredential.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDatiFisc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDatiFisc.Designer.cs">
+      <DependentUpon>FrmDatiFisc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmElaborazioneInCorso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmElaborazioneInCorso.Designer.cs">
+      <DependentUpon>FrmElaborazioneInCorso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmExportBilancio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmExportBilancio.Designer.cs">
+      <DependentUpon>FrmExportBilancio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmexportData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmexportData.Designer.cs">
+      <DependentUpon>FrmexportData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmQueryMultipleWorkers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmQueryMultipleWorkers.Designer.cs">
+      <DependentUpon>FrmQueryMultipleWorkers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmQueryWorker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmQueryWorker.Designer.cs">
+      <DependentUpon>FrmQueryWorker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSearchData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSearchData.Designer.cs">
+      <DependentUpon>FrmSearchData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSelezionaComune.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSelezionaComune.Designer.cs">
+      <DependentUpon>FrmSelezionaComune.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmViewData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmViewData.Designer.cs">
+      <DependentUpon>FrmViewData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GeoElements\GeoElementChecker.cs" />
+    <Compile Include="GeoElements\GeoHandlerClass.cs" />
+    <Compile Include="GeoElements\GeoHandlerProvider.cs" />
+    <Compile Include="GeoElements\LazyComune.cs" />
+    <Compile Include="GeoElements\LazyProvincie.cs" />
+    <Compile Include="ParamCreator.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="ProgramParameters.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reports\OrganizzativeDataOrganismiRegionaliReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\OrganizzativeDataOrganismiRegionaliReport.Designer.cs">
+      <DependentUpon>OrganizzativeDataOrganismiRegionaliReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\OrganizzativeDataOrganismiTerritorialiReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\OrganizzativeDataOrganismiTerritorialiReport.Designer.cs">
+      <DependentUpon>OrganizzativeDataOrganismiTerritorialiReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\OrganizzativeDataStrutturaReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\OrganizzativeDataStrutturaReport.Designer.cs">
+      <DependentUpon>OrganizzativeDataStrutturaReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceAgents\SharetopIntegrationServiceAgent.cs" />
+    <Compile Include="ServiceAgents\TestServiceAgent.cs" />
+    <Compile Include="TestSharetoIntegration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestSharetoIntegration.Designer.cs">
+      <DependentUpon>TestSharetoIntegration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\FenealgestServices\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\JoinAllServices\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\SharetopServices\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="controls\DatiStrutturaControl.resx">
+      <DependentUpon>DatiStrutturaControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="controls\OrganismiRegionaliControl.resx">
+      <DependentUpon>OrganismiRegionaliControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="controls\OrganismiTerritorialiControl.resx">
+      <DependentUpon>OrganismiTerritorialiControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="controls\RapprersentanzeControl.resx">
+      <DependentUpon>RapprersentanzeControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="controls\RappresentantiControl.resx">
+      <DependentUpon>RappresentantiControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="controls\ReportDatiCasseEdiuli.resx">
+      <DependentUpon>ReportDatiCasseEdiuli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="controls\ReportRisorseUmane.resx">
+      <DependentUpon>ReportRisorseUmane.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="controls\RisorseUmaneControl.resx">
+      <DependentUpon>RisorseUmaneControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAnnoIscrizione.resx">
+      <DependentUpon>FrmAnnoIscrizione.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCongressPresence.resx">
+      <DependentUpon>FrmCongressPresence.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCrossLiberiDataWithLiberiFile.resx">
+      <DependentUpon>FrmCrossLiberiDataWithLiberiFile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNomeAzienda.resx">
+      <DependentUpon>FrmNomeAzienda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmsendFiles.resx">
+      <DependentUpon>FrmsendFiles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmViewDataForAzienda.resx">
+      <DependentUpon>FrmViewDataForAzienda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmViewInps.resx">
+      <DependentUpon>FrmViewInps.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmViewIQA.resx">
+      <DependentUpon>FrmViewIQA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmViewLiberi.resx">
+      <DependentUpon>FrmViewLiberi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="RegionalForm1.resx">
+      <DependentUpon>RegionalForm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRegionCredential.resx">
+      <DependentUpon>FrmRegionCredential.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCalcolaCodiceFisclae.resx">
+      <DependentUpon>FrmCalcolaCodiceFisclae.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmChangeExportParameters.resx">
+      <DependentUpon>FrmChangeExportParameters.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCredential.resx">
+      <DependentUpon>FrmCredential.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDatiFisc.resx">
+      <DependentUpon>FrmDatiFisc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmElaborazioneInCorso.resx">
+      <DependentUpon>FrmElaborazioneInCorso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmExportBilancio.resx">
+      <DependentUpon>FrmExportBilancio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmexportData.resx">
+      <DependentUpon>FrmexportData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmQueryMultipleWorkers.resx">
+      <DependentUpon>FrmQueryMultipleWorkers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmQueryWorker.resx">
+      <DependentUpon>FrmQueryWorker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSearchData.resx">
+      <DependentUpon>FrmSearchData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSelezionaComune.resx">
+      <DependentUpon>FrmSelezionaComune.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmViewData.resx">
+      <DependentUpon>FrmViewData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Reports\OrganizzativeDataOrganismiRegionaliReport.resx">
+      <DependentUpon>OrganizzativeDataOrganismiRegionaliReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\OrganizzativeDataOrganismiTerritorialiReport.resx">
+      <DependentUpon>OrganizzativeDataOrganismiTerritorialiReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\OrganizzativeDataStrutturaReport.resx">
+      <DependentUpon>OrganizzativeDataStrutturaReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestSharetoIntegration.resx">
+      <DependentUpon>TestSharetoIntegration.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\DataSources\WIN.FENGEST_NAZIONALE.INTEGRATION_ENTITIES.FenealgestImportExport.InpsTraceDetails.datasource" />
+    <None Include="Properties\DataSources\WIN.FENGEST_NAZIONALE.INTEGRATION_ENTITIES.FenealgestImportExport.IqaTraceDetail.datasource" />
+    <None Include="Properties\DataSources\WIN.FENGEST_NAZIONALE.INTEGRATION_ENTITIES.FenealgestImportExport.LiberiTraceDetail.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="ServiceAgents\ExportBilancioServiceAgent.cs" />
+    <Compile Include="TraceExporter.cs" />
+    <None Include="Web References\FenealgestServices\FenealgestwebServices.wsdl" />
+    <None Include="Web References\FenealgestServices\QueryResultDTO.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\FenealgestServices\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\JoinAllServices\JoinAllWebService.wsdl" />
+    <None Include="Web References\JoinAllServices\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\SharetopServices\CongressPresence.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SharetopServices\DatiCassaEdile.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SharetopServices\OrganizzativeData.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SharetopServices\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\SharetopServices\RisorsaUmana.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SharetopServices\SharetopIntegration.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sfondo_area_riservata_italia.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\WIN.FENGEST.BILANCIO\WIN.BILANCIO\WIN.BILANCIO.csproj">
+      <Project>{8da88464-6ffa-4cc7-8474-8c98c6d1736f}</Project>
+      <Name>WIN.BILANCIO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\WIN.TECHNICAL.MIDDLEWARE\WIN.TECHNICAL.MIDDLEWARE.csproj">
+      <Project>{7817938C-E1D1-435C-B124-5F40F430A46D}</Project>
+      <Name>WIN.TECHNICAL.MIDDLEWARE</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\WIN.TECHNICAL.VB.UTILS\WIN.TECHNICAL.VB.UTILS.vbproj">
+      <Project>{466a883d-893e-46fd-a2c0-d4257b63a6c0}</Project>
+      <Name>WIN.TECHNICAL.VB.UTILS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\WIN.FENGEST_NAZIONALE.INTEGRATION_ENTITIES\WIN.FENGEST_NAZIONALE.INTEGRATION_ENTITIES.csproj">
+      <Project>{FEF19374-07AC-46F6-93A3-F7FB32E2428D}</Project>
+      <Name>WIN.FENGEST_NAZIONALE.INTEGRATION_ENTITIES</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\WIN.TECHNICAL.SERVICE_PROCESSOR\WIN.TECHNICAL.SERVICE_PROCESSOR.csproj">
+      <Project>{8E285472-7005-474C-A2EA-7CB4E25A4B66}</Project>
+      <Name>WIN.TECHNICAL.SERVICE_PROCESSOR</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ManualeDefinitivo.doc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="app.config" />
+    <None Include="Resources\Waiting3.jpg" />
+    <None Include="Template\WebConnectorTemplate.xlt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Fenealgest.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="GEODB\geo2003.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it\DevExpress.Charts.Designer.v13.2.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it\DevExpress.Dashboard.v13.2.Core.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it\DevExpress.Dashboard.v13.2.Web.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it\DevExpress.Dashboard.v13.2.Win.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it\DevExpress.Data.v13.2.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it\DevExpress.DataAccess.v13.2.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it\DevExpress.DataAccess.v13.2.UI.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it\DevExpress.ExpressApp.AuditTrail.v13.2.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it\DevExpress.ExpressApp.Chart.v13.2.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it\DevExpress.ExpressApp.CloneObject.v13.2.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it\DevExpress.ExpressApp.Demos.Win.v13.2.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it\DevExpress.ExpressApp.FileAttachment.Web.v13.2.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it\DevExpress.ExpressApp.FileAttachment.Win.v13.2.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it\DevExpress.ExpressApp.HtmlPropertyEditor.Win.v13.2.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it\DevExpress.ExpressApp.Kpi.v13.2.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it\DevExpress.ExpressApp.Objects.v13.2.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it\DevExpress.ExpressApp.PivotChart.v13.2.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it\DevExpress.ExpressApp.PivotChart.Web.v13.2.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it\DevExpress.ExpressApp.PivotChart.Win.v13.2.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it\DevExpress.ExpressApp.PivotGrid.v13.2.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it\DevExpress.ExpressApp.Reports.v13.2.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it\DevExpress.ExpressApp.Reports.Web.v13.2.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it\DevExpress.ExpressApp.Reports.Win.v13.2.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it\DevExpress.ExpressApp.Scheduler.v13.2.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it\DevExpress.ExpressApp.Scheduler.Web.v13.2.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it\DevExpress.ExpressApp.Scheduler.Win.v13.2.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it\DevExpress.ExpressApp.ScriptRecorder.v13.2.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it\DevExpress.ExpressApp.ScriptRecorder.Win.v13.2.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it\DevExpress.ExpressApp.Security.v13.2.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it\DevExpress.ExpressApp.StateMachine.v13.2.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it\DevExpress.ExpressApp.v13.2.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it\DevExpress.ExpressApp.Validation.v13.2.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it\DevExpress.ExpressApp.Validation.Win.v13.2.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it\DevExpress.ExpressApp.ViewVariantsModule.v13.2.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it\DevExpress.ExpressApp.Web.v13.2.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it\DevExpress.ExpressApp.Win.v13.2.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it\DevExpress.Map.v13.2.Core.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it\DevExpress.Office.v13.2.Core.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it\DevExpress.Pdf.v13.2.Core.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it\DevExpress.PivotGrid.v13.2.Core.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it\DevExpress.Printing.v13.2.Core.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it\DevExpress.RichEdit.v13.2.Core.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it\DevExpress.Snap.v13.2.Core.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it\DevExpress.Snap.v13.2.Extensions.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it\DevExpress.Snap.v13.2.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it\DevExpress.Sparkline.v13.2.Core.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it\DevExpress.Spreadsheet.v13.2.Core.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it\DevExpress.Utils.v13.2.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it\DevExpress.Utils.v13.2.UI.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it\DevExpress.Web.ASPxHtmlEditor.v13.2.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it\DevExpress.Web.ASPxScheduler.v13.2.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it\DevExpress.Web.ASPxSpellChecker.v13.2.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it\DevExpress.Web.ASPxTreeList.v13.2.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it\DevExpress.Web.v13.2.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it\DevExpress.Xpf.Charts.v13.2.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it\DevExpress.Xpf.Core.v13.2.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it\DevExpress.Xpf.Docking.v13.2.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it\DevExpress.Xpf.Gauges.v13.2.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it\DevExpress.Xpf.Grid.v13.2.Core.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it\DevExpress.Xpf.LayoutControl.v13.2.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it\DevExpress.Xpf.NavBar.v13.2.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it\DevExpress.Xpf.Printing.v13.2.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it\DevExpress.Xpf.PropertyGrid.v13.2.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it\DevExpress.Xpf.ReportDesigner.v13.2.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it\DevExpress.Xpf.Ribbon.v13.2.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it\DevExpress.Xpf.RichEdit.v13.2.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it\DevExpress.Xpf.Scheduler.v13.2.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it\DevExpress.Xpf.SpellChecker.v13.2.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it\DevExpress.Xpo.v13.2.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it\DevExpress.XtraBars.v13.2.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it\DevExpress.XtraCharts.v13.2.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it\DevExpress.XtraCharts.v13.2.Wizard.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it\DevExpress.XtraEditors.v13.2.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it\DevExpress.XtraGauges.v13.2.Core.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it\DevExpress.XtraGauges.v13.2.Presets.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it\DevExpress.XtraGrid.v13.2.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it\DevExpress.XtraLayout.v13.2.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it\DevExpress.XtraNavBar.v13.2.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it\DevExpress.XtraPdfViewer.v13.2.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it\DevExpress.XtraPivotGrid.v13.2.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it\DevExpress.XtraPrinting.v13.2.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it\DevExpress.XtraReports.v13.2.Extensions.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it\DevExpress.XtraReports.v13.2.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it\DevExpress.XtraReports.v13.2.Web.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it\DevExpress.XtraRichEdit.v13.2.Extensions.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it\DevExpress.XtraRichEdit.v13.2.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it\DevExpress.XtraScheduler.v13.2.Core.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it\DevExpress.XtraScheduler.v13.2.Extensions.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it\DevExpress.XtraScheduler.v13.2.Reporting.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it\DevExpress.XtraScheduler.v13.2.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it\DevExpress.XtraSpellChecker.v13.2.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it\DevExpress.XtraSpreadsheet.v13.2.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it\DevExpress.XtraTreeList.v13.2.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it\DevExpress.XtraVerticalGrid.v13.2.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it\DevExpress.XtraWizard.v13.2.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\logoFeneal.png" />
+    <None Include="Resources\logoFeneal.jpg" />
+    <None Include="Resources\fenealGest.png" />
+    <None Include="Web References\FenealgestServices\FenealgestwebServices.disco" />
+    <None Include="Web References\SharetopServices\SharetopIntegration.disco" />
+    <None Include="Web References\JoinAllServices\JoinAllWebService.disco" />
+    <None Include="Properties\DataSources\WIN.FENGEST_NAZIONALE.INTEGRATION_ENTITIES.WorkerDTO.datasource" />
+    <None Include="Resources\Immagine.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="https://www.fenealgest.it/servizi/WebServices/FenealgestwebServices.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\FenealgestServices\</RelPath>
+      <UpdateFromURL>https://www.fenealgest.it/servizi/WebServices/FenealgestwebServices.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>WIN_WEBCONNECTOR_FenealgestServices_FenealgestwebServices</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://www.fenealgest.it/servizi/WebServices/SharetopIntegration.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\SharetopServices\</RelPath>
+      <UpdateFromURL>https://www.fenealgest.it/servizi/WebServices/SharetopIntegration.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>WIN_WEBCONNECTOR_SharetopServices_SharetopIntegration</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://www.fenealgest.it/servizi/WebServices/JoinAllWebService.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\JoinAllServices\</RelPath>
+      <UpdateFromURL>https://www.fenealgest.it/servizi/WebServices/JoinAllWebService.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>WIN_WEBCONNECTOR_JoinAllServices_JoinAllWebService</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

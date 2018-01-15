@@ -1,0 +1,113 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="FenealgestwebNew.Master.cs" Inherits="FenealgestWEB.FenealgestwebNew" EnableTheming="True" %>
+
+<%@ Register Assembly="DevExpress.Web.v13.2, Version=13.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"
+    Namespace="DevExpress.Web.ASPxEditors" TagPrefix="dx" %>
+
+<%@ Register Assembly="DevExpress.Web.v13.2, Version=13.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"
+    Namespace="DevExpress.Web.ASPxMenu" TagPrefix="dx" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+      <title>Fenealgest</title>
+      <link rel="Stylesheet" type="text/css" href="css/style.css" />
+
+
+
+
+      <script type="text/javascript" src="/javascript/jquery-1.4.4.min.js"></script>
+      <script type="text/javascript"  src="/javascript/jqprint.js"></script>
+      <script type="text/javascript">
+            JQ = $;
+      </script>
+      
+      <script type="text/javascript"  src="/javascript/news/jquery.carouFredSel-3.2.1.js"></script>
+      
+      <script type="text/javascript" >
+          JQ(function() {
+	          JQ('#news_1').carouFredSel({
+		          circular: true,
+		          auto: {
+			          play: true,
+			          pauseOnHover: true
+		          },			
+		          infinite: true,
+		          direction: 'up',
+		          padding: 0,
+		          items: 1,
+		          scroll: {
+			          duration: 1000 // correct
+		          }
+	          });
+          });
+      </script>
+      <script type="text/javascript" language="javascript">
+          JQ(function() {
+	          JQ('#news_2').carouFredSel({
+		          circular: true,
+		          auto: {
+			          play: true,
+			          pauseOnHover: true
+		          },			
+		          infinite: true,
+		          direction: 'up',
+		          padding: 0,
+		          items: 1,
+		          scroll: {
+			          duration: 1000 // correct
+		          }
+	          });
+          });
+      </script> 
+
+      <script type="text/javascript">
+          var _gaq = _gaq || [];
+          _gaq.push(['_setAccount', 'UA-23165858-1']);
+          _gaq.push(['_trackPageview']);
+
+          (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+          })();
+    </script>  
+     
+</head>
+<body>
+    <form id="form1" runat="server">
+	    <div id="container">	
+	    
+	        
+	      <%--  <% if (FenealgestWEB.Utility.SessionServiceManager.SecurityService.IsUserLogged()) { %>
+	            <control:headerreserved ID="headerreserved1" runat="server" />       
+            <% } else { %>--%>
+                <control:headerhome runat="server" ID="headerhome1" />  
+        <%--    <% } %>--%>
+            
+		    <div id="center">
+		    
+			    <div class="left">
+    			    <control:homemenu  ID="homemenu1" runat="server" />
+    			    
+			        <% if (!FenealgestWEB.Utility.SessionServiceManager.SecurityService.IsUserLogged()) { %>
+                        <control:utilitymenu ID="utilityMenu1"  runat="server" />
+                    <% } else { %>
+                        <control:loggedutilitymenu ID="loggedutilityMenu1"  runat="server" />
+                    <% } %>
+	    
+			    </div>
+			    
+			    <div class="right">
+				    
+				        <asp:ContentPlaceHolder ID="ContentPlaceHolderPrincipale" runat="server">
+                            </asp:ContentPlaceHolder>
+				   
+			    </div>
+			    
+			    <control:footer ID="footer1" runat="server" />
+		    </div>
+	    </div>
+    </form>
+</body>
+</html>

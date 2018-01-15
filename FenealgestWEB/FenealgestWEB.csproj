@@ -1,0 +1,674 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{ADB9D439-5993-4C2D-88B9-99F605642987}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FenealgestWEB</RootNamespace>
+    <AssemblyName>FenealgestWEB</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+    <PublishDatabases>false</PublishDatabases>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Office.v13.2.Core, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v13.2.Core, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v13.2.Core, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v13.2.Core, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.ASPxHtmlEditor.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.ASPxPivotGrid.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.ASPxSpellChecker.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.ASPxThemes.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.ASPxTreeList.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPivotGrid.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraTreeList.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data, Version=6.2.3.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\WIN.FENGEST_NAZIONALE.DLLs\MySql.Data.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="WIN.BILANCIO, Version=8.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dlls\WIN.BILANCIO.dll</HintPath>
+    </Reference>
+    <Reference Include="WIN.TECHNICAL.MENU_CUSTOMIZER, Version=8.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dlls\WIN.TECHNICAL.MENU_CUSTOMIZER.dll</HintPath>
+    </Reference>
+    <Reference Include="WIN.TECHNICAL.MIDDLEWARE, Version=8.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dlls\WIN.TECHNICAL.MIDDLEWARE.dll</HintPath>
+    </Reference>
+    <Reference Include="WIN.TECHNICAL.SECURITY, Version=8.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dlls\WIN.TECHNICAL.SECURITY.dll</HintPath>
+    </Reference>
+    <Reference Include="WIN.TECHNICAL.SECURITY_NEW, Version=8.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dlls\WIN.TECHNICAL.SECURITY_NEW.dll</HintPath>
+    </Reference>
+    <Reference Include="WIN.TECHNICAL.VB.PERSISTENCE, Version=8.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dlls\WIN.TECHNICAL.VB.PERSISTENCE.dll</HintPath>
+    </Reference>
+    <Reference Include="WIN.TECHNICAL.VB.UTILS, Version=8.6.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dlls\WIN.TECHNICAL.VB.UTILS.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="javascript\jqprint.js" />
+    <Content Include="Reserved\AreaNazionale\ReportFlussi.aspx" />
+    <Content Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </Content>
+    <None Include="Properties\PublishProfiles\produzioine.pubxml" />
+    <None Include="Web References\FenealgestUtilsService\FenealgestUtils.disco" />
+    <Content Include="Web.config" />
+    <Content Include="Web References\FenealgestUtilsService\FiscalData.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </Content>
+    <None Include="Web References\FenealgestUtilsService\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="assets\control\Footer.ascx.cs">
+      <DependentUpon>Footer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="assets\control\Footer.ascx.designer.cs">
+      <DependentUpon>Footer.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="assets\control\HeaderHome.ascx.cs">
+      <DependentUpon>HeaderHome.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="assets\control\HeaderHome.ascx.designer.cs">
+      <DependentUpon>HeaderHome.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="assets\control\HeaderReserved.ascx.cs">
+      <DependentUpon>HeaderReserved.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="assets\control\HeaderReserved.ascx.designer.cs">
+      <DependentUpon>HeaderReserved.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="assets\control\HomePageMenu.ascx.cs">
+      <DependentUpon>HomePageMenu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="assets\control\HomePageMenu.ascx.designer.cs">
+      <DependentUpon>HomePageMenu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="assets\control\LoggedUtilityMenu.ascx.cs">
+      <DependentUpon>LoggedUtilityMenu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="assets\control\LoggedUtilityMenu.ascx.designer.cs">
+      <DependentUpon>LoggedUtilityMenu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="assets\control\UtilityMenu.ascx.cs">
+      <DependentUpon>UtilityMenu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="assets\control\UtilityMenu.ascx.designer.cs">
+      <DependentUpon>UtilityMenu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ErrorHandling\ErrorPage.aspx.cs">
+      <DependentUpon>ErrorPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ErrorHandling\ErrorPage.aspx.designer.cs">
+      <DependentUpon>ErrorPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FenealgestwebNew.Master.cs">
+      <DependentUpon>FenealgestwebNew.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FenealgestwebNew.Master.designer.cs">
+      <DependentUpon>FenealgestwebNew.Master</DependentUpon>
+    </Compile>
+    <Compile Include="DownloadArea.aspx.cs">
+      <DependentUpon>DownloadArea.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DownloadArea.aspx.designer.cs">
+      <DependentUpon>DownloadArea.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Fenealgestweb.Master.cs">
+      <DependentUpon>Fenealgestweb.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Fenealgestweb.Master.designer.cs">
+      <DependentUpon>Fenealgestweb.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="ReservedArea.Master.cs">
+      <DependentUpon>ReservedArea.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReservedArea.Master.designer.cs">
+      <DependentUpon>ReservedArea.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Reserved\AreaAmministrativa\GestioneDownload.aspx.cs">
+      <DependentUpon>GestioneDownload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reserved\AreaAmministrativa\GestioneDownload.aspx.designer.cs">
+      <DependentUpon>GestioneDownload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reserved\AreaAmministrativa\GestioneNews.aspx.cs">
+      <DependentUpon>GestioneNews.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reserved\AreaAmministrativa\GestioneNews.aspx.designer.cs">
+      <DependentUpon>GestioneNews.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reserved\AreaAmministrativa\GestioneNewsletter.aspx.cs">
+      <DependentUpon>GestioneNewsletter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reserved\AreaAmministrativa\GestioneNewsletter.aspx.designer.cs">
+      <DependentUpon>GestioneNewsletter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reserved\AreaAmministrativa\GestioneUtenti.aspx.cs">
+      <DependentUpon>GestioneUtenti.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reserved\AreaAmministrativa\GestioneUtenti.aspx.designer.cs">
+      <DependentUpon>GestioneUtenti.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reserved\AreaAmministrativa\RicercaNews.aspx.cs">
+      <DependentUpon>RicercaNews.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reserved\AreaAmministrativa\RicercaNews.aspx.designer.cs">
+      <DependentUpon>RicercaNews.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reserved\AreaAmministrativa\RicercaUtenti.aspx.cs">
+      <DependentUpon>RicercaUtenti.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reserved\AreaAmministrativa\RicercaUtenti.aspx.designer.cs">
+      <DependentUpon>RicercaUtenti.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reserved\AreaAmministrativa\VisualizzaDownload.aspx.cs">
+      <DependentUpon>VisualizzaDownload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reserved\AreaAmministrativa\VisualizzaDownload.aspx.designer.cs">
+      <DependentUpon>VisualizzaDownload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reserved\AreaNazionale\Bilancio.aspx.cs">
+      <DependentUpon>Bilancio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reserved\AreaNazionale\Bilancio.aspx.designer.cs">
+      <DependentUpon>Bilancio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reserved\AreaNazionale\ReportBilancioProvinciale.aspx.cs">
+      <DependentUpon>ReportBilancioProvinciale.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reserved\AreaNazionale\ReportBilancioProvinciale.aspx.designer.cs">
+      <DependentUpon>ReportBilancioProvinciale.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reserved\AreaNazionale\ReportBilancio.aspx.cs">
+      <DependentUpon>ReportBilancio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reserved\AreaNazionale\ReportBilancio.aspx.designer.cs">
+      <DependentUpon>ReportBilancio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reserved\AreaNazionale\ReportBilancioRlst.aspx.cs">
+      <DependentUpon>ReportBilancioRlst.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reserved\AreaNazionale\ReportBilancioRlst.aspx.designer.cs">
+      <DependentUpon>ReportBilancioRlst.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reserved\AreaNazionale\ReportFlussi.aspx.cs">
+      <DependentUpon>ReportFlussi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reserved\AreaNazionale\ReportFlussi.aspx.designer.cs">
+      <DependentUpon>ReportFlussi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reserved\AreaNazionale\ReportIscritti.aspx.cs">
+      <DependentUpon>ReportIscritti.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reserved\AreaNazionale\ReportIscritti.aspx.designer.cs">
+      <DependentUpon>ReportIscritti.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reserved\AreaNazionale\RicercaLavoratori.aspx.cs">
+      <DependentUpon>RicercaLavoratori.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reserved\AreaNazionale\RicercaLavoratori.aspx.designer.cs">
+      <DependentUpon>RicercaLavoratori.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reserved\AreaNazionale\VerificaBilancio.aspx.cs">
+      <DependentUpon>VerificaBilancio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reserved\AreaNazionale\VerificaBilancio.aspx.designer.cs">
+      <DependentUpon>VerificaBilancio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reserved\AreaNazionale\VisualizzaLavoratore.aspx.cs">
+      <DependentUpon>VisualizzaLavoratore.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reserved\AreaNazionale\VisualizzaLavoratore.aspx.designer.cs">
+      <DependentUpon>VisualizzaLavoratore.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reserved\AreaPubblica\CodiceFiscale.aspx.cs">
+      <DependentUpon>CodiceFiscale.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reserved\AreaPubblica\CodiceFiscale.aspx.designer.cs">
+      <DependentUpon>CodiceFiscale.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reserved\AreaPubblica\PassDimenticata.aspx.cs">
+      <DependentUpon>PassDimenticata.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reserved\AreaPubblica\PassDimenticata.aspx.designer.cs">
+      <DependentUpon>PassDimenticata.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reserved\AreaPubblica\RinnovaPassLogged.aspx.cs">
+      <DependentUpon>RinnovaPassLogged.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reserved\AreaPubblica\RinnovaPassLogged.aspx.designer.cs">
+      <DependentUpon>RinnovaPassLogged.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reserved\AreaPubblica\RinnovaPassNotLogged.aspx.cs">
+      <DependentUpon>RinnovaPassNotLogged.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reserved\AreaPubblica\RinnovaPassNotLogged.aspx.designer.cs">
+      <DependentUpon>RinnovaPassNotLogged.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reserved\AreaPubblica\ScaricaMateriali.aspx.cs">
+      <DependentUpon>ScaricaMateriali.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reserved\AreaPubblica\ScaricaMateriali.aspx.designer.cs">
+      <DependentUpon>ScaricaMateriali.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reserved\AreaRegionale\DettaglioTracciaImportazioni.aspx.cs">
+      <DependentUpon>DettaglioTracciaImportazioni.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reserved\AreaRegionale\DettaglioTracciaImportazioni.aspx.designer.cs">
+      <DependentUpon>DettaglioTracciaImportazioni.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reserved\AreaRegionale\VisualizzaCode.aspx.cs">
+      <DependentUpon>VisualizzaCode.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reserved\AreaRegionale\VisualizzaCode.aspx.designer.cs">
+      <DependentUpon>VisualizzaCode.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reserved\AreaRegionale\VisualizzaTracciaImportazione.aspx.cs">
+      <DependentUpon>VisualizzaTracciaImportazione.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reserved\AreaRegionale\VisualizzaTracciaImportazione.aspx.designer.cs">
+      <DependentUpon>VisualizzaTracciaImportazione.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Utility\BasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Utility\BaseReservedArea.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Utility\LinkHandler.cs" />
+    <Compile Include="Utility\SessionServiceManager.cs" />
+    <Compile Include="ReservedAreaHomePage.aspx.cs">
+      <DependentUpon>ReservedAreaHomePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReservedAreaHomePage.aspx.designer.cs">
+      <DependentUpon>ReservedAreaHomePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\FenealgestUtilsService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WIN.FENGEST_NAZIONALE.DOMAIN\WIN.FENGEST_NAZIONALE.DOMAIN.csproj">
+      <Project>{CCD2CC47-18FD-4E95-B9CA-B81DED3D4E2F}</Project>
+      <Name>WIN.FENGEST_NAZIONALE.DOMAIN</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WIN.FENGEST_NAZIONALE.HANDLERS\WIN.FENGEST_NAZIONALE.HANDLERS.csproj">
+      <Project>{A7C54B56-1A2A-4D16-95B7-0174B44748BD}</Project>
+      <Name>WIN.FENGEST_NAZIONALE.HANDLERS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WIN.FENGEST_NAZIONALE.INTEGRATION_ENTITIES\WIN.FENGEST_NAZIONALE.INTEGRATION_ENTITIES.csproj">
+      <Project>{FEF19374-07AC-46F6-93A3-F7FB32E2428D}</Project>
+      <Name>WIN.FENGEST_NAZIONALE.INTEGRATION_ENTITIES</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WIN.FENGEST_NAZIONALE.VB.PERSISTENCE\WIN.FENGEST_NAZIONALE.VB.PERSISTENCE.vbproj">
+      <Project>{9CF12BE4-D860-454C-9D57-FBEFAD968D66}</Project>
+      <Name>WIN.FENGEST_NAZIONALE.VB.PERSISTENCE</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Themes\Default\Default.css" />
+    <Content Include="Fenealgestweb.Master" />
+    <Content Include="Home.aspx" />
+    <Content Include="immagini\footer.png" />
+    <Content Include="immagini\home_image.png" />
+    <Content Include="immagini\login_button.png" />
+    <Content Include="immagini\menu_bottom.png" />
+    <Content Include="Login.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Themes\Default\Master.css" />
+    <Content Include="Global.asax" />
+    <Content Include="immagini\header\header.png" />
+    <Content Include="immagini\header\header_abruzzo.png" />
+    <Content Include="immagini\header\header_basilicata.png" />
+    <Content Include="immagini\header\header_calabria.png" />
+    <Content Include="immagini\header\header_campania.png" />
+    <Content Include="immagini\header\header_emilia.png" />
+    <Content Include="immagini\header\header_friuli.png" />
+    <Content Include="immagini\header\header_lazio.png" />
+    <Content Include="immagini\header\header_liguria.png" />
+    <Content Include="immagini\header\header_lombardia.png" />
+    <Content Include="immagini\header\header_marche.png" />
+    <Content Include="immagini\header\header_molise.png" />
+    <Content Include="immagini\header\header_nazionale.png" />
+    <Content Include="immagini\header\header_piemonte.png" />
+    <Content Include="immagini\header\header_puglia.png" />
+    <Content Include="immagini\header\header_sardegna.png" />
+    <Content Include="immagini\header\header_sicilia.png" />
+    <Content Include="immagini\header\header_toscana.png" />
+    <Content Include="immagini\header\header_trentino.png" />
+    <Content Include="immagini\header\header_umbria.png" />
+    <Content Include="immagini\header\header_valle.png" />
+    <Content Include="immagini\header\header_veneto.png" />
+    <Content Include="immagini\menu_arrow.png" />
+    <Content Include="immagini\menu_separator.png" />
+    <Content Include="immagini\sfondi_area_riservata\mappa_regioniItalia_pulita.gif" />
+    <Content Include="immagini\sfondi_area_riservata\mappa_regioniItalia_pulita_small.gif" />
+    <Content Include="immagini\sfondi_area_riservata\sfondo_area_riservata.png" />
+    <Content Include="immagini\sfondi_area_riservata\sfondo_area_riservata_abruzzo.png" />
+    <Content Include="immagini\sfondi_area_riservata\sfondo_area_riservata_basilicata.png" />
+    <Content Include="immagini\sfondi_area_riservata\sfondo_area_riservata_calabria.png" />
+    <Content Include="immagini\sfondi_area_riservata\sfondo_area_riservata_campania.png" />
+    <Content Include="immagini\sfondi_area_riservata\sfondo_area_riservata_emilia.png" />
+    <Content Include="immagini\sfondi_area_riservata\sfondo_area_riservata_friuli.png" />
+    <Content Include="immagini\sfondi_area_riservata\sfondo_area_riservata_italia.png" />
+    <Content Include="immagini\sfondi_area_riservata\sfondo_area_riservata_lazio.png" />
+    <Content Include="immagini\sfondi_area_riservata\sfondo_area_riservata_liguria.png" />
+    <Content Include="immagini\sfondi_area_riservata\sfondo_area_riservata_lombardia.png" />
+    <Content Include="immagini\sfondi_area_riservata\sfondo_area_riservata_marche.png" />
+    <Content Include="immagini\sfondi_area_riservata\sfondo_area_riservata_molise.png" />
+    <Content Include="immagini\sfondi_area_riservata\sfondo_area_riservata_origin.png" />
+    <Content Include="immagini\sfondi_area_riservata\sfondo_area_riservata_piemonte.png" />
+    <Content Include="immagini\sfondi_area_riservata\sfondo_area_riservata_puglia.png" />
+    <Content Include="immagini\sfondi_area_riservata\sfondo_area_riservata_sardegna.png" />
+    <Content Include="immagini\sfondi_area_riservata\sfondo_area_riservata_sicilia.png" />
+    <Content Include="immagini\sfondi_area_riservata\sfondo_area_riservata_toscana.png" />
+    <Content Include="immagini\sfondi_area_riservata\sfondo_area_riservata_trentino.png" />
+    <Content Include="immagini\sfondi_area_riservata\sfondo_area_riservata_umbria.png" />
+    <Content Include="immagini\sfondi_area_riservata\sfondo_area_riservata_valle.png" />
+    <Content Include="immagini\sfondi_area_riservata\sfondo_area_riservata_veneto.png" />
+    <Content Include="ReservedAreaHomePage.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\docs\guida_installazione_rendiconto.doc" />
+    <None Include="assets\docs\ManualeFenealgestWEB.doc" />
+    <None Include="Configuration file\DBScript.sql" />
+    <None Include="Configuration file\ManualeDeploymentFenealgestWEB.doc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <Content Include="assets\control\Footer.ascx" />
+    <Content Include="assets\control\HeaderHome.ascx" />
+    <Content Include="assets\control\HeaderReserved.ascx" />
+    <Content Include="assets\control\HomePageMenu.ascx" />
+    <Content Include="assets\control\LoggedUtilityMenu.ascx" />
+    <Content Include="assets\control\UtilityMenu.ascx" />
+    <Content Include="css\DevexpressCSS.css" />
+    <Content Include="ErrorHandling\ErrorPage.aspx" />
+    <Content Include="FenealgestwebNew.Master" />
+    <None Include="images\PNG\Thumbs.db" />
+    <None Include="images\Thumbs.db" />
+    <None Include="immagini\header\Thumbs.db" />
+    <None Include="immagini\sfondi_area_riservata\Thumbs.db" />
+    <Content Include="Web_WithHttpsRedirection.config" />
+    <Content Include="css\style.css" />
+    <Content Include="DownloadArea.aspx" />
+    <Content Include="images\download.png" />
+    <Content Include="images\down_arrow.png" />
+    <Content Include="images\footer_bg.png" />
+    <Content Include="images\guida.png" />
+    <Content Include="images\header_bg.png" />
+    <Content Include="images\info.png" />
+    <Content Include="images\logo.png" />
+    <Content Include="images\logo_noesis.png" />
+    <Content Include="images\lucchetto.png" />
+    <Content Include="images\PNG\footer_bg.png" />
+    <Content Include="images\PNG\header_bg.png" />
+    <Content Include="images\PNG\logo.png" />
+    <Content Include="images\PNG\right_bg.png" />
+    <Content Include="images\PNG\right_shadow.png" />
+    <Content Include="images\recupera.png" />
+    <Content Include="images\right_arrow.png" />
+    <Content Include="images\right_bg.png" />
+    <Content Include="images\rinnova.png" />
+    <Content Include="images\teamviewer.png" />
+    <Content Include="images\teleassistenza.png" />
+    <Content Include="images\tesserino.png" />
+    <Content Include="images\utenti.png" />
+    <Content Include="immagini\icon\download32.png" />
+    <Content Include="immagini\icon\download16.png" />
+    <Content Include="immagini\icon\edit32.png" />
+    <Content Include="immagini\icon\edit16.png" />
+    <Content Include="immagini\icon\zoom32.png" />
+    <Content Include="immagini\icon\zoom16.png" />
+    <Content Include="immagini\loader\ajax-loader.gif" />
+    <Content Include="Index.aspx" />
+    <Content Include="javascript\jquery-1.4.4.min.js" />
+    <Content Include="javascript\news\jquery.carouFredSel-3.1.0-packed.js" />
+    <Content Include="javascript\news\jquery.carouFredSel-3.1.0.js" />
+    <Content Include="javascript\news\jquery.carouFredSel-3.2.1-packed.js" />
+    <Content Include="javascript\news\jquery.carouFredSel-3.2.1.js" />
+    <Content Include="javascript\news\jquery.js" />
+    <Content Include="Reserved\AreaAmministrativa\GestioneDownload.aspx" />
+    <Content Include="Reserved\AreaAmministrativa\GestioneNews.aspx" />
+    <Content Include="Reserved\AreaAmministrativa\GestioneNewsletter.aspx" />
+    <Content Include="Reserved\AreaAmministrativa\GestioneUtenti.aspx" />
+    <Content Include="Reserved\AreaAmministrativa\RicercaNews.aspx" />
+    <Content Include="Reserved\AreaAmministrativa\RicercaUtenti.aspx" />
+    <Content Include="Reserved\AreaAmministrativa\VisualizzaDownload.aspx" />
+    <Content Include="Reserved\AreaNazionale\Bilancio.aspx" />
+    <Content Include="Reserved\AreaNazionale\rendiconto.xml" />
+    <Content Include="Reserved\AreaNazionale\ReportBilancioProvinciale.aspx" />
+    <Content Include="Reserved\AreaNazionale\ReportBilancio.aspx" />
+    <Content Include="Reserved\AreaNazionale\ReportBilancioRlst.aspx" />
+    <Content Include="Reserved\AreaNazionale\ReportIscritti.aspx" />
+    <Content Include="Reserved\AreaNazionale\RicercaLavoratori.aspx" />
+    <Content Include="Reserved\AreaNazionale\VerificaBilancio.aspx" />
+    <Content Include="Reserved\AreaNazionale\VisualizzaLavoratore.aspx" />
+    <Content Include="Reserved\AreaPubblica\CodiceFiscale.aspx" />
+    <Content Include="Reserved\AreaPubblica\PassDimenticata.aspx" />
+    <Content Include="Reserved\AreaPubblica\RinnovaPassLogged.aspx" />
+    <Content Include="Reserved\AreaPubblica\RinnovaPassNotLogged.aspx" />
+    <Content Include="Reserved\AreaPubblica\ScaricaMateriali.aspx" />
+    <Content Include="Reserved\AreaRegionale\DettaglioTracciaImportazioni.aspx" />
+    <Content Include="Reserved\AreaRegionale\VisualizzaCode.aspx" />
+    <Content Include="Reserved\AreaRegionale\VisualizzaTracciaImportazione.aspx" />
+    <Content Include="Configuration file\Menu.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ErrorHandling\FileNotFound.htm" />
+    <Content Include="ErrorHandling\GenericErrorPage.htm" />
+    <Content Include="immagini\header\header_bolzano.png" />
+    <Content Include="immagini\header\header_connector.png" />
+    <Content Include="immagini\header\header_trento.png" />
+    <Content Include="ReservedArea.Master" />
+    <Content Include="Configuration file\Ruoli.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Web References\FenealgestUtilsService\FenealgestUtils.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="assets\setups\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://www.fenealgest.it/servizi/WebServices/FenealgestUtils.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\FenealgestUtilsService\</RelPath>
+      <UpdateFromURL>http://www.fenealgest.it/servizi/WebServices/FenealgestUtils.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>FenealgestWEB_FenealgestUtilsService_FenealgestUtils</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>53326</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/fenealweb</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

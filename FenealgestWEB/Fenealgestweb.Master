@@ -1,0 +1,66 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Fenealgestweb.master.cs" Inherits="FenealgestWEB.Fenealgestweb" EnableTheming="True" %>
+
+<%@ Register Assembly="DevExpress.Web.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"
+    Namespace="DevExpress.Web.ASPxTreeView" TagPrefix="dx" %>
+
+<%@ Register Assembly="DevExpress.Web.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"
+    Namespace="DevExpress.Web.ASPxMenu" TagPrefix="dx" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+    <head runat="server">
+        <title>No title</title>
+        <link href="App_Themes/Default/Master.css" rel="stylesheet" type="text/css" />
+        <asp:ContentPlaceHolder ID="head" runat="server">
+        </asp:ContentPlaceHolder>
+    </head>
+    <body id="BodyFenealgestWeb">
+        <div align="center">
+            <form id="form1" runat="server">
+                <table id="Tabellaprincipale" >
+                    <tr>
+                        <td colspan="2">
+                            <asp:Image ID="ImgHeader" runat="server" 
+                                ImageUrl="~/immagini/header/header.png" Width="985px" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td  id="TdMenuTabellaPrincipale">
+                            <table >
+                                <tr >
+                                    <td  id="TdTabellaMenu">
+                                        <dx:ASPxTreeView ID="mainTree" runat="server">
+                                        </dx:ASPxTreeView>
+                                        <dx:ASPxMenu ID="mainMenu" runat="server" Orientation="Vertical">
+                                        </dx:ASPxMenu>
+                                    </td>
+                                </tr >
+                                <tr >
+                                    <td >
+                                        <asp:Image ID="Image1" runat="server" 
+                                            ImageUrl="~/immagini/menu_bottom.png" />      
+                                    </td>
+                                </tr> 
+                            </table>
+                        </td>
+                        <td id="TdPrincipaleTabellaPrincipale">
+                            <asp:ContentPlaceHolder ID="ContentPlaceHolderPrincipale" runat="server">
+                            </asp:ContentPlaceHolder>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        </td>
+                        <td id="TdFooterTabellaPrincipale">
+                              <a href ="http://www.tecnoesis.it">
+                              <asp:Image ID="Image2" runat="server" 
+                                  ImageUrl="~/immagini/footer.png" />
+                              </a>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </body>
+</html>

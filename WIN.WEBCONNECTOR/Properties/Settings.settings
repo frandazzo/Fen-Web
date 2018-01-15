@@ -1,0 +1,30 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="WIN.WEBCONNECTOR.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="PacketSize" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">500</Value>
+    </Setting>
+    <Setting Name="CheckInternetConnection" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="MaxQueryResult" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">500</Value>
+    </Setting>
+    <Setting Name="MaxFiscalCodeRequests" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">500</Value>
+    </Setting>
+    <Setting Name="RegionalDeploy" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="WIN_WEBCONNECTOR_JoinAllServices_JoinAllWebService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://www.fenealgest.it/servizi/WebServices/JoinAllWebService.asmx</Value>
+    </Setting>
+    <Setting Name="WIN_WEBCONNECTOR_SharetopServices_SharetopIntegration" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://www.fenealgest.it/servizi/WebServices/SharetopIntegration.asmx</Value>
+    </Setting>
+    <Setting Name="WIN_WEBCONNECTOR_FenealgestServices_FenealgestwebServices" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://www.fenealgest.it/servizi/WebServices/FenealgestwebServices.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

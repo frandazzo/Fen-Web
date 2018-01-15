@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DescrittoreMenu xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="www.fenealgestweb.it">
+  <ListaMenu>
+    <Menu>
+      <Funzioni>
+        <Funzione Nome="Analisi iscritti">
+          <Nodi>
+            <Nodo TestoMenu="Nazionale" Padre="" Figlio="A0" Url="" UrlImage="~/images/utenti.png" Livello="0" Indice="0" />
+            <Nodo TestoMenu="Iscritti" Padre="A0" Figlio="B0"  UrlImage="~/images/lucchetto.png" Url="" Livello="1" Indice="0" />
+            <Nodo TestoMenu="Analisi iscritti" Padre="B0" Figlio="" UrlImage="~/images/lucchetto.png" Url="~/iscritti.aspx" Livello="2" Indice="1" />
+          </Nodi>
+        </Funzione>
+        <Funzione Nome="Visualizza pubblicazioni">
+          <Nodi>
+            <Nodo TestoMenu="Nazionale" Padre="" Figlio="A0" Url="" UrlImage="~/images/utenti.png" Livello="0" Indice="0" />
+            <Nodo TestoMenu="Iscritti" Padre="A0" Figlio="B0"  UrlImage="~/images/lucchetto.png" Url="" Livello="1" Indice="0" />
+            <Nodo TestoMenu="Visualizza pubblicazioni" Padre="B0" Figlio="" UrlImage="~/images/lucchetto.png" Url="~/iscritti.aspx" Livello="2" Indice="2" />
+          </Nodi>
+        </Funzione>
+        <Funzione Nome="Visualizza storico lista lavoratori liv nazionale">
+          <Nodi>
+            <Nodo TestoMenu="Nazionale" Padre="" Figlio="A0" Url="" UrlImage="~/images/utenti.png" Livello="0" Indice="0" />
+            <Nodo TestoMenu="Iscritti" Padre="A0" Figlio="B0"  UrlImage="~/images/lucchetto.png" Url="" Livello="1" Indice="0" />
+            <Nodo TestoMenu="Visualizza storico lista lavoratori" Padre="B0" Figlio="" UrlImage="~/images/lucchetto.png" Url="~/iscritti.aspx" Livello="2" Indice="3" />
+          </Nodi>
+        </Funzione>
+        <Funzione Nome="Visualizza storico lavoratore liv nazionale">
+          <Nodi>
+            <Nodo TestoMenu="Nazionale" Padre="" Figlio="A0" Url="" UrlImage="~/images/utenti.png" Livello="0" Indice="0" />
+            <Nodo TestoMenu="Iscritti" Padre="A0" Figlio="B0"  UrlImage="~/images/lucchetto.png" Url="" Livello="1" Indice="0" />
+            <Nodo TestoMenu="Ricerca lavoratori" Padre="B0" Figlio="" UrlImage="~/images/lucchetto.png" Url="~/Reserved/AreaNazionale/RicercaLavoratori.aspx?isnat=true" Livello="2" Indice="4" />
+          </Nodi>
+        </Funzione>
+        <Funzione Nome="Report iscritti">
+          <Nodi>
+            <Nodo TestoMenu="Nazionale" Padre="" Figlio="A0" Url="" UrlImage="~/images/utenti.png" Livello="0" Indice="0" />
+            <Nodo TestoMenu="Iscritti" Padre="A0" Figlio="B0"  UrlImage="~/images/lucchetto.png" Url="" Livello="1" Indice="0" />
+            <Nodo TestoMenu="Report iscritti" Padre="B0" Figlio="" UrlImage="~/images/lucchetto.png" Url="~/Reserved/AreaNazionale/ReportIscritti.aspx" Livello="2" Indice="5" />
+          </Nodi>
+        </Funzione>
+        <Funzione Nome="Ricerca bilancio">
+          <Nodi>
+            <Nodo TestoMenu="Nazionale" Padre="" Figlio="A0" Url="" UrlImage="~/images/utenti.png" Livello="0" Indice="0" />
+            <Nodo TestoMenu="Amministrativo" Padre="A0" Figlio="C0"  UrlImage="~/images/lucchetto.png" Url="" Livello="1" Indice="1" />
+            <Nodo TestoMenu="Ricerca/visualizza rendiconto" Padre="C0" Figlio="" UrlImage="~/images/lucchetto.png" Url="~/Reserved/AreaNazionale/Bilancio.aspx" Livello="2" Indice="1" />
+          </Nodi>
+        </Funzione>
+        <Funzione Nome="Report bilancio">
+          <Nodi>
+            <Nodo TestoMenu="Nazionale" Padre="" Figlio="A0" Url="" UrlImage="~/images/utenti.png" Livello="0" Indice="0" />
+            <Nodo TestoMenu="Amministrativo" Padre="A0" Figlio="C0"  UrlImage="~/images/lucchetto.png" Url="" Livello="1" Indice="1" />
+            <Nodo TestoMenu="Report rendiconto regionale" Padre="C0" Figlio="" UrlImage="~/images/lucchetto.png" Url="~/Reserved/AreaNazionale/ReportBilancio.aspx" Livello="2" Indice="2" />
+          </Nodi>
+        </Funzione>
+        <Funzione Nome="Report bilancio Provinciale">
+          <Nodi>
+            <Nodo TestoMenu="Nazionale" Padre="" Figlio="A0" Url="" UrlImage="~/images/utenti.png" Livello="0" Indice="0" />
+            <Nodo TestoMenu="Amministrativo" Padre="A0" Figlio="C0"  UrlImage="~/images/lucchetto.png" Url="" Livello="1" Indice="1" />
+            <Nodo TestoMenu="Report rendiconto provinciale" Padre="C0" Figlio="" UrlImage="~/images/lucchetto.png" Url="~/Reserved/AreaNazionale/ReportBilancioProvinciale.aspx" Livello="2" Indice="3" />
+          </Nodi>
+        </Funzione>
+        <Funzione Nome="Verifica bilancio">
+          <Nodi>
+            <Nodo TestoMenu="Nazionale" Padre="" Figlio="A0" Url="" UrlImage="~/images/utenti.png" Livello="0" Indice="0" />
+            <Nodo TestoMenu="Amministrativo" Padre="A0" Figlio="C0"  UrlImage="~/images/lucchetto.png" Url="" Livello="1" Indice="1" />
+            <Nodo TestoMenu="Verifica invio rendiconti" Padre="C0" Figlio="" UrlImage="~/images/lucchetto.png" Url="~/Reserved/AreaNazionale/VerificaBilancio.aspx" Livello="2" Indice="4" />
+          </Nodi>
+        </Funzione>
+        <Funzione Nome="Gestione newsletter">
+          <Nodi>
+            <Nodo TestoMenu="Amministrazione" Padre="" Figlio="B0" Url="" UrlImage="~/images/utenti.png" Livello="0" Indice="1" />
+            <Nodo TestoMenu="Gestione newsletter" Padre="B0" Figlio="" UrlImage="~/images/lucchetto.png" Url="~/Reserved/AreaAmministrativa/GestioneNewsletter.aspx" Livello="1" Indice="1" />
+          </Nodi>
+        </Funzione>
+        <Funzione Nome="Gestione news">
+          <Nodi>
+            <Nodo TestoMenu="Amministrazione" Padre="" Figlio="B0" Url="" UrlImage="~/images/utenti.png" Livello="0" Indice="1" />
+            <Nodo TestoMenu="Gestione news" Padre="B0" Figlio="" UrlImage="~/images/lucchetto.png" Url="~/Reserved/AreaAmministrativa/RicercaNews.aspx" Livello="1" Indice="2" />
+          </Nodi>
+        </Funzione>
+        <Funzione Nome="Gestione utenti">
+          <Nodi>
+            <Nodo TestoMenu="Amministrazione" Padre="" Figlio="B0" Url="" UrlImage="~/images/utenti.png" Livello="0" Indice="1" />
+            <Nodo TestoMenu="Crea utenti" Padre="B0" Figlio="" UrlImage="~/images/lucchetto.png" Url="~/Reserved/AreaAmministrativa/GestioneUtenti.aspx" Livello="1" Indice="3" />
+          </Nodi>
+        </Funzione>
+        <Funzione Nome="Ricerca utenti">
+          <Nodi>
+            <Nodo TestoMenu="Amministrazione" Padre="" Figlio="B0" Url="" UrlImage="~/images/utenti.png" Livello="0" Indice="1" />
+            <Nodo TestoMenu="Ricerca utenti" Padre="B0" Figlio="" UrlImage="~/images/lucchetto.png" Url="~/Reserved/AreaAmministrativa/RicercaUtenti.aspx" Livello="1" Indice="4" />
+          </Nodi>
+        </Funzione>
+        <Funzione Nome="Visualizza storico lista lavoratori liv regionale">
+          <Nodi>
+            <Nodo TestoMenu="Regionale" Padre="" Figlio="C0" Url="" UrlImage="~/images/utenti.png" Livello="0" Indice="2" />
+            <Nodo TestoMenu="Visualizza storico lista lavoratori" UrlImage="~/images/lucchetto.png" Padre="C0" Figlio="" Url="~/iscritti.aspx" Livello="1" Indice="0" />
+          </Nodi>
+        </Funzione>
+        <Funzione Nome="Visualizza storico lavoratore liv regionale">
+          <Nodi>
+            <Nodo TestoMenu="Regionale" Padre="" Figlio="C0" Url="" UrlImage="~/images/utenti.png" Livello="0" Indice="2" />
+            <Nodo TestoMenu="Ricerca lavoratori" Padre="C0" Figlio="" UrlImage="~/images/lucchetto.png" Url="~/Reserved/AreaNazionale/RicercaLavoratori.aspx?isnat=false" Livello="1" Indice="1" />
+          </Nodi>
+        </Funzione>
+        <Funzione Nome="Analisi iscritti regionale">
+          <Nodi>
+            <Nodo TestoMenu="Regionale" Padre="" Figlio="C0" Url="" UrlImage="~/images/utenti.png" Livello="0" Indice="2" />
+            <Nodo TestoMenu="Analisi iscritti" Padre="C0" Figlio="" UrlImage="~/images/lucchetto.png" Url="~/iscritti.aspx" Livello="1" Indice="2" />
+          </Nodi>
+        </Funzione>
+        <Funzione Nome="Visualizza lista importazioni">
+          <Nodi>
+            <Nodo TestoMenu="Regionale" Padre="" Figlio="C0" Url="" UrlImage="~/images/utenti.png" Livello="0" Indice="2" />
+            <Nodo TestoMenu="Visualizza lista importazioni" Padre="C0" Figlio="" UrlImage="~/images/lucchetto.png" Url="~/Reserved/AreaRegionale/VisualizzaTracciaImportazione.aspx" Livello="1" Indice="3" />
+          </Nodi>
+        </Funzione>
+        <Funzione Nome="Elimina Dati importazione">
+          <Nodi>
+            <Nodo TestoMenu="Regionale" Padre="" Figlio="C0" Url="" UrlImage="~/images/utenti.png" Livello="0" Indice="2" />
+            <Nodo TestoMenu="Elimina Dati importazione" Padre="C0" Figlio="" UrlImage="~/images/lucchetto.png" Url="~/iscritti.aspx" Livello="1" Indice="4" />
+          </Nodi>
+        </Funzione>
+        <Funzione Nome="Pubblica iscritti">
+          <Nodi>
+            <Nodo TestoMenu="Regionale" Padre="" Figlio="C0" Url="" UrlImage="~/images/utenti.png" Livello="0" Indice="2" />
+            <Nodo TestoMenu="Pubblica iscritti" Padre="C0" Figlio="" UrlImage="~/images/lucchetto.png" Url="~/iscritti.aspx" Livello="1" Indice="5" />
+          </Nodi>
+        </Funzione>
+        <Funzione Nome="Visualizza code in attesa">
+          <Nodi>
+            <Nodo TestoMenu="Regionale" Padre="" Figlio="C0" Url="" UrlImage="~/images/utenti.png" Livello="0" Indice="2" />
+            <Nodo TestoMenu="Visualizza code in attesa" Padre="C0" Figlio="" UrlImage="~/images/lucchetto.png" Url="~/Reserved/AreaRegionale/VisualizzaCode.aspx" Livello="1" Indice="6" />
+          </Nodi>
+        </Funzione>
+        <Funzione Nome="Iscriviti alla newsletter">
+          <Nodi>
+            <Nodo TestoMenu="Area pubblica" Padre="" Figlio="D0" Url="" UrlImage="~/images/utenti.png" Livello="0" Indice="3" />
+            <Nodo TestoMenu="Iscriviti alla newsletter" Padre="D0" Figlio="" UrlImage="~/images/lucchetto.png" Url="~/iscritti.aspx" Livello="1" Indice="0" />
+          </Nodi>
+        </Funzione>
+        <Funzione Nome="Visualizza news">
+          <Nodi>
+            <Nodo TestoMenu="Area pubblica" Padre="" Figlio="D0" Url="" UrlImage="~/images/utenti.png" Livello="0" Indice="3" />
+            <Nodo TestoMenu="Visualizza news" Padre="D0" Figlio="" UrlImage="~/images/lucchetto.png" Url="~/iscritti.aspx" Livello="1" Indice="1" />
+          </Nodi>
+        </Funzione>
+
+        <Funzione Nome="Rinnova password">
+          <Nodi>
+            <Nodo TestoMenu="Area pubblica" Padre="" Figlio="D0" Url="" UrlImage="~/images/utenti.png" Livello="0" Indice="3" />
+            <Nodo TestoMenu="Rinnova password" Padre="D0" Figlio="" UrlImage="~/images/lucchetto.png" Url="~/Reserved/AreaPubblica/RinnovaPassLogged.aspx" Livello="1" Indice="2" />
+          </Nodi>
+        </Funzione>
+        <Funzione Nome="Password dimenticata">
+          <Nodi>
+            <Nodo TestoMenu="Area pubblica" Padre="" Figlio="D0" Url="" UrlImage="~/images/utenti.png" Livello="0" Indice="3" />
+            <Nodo TestoMenu="Password dimenticata" Padre="D0" Figlio="" UrlImage="~/images/lucchetto.png" Url="~/Reserved/AreaPubblica/PassDimenticata.aspx" Livello="1" Indice="3" />
+          </Nodi>
+        </Funzione>
+        <Funzione Nome="Calcola codice fiscale">
+          <Nodi>
+            <Nodo TestoMenu="Area pubblica" Padre="" Figlio="D0" Url="" UrlImage="~/images/utenti.png" Livello="0" Indice="3" />
+            <Nodo TestoMenu="Calcola codice fiscale" Padre="D0" Figlio="" UrlImage="~/images/lucchetto.png" Url="~/Reserved/AreaPubblica/CodiceFiscale.aspx" Livello="1" Indice="4" />
+          </Nodi>
+        </Funzione>
+        <Funzione Nome="Scarica setup">
+          <Nodi>
+            <Nodo TestoMenu="Area pubblica" Padre="" Figlio="D0" Url="" UrlImage="~/images/utenti.png" Livello="0" Indice="3" />
+            <Nodo TestoMenu="Area download" Padre="" Figlio="D0" UrlImage="~/images/lucchetto.png" Url="~/DownloadArea.aspx" Livello="1" Indice="5" />
+          </Nodi>
+        </Funzione>
+      </Funzioni>
+    </Menu>
+  </ListaMenu>
+</DescrittoreMenu>

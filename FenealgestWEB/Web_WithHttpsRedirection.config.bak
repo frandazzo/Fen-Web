@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <configSections>
+    <sectionGroup name="devExpress">
+      <section name="compression" type="DevExpress.Web.ASPxClasses.CompressionConfigurationSection, DevExpress.Web.v11.1, Version=11.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" requirePermission="false" />
+      <section name="themes" type="DevExpress.Web.ASPxClasses.ThemesConfigurationSection, DevExpress.Web.v11.1, Version=11.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" requirePermission="false" />
+      <section name="errors" type="DevExpress.Web.ASPxClasses.ErrorsConfigurationSection, DevExpress.Web.v11.1, Version=11.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" requirePermission="false" />
+      <section name="settings" type="DevExpress.Web.ASPxClasses.SettingsConfigurationSection, DevExpress.Web.v11.1, Version=11.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" requirePermission="false" />
+    </sectionGroup>
+  </configSections>
+  <appSettings>
+		<add key="smtpServer" value="smtp.gmail.com" />
+    		<add key="smtpAccount" value="fg.randazzo@gmail.com" />
+    		<add key="smtpPassword" value="vivalafica" />
+    		<add key="smtpEnableSSL" value="true" />
+    		<add key="from" value="fenealgest@web.it" />
+    		<add key="QueueName" value=".\private$\importData_queue" />
+    		<add key="ProductionEnvironment" value="true" />
+    		<add key="LogName" value="FenealgestWebErrorLog" />
+    		<add key="LogSource" value="FenealgestWeb" />
+    		<add key="MaxQueryResult" value="400" />
+    		<add key="DownloadDirectoryName" value="D:\FileCaricati\" />
+  </appSettings>
+  <connectionStrings>
+    <add name="dbFeneal" connectionString="Dsn=FenealgestWebTest;uid=root;pwd=RegUsr" providerName="System.Data.Odbc" />
+  </connectionStrings>
+  <system.web>
+
+    <pages>
+      <controls>
+        <add tagPrefix="control" src="~/assets/control/Footer.ascx" tagName="footer" />
+        <add tagPrefix="control" src="~/assets/control/HeaderHome.ascx" tagName="headerhome" />
+        <add tagPrefix="control" src="~/assets/control/HeaderReserved.ascx" tagName="headerreserved" />
+        <add tagPrefix="control" src="~/assets/control/UtilityMenu.ascx" tagName="utilitymenu" />
+        <add tagPrefix="control" src="~/assets/control/LoggedUtilityMenu.ascx" tagName="loggedutilitymenu" />
+        <add tagPrefix="control" src="~/assets/control/HomePageMenu.ascx" tagName="homemenu" />
+      </controls>
+    </pages>
+
+
+    <httpRuntime executionTimeout="90" maxRequestLength="500" />
+    <!-- 
+            Impostare compilation debug="true" per inserire i 
+            simboli di debug nella pagina compilata. Poiché tale operazione ha effetto 
+            sulle prestazioni, impostare questo valore su true 
+            solo durante lo sviluppo.
+        -->
+    <compilation debug="false">
+      <assemblies>
+        <add assembly="System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=B03F5F7F11D50A3A" />
+        <add assembly="DevExpress.Web.ASPxGridView.v11.1.Export, Version=11.1.4.0, Culture=neutral, PublicKeyToken=B88D1754D700E49A" />
+        <add assembly="DevExpress.XtraPrinting.v11.1, Version=11.1.4.0, Culture=neutral, PublicKeyToken=B88D1754D700E49A" />
+        <add assembly="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=B77A5C561934E089" />
+        <add assembly="DevExpress.Web.v11.1, Version=11.1.4.0, Culture=neutral, PublicKeyToken=B88D1754D700E49A" />
+        <add assembly="DevExpress.Web.ASPxGridView.v11.1, Version=11.1.4.0, Culture=neutral, PublicKeyToken=B88D1754D700E49A" />
+        <add assembly="DevExpress.XtraEditors.v11.1, Version=11.1.4.0, Culture=neutral, PublicKeyToken=B88D1754D700E49A" />
+        <add assembly="DevExpress.Printing.v11.1.Core, Version=11.1.4.0, Culture=neutral, PublicKeyToken=B88D1754D700E49A" />
+        <add assembly="DevExpress.Data.v11.1, Version=11.1.4.0, Culture=neutral, PublicKeyToken=B88D1754D700E49A" />
+        <add assembly="DevExpress.Web.ASPxEditors.v11.1, Version=11.1.4.0, Culture=neutral, PublicKeyToken=B88D1754D700E49A" />
+        <add assembly="DevExpress.Web.ASPxPivotGrid.v11.1, Version=11.1.4.0, Culture=neutral, PublicKeyToken=B88D1754D700E49A" />
+        <add assembly="DevExpress.PivotGrid.v11.1.Core, Version=11.1.4.0, Culture=neutral, PublicKeyToken=B88D1754D700E49A" />
+        <add assembly="DevExpress.Web.ASPxPivotGrid.v11.1.Export, Version=11.1.4.0, Culture=neutral, PublicKeyToken=B88D1754D700E49A" />
+        <add assembly="DevExpress.XtraPivotGrid.v11.1, Version=11.1.4.0, Culture=neutral, PublicKeyToken=B88D1754D700E49A" />
+        <add assembly="DevExpress.Utils.v11.1, Version=11.1.4.0, Culture=neutral, PublicKeyToken=B88D1754D700E49A" />
+        <add assembly="DevExpress.Web.ASPxTreeList.v11.1.Export, Version=11.1.4.0, Culture=neutral, PublicKeyToken=B88D1754D700E49A" />
+        <add assembly="DevExpress.Web.ASPxTreeList.v11.1, Version=11.1.4.0, Culture=neutral, PublicKeyToken=B88D1754D700E49A" />
+        <add assembly="DevExpress.Web.ASPxHtmlEditor.v11.1, Version=11.1.4.0, Culture=neutral, PublicKeyToken=B88D1754D700E49A" />
+        <add assembly="DevExpress.Web.ASPxSpellChecker.v11.1, Version=11.1.4.0, Culture=neutral, PublicKeyToken=B88D1754D700E49A" />
+        <add assembly="DevExpress.SpellChecker.v11.1.Core, Version=11.1.4.0, Culture=neutral, PublicKeyToken=B88D1754D700E49A" />
+      </assemblies>
+    </compilation>
+    <!--
+            La sezione <authentication> consente di configurare 
+            la modalità di autenticazione della sicurezza utilizzata da 
+            ASP.NET per identificare un utente in ingresso. 
+        -->
+    <authentication mode="None" />
+    <!--La sezione <customErrors> consente di configurare 
+            l'operazione da eseguire in caso di errore non gestito 
+            durante l'esecuzione di una richiesta. In particolare, 
+            consente agli sviluppatori di configurare le pagine di errore HTML 
+            in modo che vengano visualizzate al posto dell'analisi dello stack dell'errore.-->
+    <customErrors mode="On" defaultRedirect="ErrorHandling\GenericErrorPage.htm">
+      <error statusCode="404" redirect="ErrorHandling\FileNotFound.htm" />
+    </customErrors>
+    <httpModules>
+      <add type="DevExpress.Web.ASPxClasses.ASPxHttpHandlerModule, DevExpress.Web.v11.1, Version=11.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" name="ASPxHttpHandlerModule" />
+    </httpModules>
+  </system.web>
+  <system.codedom>
+  </system.codedom>
+  <!-- 
+        La sezione system.webServer è richiesta per eseguire ASP.NET AJAX in Internet
+       Information Services 7.0. Non è necessaria per la versione precedente di IIS.
+    -->
+  <system.webServer>
+    <validation validateIntegratedModeConfiguration="false" />
+    <modules>
+      <add type="DevExpress.Web.ASPxClasses.ASPxHttpHandlerModule, DevExpress.Web.v11.1, Version=11.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" name="ASPxHttpHandlerModule" />
+    </modules>
+        <defaultDocument>
+            <files>
+                <clear />
+                <add value="Index.aspx" />
+                <add value="index.htm" />
+                <add value="Default.htm" />
+                <add value="Default.asp" />
+                <add value="index.html" />
+                <add value="iisstart.htm" />
+                <add value="default.aspx" />
+            </files>
+        </defaultDocument>
+        <rewrite>
+            <rules>
+                <rule name="Redirect to HTTPS" stopProcessing="true">
+                    <match url="(.*)" />
+                    <conditions>
+                        <add input="{HTTPS}" pattern="^OFF$" />
+                    </conditions>
+                    <action type="Redirect" url="https://{HTTP_HOST}/{R:1}" redirectType="SeeOther" />
+                </rule>
+            </rules>
+        </rewrite>
+  </system.webServer>
+  <devExpress>
+    <compression enableHtmlCompression="false" enableCallbackCompression="true" enableResourceCompression="true" enableResourceMerging="false" />
+    <themes enableThemesAssembly="true" />
+    <errors callbackErrorRedirectUrl="" />
+    <settings rightToLeft="false" />
+  </devExpress>
+</configuration>

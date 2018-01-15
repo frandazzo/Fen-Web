@@ -1,0 +1,230 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CCD2CC47-18FD-4E95-B9CA-B81DED3D4E2F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WIN.FENGEST_NAZIONALE.DOMAIN</RootNamespace>
+    <AssemblyName>WIN.FENGEST_NAZIONALE.DOMAIN</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>http://localhost/WIN.FENGEST_NAZIONALE.DOMAIN/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Charts.v13.2.Core, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Data.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Docs.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Office.v13.2.Core, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Sparkline.v13.2.Core, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Spreadsheet.v13.2.Core, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Web.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WIN.BILANCIO, Version=8.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dlls\WIN.BILANCIO.dll</HintPath>
+    </Reference>
+    <Reference Include="WIN.TECHNICAL.MENU_CUSTOMIZER, Version=8.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dlls\WIN.TECHNICAL.MENU_CUSTOMIZER.dll</HintPath>
+    </Reference>
+    <Reference Include="WIN.TECHNICAL.SECURITY_NEW, Version=8.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dlls\WIN.TECHNICAL.SECURITY_NEW.dll</HintPath>
+    </Reference>
+    <Reference Include="WIN.TECHNICAL.VB.UTILS, Version=8.6.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dlls\WIN.TECHNICAL.VB.UTILS.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Appartenenza.cs" />
+    <Compile Include="Compression\Archiver.cs" />
+    <Compile Include="ExcelExport\ExcelDocument.cs" />
+    <Compile Include="ExcelExport\ExcelDocumentExporter.cs" />
+    <Compile Include="ExcelExport\ExcelProperty.cs" />
+    <Compile Include="ExcelExport\ExcelRow.cs" />
+    <Compile Include="Financial\ItemRendicontoWrapper.cs" />
+    <Compile Include="Financial\RendicontoWrapper.cs" />
+    <Compile Include="GestioneOrganizzativa\AdministrativeRecord.cs" />
+    <Compile Include="GestioneOrganizzativa\OrganizativeRecord.cs" />
+    <Compile Include="IContactProvider.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Public\Contatti.cs" />
+    <Compile Include="Public\Download.cs" />
+    <Compile Include="Public\News.cs" />
+    <Compile Include="Public\Newsletter.cs" />
+    <Compile Include="Public\TipoDownload.cs" />
+    <Compile Include="Public\Trace.cs" />
+    <Compile Include="Security\AccessChecker.cs" />
+    <Compile Include="Security\DecayDataCalculator.cs" />
+    <Compile Include="Security\DevMenuConstructor.cs" />
+    <Compile Include="Security\DevTreeConstructor.cs" />
+    <Compile Include="Security\MenuConstructor.cs" />
+    <Compile Include="Security\MenuProvider.cs" />
+    <Compile Include="Security\RoleProvider.cs" />
+    <Compile Include="Security\SiteAccessChecker.cs" />
+    <Compile Include="Security\Utente.cs" />
+    <Compile Include="Serializzation\ObjectXMLSerializer.cs" />
+    <Compile Include="Serializzation\SerializedFormat.cs" />
+    <Compile Include="SharetopIntegration\DatiCassaEdile.cs" />
+    <Compile Include="SharetopIntegration\CongressPresence.cs" />
+    <Compile Include="SharetopIntegration\CongressoRegionale.cs" />
+    <Compile Include="SharetopIntegration\CongressoTerritoriale.cs" />
+    <Compile Include="SharetopIntegration\CoordinataBancaria.cs" />
+    <Compile Include="SharetopIntegration\OperationResult.cs" />
+    <Compile Include="SharetopIntegration\OrganizzativeData.cs" />
+    <Compile Include="SharetopIntegration\Rappresentante.cs" />
+    <Compile Include="SharetopIntegration\Rappresentanza.cs" />
+    <Compile Include="SharetopIntegration\RisorsaUmana.cs" />
+    <Compile Include="SharetopIntegration\SharetopBaseData.cs" />
+    <Compile Include="SharetopIntegration\SharetopIntegragrationSuperClass.cs" />
+    <Compile Include="SharetopIntegration\Struttura.cs" />
+    <Compile Include="StrutturaFederazione.cs" />
+    <Compile Include="ValidationSubsystem\LiberiValidationFacade.cs" />
+    <Compile Include="ValidationSubsystem\LiberoFactory.cs" />
+    <Compile Include="WorkerFlowFactory.cs" />
+    <Compile Include="Workers\DenormalizedData.cs" />
+    <Compile Include="Workers\Document.cs" />
+    <Compile Include="ValidationSubsystem\DocumentFactory.cs" />
+    <Compile Include="ValidationSubsystem\ErrorManager.cs" />
+    <Compile Include="Workers\Export.cs" />
+    <Compile Include="ValidationSubsystem\ExportError.cs" />
+    <Compile Include="ValidationSubsystem\ExportFactory.cs" />
+    <Compile Include="ValidationSubsystem\ValidationFacade.cs" />
+    <Compile Include="ValidationSubsystem\GeoElementChecker.cs" />
+    <Compile Include="Workers\Libero.cs" />
+    <Compile Include="Workers\Subscription.cs" />
+    <Compile Include="ValidationSubsystem\SubscriptionFactory.cs" />
+    <Compile Include="Workers\Worker.cs" />
+    <Compile Include="ValidationSubsystem\WorkerFactory.cs" />
+    <Compile Include="Workers\WorkerFlow.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WIN.FENGEST_NAZIONALE.INTEGRATION_ENTITIES\WIN.FENGEST_NAZIONALE.INTEGRATION_ENTITIES.csproj">
+      <Project>{FEF19374-07AC-46F6-93A3-F7FB32E2428D}</Project>
+      <Name>WIN.FENGEST_NAZIONALE.INTEGRATION_ENTITIES</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

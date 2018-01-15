@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.fenealgestweb.it/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:s1="www.fenealgestweb.it" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://www.fenealgestweb.it/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://www.fenealgestweb.it/">
+      <s:import namespace="www.fenealgestweb.it" />
+      <s:element name="ImportIQA">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" ref="s1:IQATrace" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ImportIQAResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ImportIQAResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ImportLiberi">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" ref="s1:LiberiTrace" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ImportLiberiResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ImportLiberiResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+    <s:schema elementFormDefault="qualified" targetNamespace="www.fenealgestweb.it">
+      <s:element name="IQATrace" type="s1:IQATrace" />
+      <s:complexType name="IQATrace">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="IqaTraceDetails" type="s1:ArrayOfIqaTraceDetail" />
+        </s:sequence>
+        <s:attribute name="Subject" type="s:string" />
+        <s:attribute name="Mailto" type="s:string" />
+        <s:attribute name="Provincia" type="s:string" />
+        <s:attribute name="Anno" type="s:int" use="required" />
+        <s:attribute name="Entity" type="s:string" />
+        <s:attribute name="Period" type="s:int" use="required" />
+      </s:complexType>
+      <s:complexType name="ArrayOfIqaTraceDetail">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="IqaTraceDetail" nillable="true" type="s1:IqaTraceDetail" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="IqaTraceDetail">
+        <s:attribute name="COGNOME_UTENTE" type="s:string" />
+        <s:attribute name="NOME_UTENTE" type="s:string" />
+        <s:attribute name="DATA_NASCITA_UTENTE" type="s:string" />
+        <s:attribute name="FISCALE" type="s:string" />
+        <s:attribute name="PROVINCIA_NASCITA" type="s:string" />
+        <s:attribute name="COMUNE_NASCITA" type="s:string" />
+        <s:attribute name="PROVINCIA" type="s:string" />
+        <s:attribute name="COMUNE" type="s:string" />
+        <s:attribute name="INDIRIZZO" type="s:string" />
+        <s:attribute name="CAP" type="s:string" />
+        <s:attribute name="TELEFONO1" type="s:string" />
+        <s:attribute name="TELEFONO2" type="s:string" />
+        <s:attribute name="CODICE_CE_UTENTE" type="s:string" />
+        <s:attribute name="CODICE_EC_UTENTE" type="s:string" />
+        <s:attribute name="NOTE_UTENTE" type="s:string" />
+        <s:attribute name="SETTORE" type="s:string" />
+        <s:attribute name="ENTE" type="s:string" />
+        <s:attribute name="AZIENDA_IMPIEGO" type="s:string" />
+        <s:attribute name="PARTITA_IVA" type="s:string" />
+        <s:attribute name="PROVINCIA_AZIENDA" type="s:string" />
+        <s:attribute name="COMUNE_AZIENDA" type="s:string" />
+        <s:attribute name="INDIRIZZO_AZIENDA" type="s:string" />
+        <s:attribute name="CAP_AZIENDA" type="s:string" />
+        <s:attribute name="TELEFONO_AZIENDA" type="s:string" />
+        <s:attribute name="NOTE_AZIENDA" type="s:string" />
+        <s:attribute name="CODICE_CE_AZIENDA" type="s:string" />
+        <s:attribute name="CODICE_EC_AZIENDA" type="s:string" />
+        <s:attribute name="CONTRATTO" type="s:string" />
+        <s:attribute name="DATA_INIZIO" type="s:string" />
+        <s:attribute name="DATA_FINE" type="s:string" />
+        <s:attribute name="QUOTA" type="s:string" />
+        <s:attribute name="LIVELLO" type="s:string" />
+        <s:attribute name="NOTE" type="s:string" />
+        <s:attribute name="ORE_LAVORATE" type="s:string" />
+        <s:attribute name="ORE_MALATTIA_INFORTUNIO" type="s:string" />
+        <s:attribute name="NOME_REFERENTE" type="s:string" />
+        <s:attribute name="COGNOME_REFERENTE" type="s:string" />
+      </s:complexType>
+      <s:element name="LiberiTrace" type="s1:LiberiTrace" />
+      <s:complexType name="LiberiTrace">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="LiberiTraceDetails" type="s1:ArrayOfLiberiTraceDetail" />
+          <s:element minOccurs="0" maxOccurs="1" name="Provincia" type="s:string" />
+        </s:sequence>
+        <s:attribute name="Subject" type="s:string" />
+        <s:attribute name="Mailto" type="s:string" />
+      </s:complexType>
+      <s:complexType name="ArrayOfLiberiTraceDetail">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="LiberiTraceDetail" nillable="true" type="s1:LiberiTraceDetail" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="LiberiTraceDetail">
+        <s:attribute name="COGNOME_UTENTE" type="s:string" />
+        <s:attribute name="NOME_UTENTE" type="s:string" />
+        <s:attribute name="DATA_NASCITA_UTENTE" type="s:string" />
+        <s:attribute name="FISCALE" type="s:string" />
+        <s:attribute name="PROVINCIA_NASCITA" type="s:string" />
+        <s:attribute name="COMUNE_NASCITA" type="s:string" />
+        <s:attribute name="PROVINCIA" type="s:string" />
+        <s:attribute name="COMUNE" type="s:string" />
+        <s:attribute name="INDIRIZZO" type="s:string" />
+        <s:attribute name="CAP" type="s:string" />
+        <s:attribute name="TELEFONO1" type="s:string" />
+        <s:attribute name="TELEFONO2" type="s:string" />
+        <s:attribute name="CODICE_CE_UTENTE" type="s:string" />
+        <s:attribute name="CODICE_EC_UTENTE" type="s:string" />
+        <s:attribute name="NOTE_UTENTE" type="s:string" />
+        <s:attribute name="ENTE" type="s:string" />
+        <s:attribute name="AZIENDA_IMPIEGO" type="s:string" />
+        <s:attribute name="PARTITA_IVA" type="s:string" />
+        <s:attribute name="PROVINCIA_AZIENDA" type="s:string" />
+        <s:attribute name="COMUNE_AZIENDA" type="s:string" />
+        <s:attribute name="INDIRIZZO_AZIENDA" type="s:string" />
+        <s:attribute name="CAP_AZIENDA" type="s:string" />
+        <s:attribute name="TELEFONO_AZIENDA" type="s:string" />
+        <s:attribute name="NOTE_AZIENDA" type="s:string" />
+        <s:attribute name="CODICE_CE_AZIENDA" type="s:string" />
+        <s:attribute name="CODICE_EC_AZIENDA" type="s:string" />
+        <s:attribute name="CONTRATTO" type="s:string" />
+        <s:attribute name="DATA" type="s:string" />
+        <s:attribute name="LIVELLO" type="s:string" />
+        <s:attribute name="ISCRITTO_A" type="s:string" />
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="ImportIQASoapIn">
+    <wsdl:part name="parameters" element="tns:ImportIQA" />
+  </wsdl:message>
+  <wsdl:message name="ImportIQASoapOut">
+    <wsdl:part name="parameters" element="tns:ImportIQAResponse" />
+  </wsdl:message>
+  <wsdl:message name="ImportLiberiSoapIn">
+    <wsdl:part name="parameters" element="tns:ImportLiberi" />
+  </wsdl:message>
+  <wsdl:message name="ImportLiberiSoapOut">
+    <wsdl:part name="parameters" element="tns:ImportLiberiResponse" />
+  </wsdl:message>
+  <wsdl:portType name="JoinAllWebServiceSoap">
+    <wsdl:operation name="ImportIQA">
+      <wsdl:input message="tns:ImportIQASoapIn" />
+      <wsdl:output message="tns:ImportIQASoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ImportLiberi">
+      <wsdl:input message="tns:ImportLiberiSoapIn" />
+      <wsdl:output message="tns:ImportLiberiSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="JoinAllWebServiceSoap" type="tns:JoinAllWebServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ImportIQA">
+      <soap:operation soapAction="http://www.fenealgestweb.it/ImportIQA" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ImportLiberi">
+      <soap:operation soapAction="http://www.fenealgestweb.it/ImportLiberi" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="JoinAllWebServiceSoap12" type="tns:JoinAllWebServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ImportIQA">
+      <soap12:operation soapAction="http://www.fenealgestweb.it/ImportIQA" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ImportLiberi">
+      <soap12:operation soapAction="http://www.fenealgestweb.it/ImportLiberi" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="JoinAllWebService">
+    <wsdl:port name="JoinAllWebServiceSoap" binding="tns:JoinAllWebServiceSoap">
+      <soap:address location="https://www.fenealgest.it/servizi/WebServices/JoinAllWebService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="JoinAllWebServiceSoap12" binding="tns:JoinAllWebServiceSoap12">
+      <soap12:address location="https://www.fenealgest.it/servizi/WebServices/JoinAllWebService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

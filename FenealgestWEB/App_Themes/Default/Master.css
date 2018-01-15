@@ -1,0 +1,188 @@
+﻿#BodyFenealgestWeb
+{
+	background-color: #FFFFFF;
+}
+
+#Tabellaprincipale
+{
+	height: 500px;
+	width: 870px;
+
+}
+
+#TdMenuTabellaPrincipale
+{
+	 vertical-align: top;
+	/* padding-right: 5px;
+	 padding-left: 5px;
+	 padding-top: 5px;*/
+	 width: 19%;
+	 background-color: #938E8B;
+}
+
+#TabellaTdMenu
+{
+	 /*background-color: #938E8B;
+	 width:178px;
+	 float: right;
+	 border-collapse: collapse;
+	 height: 125px;*/
+	  text-align: left;
+	 vertical-align: top;
+	 font-family: Arial;
+	 font-size: 12px;
+	 font-weight: bold;	
+}
+
+#TdTabellaMenu
+{
+	/* height: 177px;*/
+	 text-align: left;
+	 /*vertical-align: top;*/
+	 font-family: Arial;
+	 font-size: 12px;
+	 font-weight: bold;	 
+}
+
+#TdPrincipaleTabellaPrincipale
+{
+	 width: 81%;
+	 padding-left: 15px;
+	 padding-top: 5px;
+	 vertical-align: top;
+	 text-align: left;
+}
+
+#TdFooterTabellaPrincipale
+{
+	 /*width: 605px;*/
+	 padding-left: 15px;
+	 padding-top: 5px;
+	 vertical-align: top;
+	 text-align: right;
+}
+/*#DivImgFooterTabellaPrincipale
+{
+	 width: 100%;
+	 text-align: right;
+}*/
+
+*/
+
+/*#TabellaRiservata
+{
+	width: 521px;
+}*/
+
+/* Questa tabella no nesiste più
+.TabellaRiservataPrincipale
+{
+	width: 521px;
+	height: 456px;
+	background-image: url(../../immagini/sfondi_area_riservata/sfondo_area_riservata_basilicata.png);
+	margin-top: -14px;
+}
+*/
+
+.TrTabellaInformazioni
+{
+	
+	border-width: 1px;
+	border-style: solid;
+	border-color: #938F90;
+}
+
+.TrTabellaInformazioniCenter
+{
+	text-align: left;
+	/*width: 1px;*/
+}
+
+.testoFissoReserved
+{
+	font-family: Arial;
+	font-weight: bold;
+	font-size: 10px;
+}
+
+.testoVariabileReserved
+{
+	font-family: Arial;
+	font-size: 11px;
+}
+
+.mainMenu
+{
+	background-color: #938E8B;
+	font-family: Arial;
+	font-Size: 12px; 
+    border: None;
+    
+}
+
+.StaticMenuItemStyle
+{
+	padding-top: 12px;
+	padding-bottom: 12px;
+	color: White;
+}
+
+.DynamicMenuStyle
+{
+	border-color: #F1EFF0;
+	border-style: Solid;
+	border-width: 1px;	
+}
+
+.DynamicMenuItemStyle
+{
+	background-color: #938E8B;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	padding-left: 2px;
+	padding-right: 2px;
+	color: White;
+}
+                                     
+.StaticHoverStyle
+{
+	color: Black;
+}
+
+#Esci
+{ 
+	vertical-align: middle;
+	text-align:  right;
+	font-family: Arial;
+	font-size: 11px;
+	/*border-color: #938E8B; 
+	border-width:1px; 
+	border-style: solid; 
+	height: 18px; 
+	width: 30px; 
+	float: right; 
+	margin-right: 68px; 
+	position:relative; 
+	z-index: 1;
+	margin-top: -2px;*/
+} 
+   
+.LinkEsci
+{ 
+	/*il display veniva sovrascritto ed è stato ridato nell'elemento con lo style*/
+	display: block;    
+	margin-top: 2px;
+	color: #74949E;
+} 
+
+
+
+#ChildContent{
+	width: 770px;
+	height: 100%;
+	overflow:  auto;
+	/*margin-top: -444px;
+	float: left;
+	
+	position:relative;*/
+}

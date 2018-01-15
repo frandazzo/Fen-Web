@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9CF12BE4-D860-454C-9D57-FBEFAD968D66}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>WIN.FENGEST_NAZIONALE.VB.PERSISTENCE</RootNamespace>
+    <AssemblyName>WIN.FENGEST_NAZIONALE.VB.PERSISTENCE</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>http://localhost/WIN.FENGEST_NAZIONALE.VB.PERSISTENCE/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="WIN.BILANCIO, Version=8.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dlls\WIN.BILANCIO.dll</HintPath>
+    </Reference>
+    <Reference Include="WIN.TECHNICAL.SECURITY_NEW, Version=8.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dlls\WIN.TECHNICAL.SECURITY_NEW.dll</HintPath>
+    </Reference>
+    <Reference Include="WIN.TECHNICAL.VB.PERSISTENCE, Version=8.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dlls\WIN.TECHNICAL.VB.PERSISTENCE.dll</HintPath>
+    </Reference>
+    <Reference Include="WIN.TECHNICAL.VB.UTILS, Version=8.6.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dlls\WIN.TECHNICAL.VB.UTILS.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="BilancioFenealgest" />
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="WIN" />
+    <Import Include="WIN.BASEREUSE" />
+    <Import Include="WIN.BILANCIO" />
+    <Import Include="WIN.FENGEST_NAZIONALE" />
+    <Import Include="WIN.FENGEST_NAZIONALE.DOMAIN" />
+    <Import Include="WIN.FENGEST_NAZIONALE.INTEGRATION_ENTITIES" />
+    <Import Include="WIN.FENGEST_NAZIONALE.VB.PERSISTENCE" />
+    <Import Include="WIN.TECHNICAL" />
+    <Import Include="WIN.TECHNICAL.PERSISTENCE" />
+    <Import Include="WIN.TECHNICAL.SECURITY_NEW" />
+    <Import Include="WIN.TECHNICAL.SECURITY_NEW.Login" />
+    <Import Include="WIN.TECHNICAL.SECURITY_NEW.PasswordManagement" />
+    <Import Include="WIN.TECHNICAL.SECURITY_NEW.RoleManagement" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GestioneOrganizzativa\MapperAdministrativeRecord.vb" />
+    <Compile Include="GestioneOrganizzativa\MapperOrganizativeRecord.vb" />
+    <Compile Include="MapperExportLiberi.vb" />
+    <Compile Include="LaziLoadComuni.vb" />
+    <Compile Include="LazyLoadProvincie.vb" />
+    <Compile Include="LazyLoadRendicontoItemWrapper.vb" />
+    <Compile Include="MapperComune.vb" />
+    <Compile Include="MapperContatti.vb" />
+    <Compile Include="MapperLibero.vb" />
+    <Compile Include="SharetopIntegration\MapperDatiCassaEdile.vb" />
+    <Compile Include="MapperDocument.vb" />
+    <Compile Include="MapperDownload.vb" />
+    <Compile Include="MapperExport.vb" />
+    <Compile Include="MapperExportError.vb" />
+    <Compile Include="MapperItemRendicontoWrapper.vb" />
+    <Compile Include="MapperNameFinder.vb" />
+    <Compile Include="MapperNazione.vb" />
+    <Compile Include="MapperNews.vb" />
+    <Compile Include="MapperProvincia.vb" />
+    <Compile Include="MapperRegione.vb" />
+    <Compile Include="MapperRendicontoWrapper.vb" />
+    <Compile Include="SharetopIntegration\MapperRisorsaUmana.vb" />
+    <Compile Include="MapperSubscription.vb" />
+    <Compile Include="MapperTipoDownload.vb" />
+    <Compile Include="MapperTrace.vb" />
+    <Compile Include="MapperUtente.vb" />
+    <Compile Include="MapperWorker.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="PersistenceFacade.vb" />
+    <Compile Include="PersistenceMapperRegistry.vb" />
+    <Compile Include="SharetopIntegration\LazyLoadCoordinateBancarie.vb" />
+    <Compile Include="SharetopIntegration\MapperCongressoRegionale.vb" />
+    <Compile Include="SharetopIntegration\MapperCongressoTerritoriale.vb" />
+    <Compile Include="SharetopIntegration\MapperCoordinataBancaria.vb" />
+    <Compile Include="SharetopIntegration\MapperRappresentante.vb" />
+    <Compile Include="SharetopIntegration\MapperRappresentanza.vb" />
+    <Compile Include="SharetopIntegration\MapperStruttura.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DB.Config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="app.config" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WIN.FENGEST_NAZIONALE.DOMAIN\WIN.FENGEST_NAZIONALE.DOMAIN.csproj">
+      <Project>{ccd2cc47-18fd-4e95-b9ca-b81ded3d4e2f}</Project>
+      <Name>WIN.FENGEST_NAZIONALE.DOMAIN</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WIN.FENGEST_NAZIONALE.INTEGRATION_ENTITIES\WIN.FENGEST_NAZIONALE.INTEGRATION_ENTITIES.csproj">
+      <Project>{FEF19374-07AC-46F6-93A3-F7FB32E2428D}</Project>
+      <Name>WIN.FENGEST_NAZIONALE.INTEGRATION_ENTITIES</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

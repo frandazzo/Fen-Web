@@ -1,0 +1,1065 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="findDuplicateRoles">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="name" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="surname" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="findDuplicateRolesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="findDuplicateRolesResult" type="tns:ArrayOfCongressPresence" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfCongressPresence">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="CongressPresence" nillable="true" type="tns:CongressPresence" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="CongressPresence">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Regione" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Territorio" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Anno" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Tipo" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="SegretarioGenerale" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="SegretarioOrganizzativo" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="MembriSegretaria" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="Tesoriere" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="ConsiglioTerritoriale" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="ConsiglioTerritorialeSupplente" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="AssembleaTerritoriale" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="AssembleaTerritorialeSupplente" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="RevisoriDeiConti" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="Probiviri" type="s:boolean" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="Credenziali" type="tns:Credenziali" />
+      <s:complexType name="Credenziali">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="UserName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Province" type="s:string" />
+        </s:sequence>
+        <s:anyAttribute />
+      </s:complexType>
+      <s:element name="SaveDatiCassaEdile">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="datiCassaEdile" type="tns:ArrayOfDatiCassaEdile" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfDatiCassaEdile">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="DatiCassaEdile" nillable="true" type="tns:DatiCassaEdile" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="DatiCassaEdile">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:SharetopIntegragrationSuperClass">
+            <s:sequence>
+              <s:element minOccurs="1" maxOccurs="1" name="Addetti" type="s:int" />
+              <s:element minOccurs="1" maxOccurs="1" name="Imprese" type="s:int" />
+              <s:element minOccurs="1" maxOccurs="1" name="MSDenunciato" type="s:double" />
+              <s:element minOccurs="1" maxOccurs="1" name="MSVersato" type="s:double" />
+              <s:element minOccurs="1" maxOccurs="1" name="IscrittiOOSS" type="s:int" />
+              <s:element minOccurs="1" maxOccurs="1" name="PercSindacalizzati" type="s:double" />
+              <s:element minOccurs="1" maxOccurs="1" name="DelegheFeneal" type="s:int" />
+              <s:element minOccurs="1" maxOccurs="1" name="PercFeneal" type="s:double" />
+              <s:element minOccurs="1" maxOccurs="1" name="DelegheFilca" type="s:int" />
+              <s:element minOccurs="1" maxOccurs="1" name="PercFilca" type="s:double" />
+              <s:element minOccurs="1" maxOccurs="1" name="DelegheFillea" type="s:int" />
+              <s:element minOccurs="1" maxOccurs="1" name="PercFillea" type="s:double" />
+              <s:element minOccurs="1" maxOccurs="1" name="ImportoQACP" type="s:double" />
+              <s:element minOccurs="1" maxOccurs="1" name="ImportoQACR" type="s:double" />
+              <s:element minOccurs="1" maxOccurs="1" name="ImportoQACN" type="s:double" />
+              <s:element minOccurs="1" maxOccurs="1" name="ImportoDelegheFeneal" type="s:double" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="SharetopIntegragrationSuperClass">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:AbstractPersistenceObject">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="BaseData" type="tns:SharetopBaseData" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="AbstractPersistenceObject">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="NonCancellabile" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="DataCreazione" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="DataModifica" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="CreatoDa" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ModificatoDa" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Versione" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Id" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Key" type="tns:Key" />
+          <s:element minOccurs="0" maxOccurs="1" name="ValidationErrors" type="tns:ArrayOfAnyType" />
+          <s:element minOccurs="0" maxOccurs="1" name="Descrizione" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Key">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Id" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfAnyType">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="anyType" nillable="true" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Provincia">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:AbstractPersistenceObject">
+            <s:sequence>
+              <s:element minOccurs="1" maxOccurs="1" name="IdRegione" type="s:int" />
+              <s:element minOccurs="0" maxOccurs="1" name="Sigla" type="s:string" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="Regione">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:AbstractPersistenceObject" />
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="SharetopBaseData">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="SurveyId" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Regione" type="tns:Regione" />
+          <s:element minOccurs="0" maxOccurs="1" name="Provincia" type="tns:Provincia" />
+          <s:element minOccurs="1" maxOccurs="1" name="Anno" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="OperationResult" type="tns:OperationResult" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="OperationResult">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Error" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="SaveDatiCassaEdileResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SaveDatiCassaEdileResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SaveRisorseUmane">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="risorseUmane" type="tns:ArrayOfRisorsaUmana" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfRisorsaUmana">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="RisorsaUmana" nillable="true" type="tns:RisorsaUmana" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="RisorsaUmana">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:SharetopIntegragrationSuperClass">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="Tipo" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Nome" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Cognome" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="DataNascita" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="CodiceFiscale" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="TipoRapporto" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Ruolo" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Indirizzo" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Telefono" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Mail" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Note" type="s:string" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:element name="SaveRisorseUmaneResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SaveRisorseUmaneResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SaveCongressoRegionale">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="congresso" type="tns:CongressoRegionale" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="CongressoRegionale">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:SharetopIntegragrationSuperClass">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="SegretarioGenerale" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="SegretarioOrganizzativo" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="MembriSegretaria" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Tesoriere" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="ConsiglioTerritoriale" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="ConsiglioTerritorialeSupplente" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="AssembleaTerritoriale" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="AssembleaTerritorialeSupplente" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="RevisoriDeiConti" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Probiviri" type="s:string" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:element name="SaveCongressoRegionaleResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SaveCongressoRegionaleResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SaveCongressoTerritoriale">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="congresso" type="tns:CongressoTerritoriale" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="CongressoTerritoriale">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:SharetopIntegragrationSuperClass">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="SegretarioGenerale" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="SegretarioOrganizzativo" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="MembriSegretaria" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Tesoriere" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="ConsiglioTerritoriale" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="ConsiglioTerritorialeSupplente" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="AssembleaTerritoriale" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="AssembleaTerritorialeSupplente" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="RevisoriDeiConti" type="s:string" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:element name="SaveCongressoTerritorialeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SaveCongressoTerritorialeResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SaveStruttura">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="struttura" type="tns:Struttura" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Struttura">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:SharetopIntegragrationSuperClass">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="Denominazione" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Responsabile" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Fiscale" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Altri" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Indirizzo" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="RecapitiTelefonici" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Mail" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="SitoInternet" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="CoordinateBancarie" type="tns:ArrayOfCoordinataBancaria" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="ArrayOfCoordinataBancaria">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="CoordinataBancaria" nillable="true" type="tns:CoordinataBancaria" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="CoordinataBancaria">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:AbstractPersistenceObject">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="Iban" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Banca" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Indirizzo" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="NumAgenzia" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="Id_Struttura" type="s:int" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:element name="SaveStrutturaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SaveStrutturaResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SaveRappresentanti">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="rappresentanti" type="tns:ArrayOfRappresentante" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfRappresentante">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Rappresentante" nillable="true" type="tns:Rappresentante" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Rappresentante">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:SharetopIntegragrationSuperClass">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="Cognome" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Nome" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="CodiceFiscale" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Telefono" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Mail" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Azienda" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="CodInpsAzienda" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="ProvinciaAzienda" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="ComuneAzienda" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Contratto" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Tipo" type="s:string" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:element name="SaveRappresentantiResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SaveRappresentantiResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SaveRappresentanze">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="rappresentanze" type="tns:ArrayOfRappresentanza" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfRappresentanza">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Rappresentanza" nillable="true" type="tns:Rappresentanza" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Rappresentanza">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:SharetopIntegragrationSuperClass">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="Azienda" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="CodInpsAzienda" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="ProvinciaAzienda" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="ComuneAzienda" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Contratto" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="NumDipendenti" type="s:int" />
+              <s:element minOccurs="1" maxOccurs="1" name="NumIscrittiFeneal" type="s:int" />
+              <s:element minOccurs="1" maxOccurs="1" name="VotiListaFeneal" type="s:int" />
+              <s:element minOccurs="0" maxOccurs="1" name="TipoNomina" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="DataElezione" type="s:dateTime" />
+              <s:element minOccurs="1" maxOccurs="1" name="NumRappresentantiFeneal" type="s:int" />
+              <s:element minOccurs="0" maxOccurs="1" name="UrlVerbale" type="s:string" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:element name="SaveRappresentanzeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SaveRappresentanzeResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FindOrganizativeData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="year" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfOrganizativeRecord">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="OrganizativeRecord" nillable="true" type="tns:OrganizativeRecord" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="OrganizativeRecord">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:AbstractPersistenceObject">
+            <s:sequence>
+              <s:element minOccurs="1" maxOccurs="1" name="Year" type="s:int" />
+              <s:element minOccurs="0" maxOccurs="1" name="Bilateral" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="SpecificBilateral" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Region" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Province" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="TotalWorkers" type="s:int" />
+              <s:element minOccurs="1" maxOccurs="1" name="TotalCompanies" type="s:int" />
+              <s:element minOccurs="1" maxOccurs="1" name="TotalSindacalizedWorkers" type="s:int" />
+              <s:element minOccurs="1" maxOccurs="1" name="FilcaWorkers" type="s:int" />
+              <s:element minOccurs="1" maxOccurs="1" name="FilleaWorkers" type="s:int" />
+              <s:element minOccurs="1" maxOccurs="1" name="FenealWorkers" type="s:int" />
+              <s:element minOccurs="1" maxOccurs="1" name="SindacalizationPercentage" type="s:double" />
+              <s:element minOccurs="1" maxOccurs="1" name="FilleaPercentage" type="s:double" />
+              <s:element minOccurs="1" maxOccurs="1" name="FilcaPercentage" type="s:double" />
+              <s:element minOccurs="1" maxOccurs="1" name="FenealPercentage" type="s:double" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:element name="FindOrganizativeDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FindOrganizativeDataResult" type="tns:ArrayOfOrganizativeRecord" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FindAdministrativeData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="year" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfAdministrativeRecord">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="AdministrativeRecord" nillable="true" type="tns:AdministrativeRecord" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="AdministrativeRecord">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:AbstractPersistenceObject">
+            <s:sequence>
+              <s:element minOccurs="1" maxOccurs="1" name="Year" type="s:int" />
+              <s:element minOccurs="0" maxOccurs="1" name="Bilateral" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="SpecificBilateral" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Region" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Province" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="Workers" type="s:int" />
+              <s:element minOccurs="1" maxOccurs="1" name="Companies" type="s:int" />
+              <s:element minOccurs="1" maxOccurs="1" name="DeclaredSalary" type="s:double" />
+              <s:element minOccurs="1" maxOccurs="1" name="GivenSalary" type="s:double" />
+              <s:element minOccurs="1" maxOccurs="1" name="QACP" type="s:double" />
+              <s:element minOccurs="1" maxOccurs="1" name="QACN" type="s:double" />
+              <s:element minOccurs="1" maxOccurs="1" name="QACR" type="s:double" />
+              <s:element minOccurs="1" maxOccurs="1" name="DelegheAmount" type="s:double" />
+              <s:element minOccurs="1" maxOccurs="1" name="Pending" type="s:double" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:element name="FindAdministrativeDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FindAdministrativeDataResult" type="tns:ArrayOfAdministrativeRecord" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SaveAdministrativeData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="year" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="data" type="tns:ArrayOfAdministrativeRecord" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SaveAdministrativeDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SaveAdministrativeDataResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SaveOrganizativeData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="year" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="data" type="tns:ArrayOfOrganizativeRecord" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SaveOrganizativeDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SaveOrganizativeDataResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FindDatiCasseEdiliByYear">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="year" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FindDatiCasseEdiliByYearResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FindDatiCasseEdiliByYearResult" type="tns:ArrayOfDatiCassaEdile" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FindRisorseUmaneByYear">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="year" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FindRisorseUmaneByYearResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FindRisorseUmaneByYearResult" type="tns:ArrayOfRisorsaUmana" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FindOrganizzativeData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="regionId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="provinceId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="year" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="OrganizzativeData">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Struttura" type="tns:Struttura" />
+          <s:element minOccurs="0" maxOccurs="1" name="CongressoRegionale" type="tns:CongressoRegionale" />
+          <s:element minOccurs="0" maxOccurs="1" name="CongressoTerritoriale" type="tns:CongressoTerritoriale" />
+          <s:element minOccurs="0" maxOccurs="1" name="Rappresentanti" type="tns:ArrayOfRappresentante" />
+          <s:element minOccurs="0" maxOccurs="1" name="Rappresentanze" type="tns:ArrayOfRappresentanza" />
+          <s:element minOccurs="0" maxOccurs="1" name="RisorseUmane" type="tns:ArrayOfRisorsaUmana" />
+          <s:element minOccurs="0" maxOccurs="1" name="FirstLevelError" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="FindOrganizzativeDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FindOrganizzativeDataResult" type="tns:OrganizzativeData" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="findDuplicateRolesSoapIn">
+    <wsdl:part name="parameters" element="tns:findDuplicateRoles" />
+  </wsdl:message>
+  <wsdl:message name="findDuplicateRolesSoapOut">
+    <wsdl:part name="parameters" element="tns:findDuplicateRolesResponse" />
+  </wsdl:message>
+  <wsdl:message name="findDuplicateRolesCredenziali">
+    <wsdl:part name="Credenziali" element="tns:Credenziali" />
+  </wsdl:message>
+  <wsdl:message name="SaveDatiCassaEdileSoapIn">
+    <wsdl:part name="parameters" element="tns:SaveDatiCassaEdile" />
+  </wsdl:message>
+  <wsdl:message name="SaveDatiCassaEdileSoapOut">
+    <wsdl:part name="parameters" element="tns:SaveDatiCassaEdileResponse" />
+  </wsdl:message>
+  <wsdl:message name="SaveDatiCassaEdileCredenziali">
+    <wsdl:part name="Credenziali" element="tns:Credenziali" />
+  </wsdl:message>
+  <wsdl:message name="SaveRisorseUmaneSoapIn">
+    <wsdl:part name="parameters" element="tns:SaveRisorseUmane" />
+  </wsdl:message>
+  <wsdl:message name="SaveRisorseUmaneSoapOut">
+    <wsdl:part name="parameters" element="tns:SaveRisorseUmaneResponse" />
+  </wsdl:message>
+  <wsdl:message name="SaveRisorseUmaneCredenziali">
+    <wsdl:part name="Credenziali" element="tns:Credenziali" />
+  </wsdl:message>
+  <wsdl:message name="SaveCongressoRegionaleSoapIn">
+    <wsdl:part name="parameters" element="tns:SaveCongressoRegionale" />
+  </wsdl:message>
+  <wsdl:message name="SaveCongressoRegionaleSoapOut">
+    <wsdl:part name="parameters" element="tns:SaveCongressoRegionaleResponse" />
+  </wsdl:message>
+  <wsdl:message name="SaveCongressoRegionaleCredenziali">
+    <wsdl:part name="Credenziali" element="tns:Credenziali" />
+  </wsdl:message>
+  <wsdl:message name="SaveCongressoTerritorialeSoapIn">
+    <wsdl:part name="parameters" element="tns:SaveCongressoTerritoriale" />
+  </wsdl:message>
+  <wsdl:message name="SaveCongressoTerritorialeSoapOut">
+    <wsdl:part name="parameters" element="tns:SaveCongressoTerritorialeResponse" />
+  </wsdl:message>
+  <wsdl:message name="SaveCongressoTerritorialeCredenziali">
+    <wsdl:part name="Credenziali" element="tns:Credenziali" />
+  </wsdl:message>
+  <wsdl:message name="SaveStrutturaSoapIn">
+    <wsdl:part name="parameters" element="tns:SaveStruttura" />
+  </wsdl:message>
+  <wsdl:message name="SaveStrutturaSoapOut">
+    <wsdl:part name="parameters" element="tns:SaveStrutturaResponse" />
+  </wsdl:message>
+  <wsdl:message name="SaveStrutturaCredenziali">
+    <wsdl:part name="Credenziali" element="tns:Credenziali" />
+  </wsdl:message>
+  <wsdl:message name="SaveRappresentantiSoapIn">
+    <wsdl:part name="parameters" element="tns:SaveRappresentanti" />
+  </wsdl:message>
+  <wsdl:message name="SaveRappresentantiSoapOut">
+    <wsdl:part name="parameters" element="tns:SaveRappresentantiResponse" />
+  </wsdl:message>
+  <wsdl:message name="SaveRappresentantiCredenziali">
+    <wsdl:part name="Credenziali" element="tns:Credenziali" />
+  </wsdl:message>
+  <wsdl:message name="SaveRappresentanzeSoapIn">
+    <wsdl:part name="parameters" element="tns:SaveRappresentanze" />
+  </wsdl:message>
+  <wsdl:message name="SaveRappresentanzeSoapOut">
+    <wsdl:part name="parameters" element="tns:SaveRappresentanzeResponse" />
+  </wsdl:message>
+  <wsdl:message name="SaveRappresentanzeCredenziali">
+    <wsdl:part name="Credenziali" element="tns:Credenziali" />
+  </wsdl:message>
+  <wsdl:message name="FindOrganizativeDataSoapIn">
+    <wsdl:part name="parameters" element="tns:FindOrganizativeData" />
+  </wsdl:message>
+  <wsdl:message name="FindOrganizativeDataSoapOut">
+    <wsdl:part name="parameters" element="tns:FindOrganizativeDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="FindOrganizativeDataCredenziali">
+    <wsdl:part name="Credenziali" element="tns:Credenziali" />
+  </wsdl:message>
+  <wsdl:message name="FindAdministrativeDataSoapIn">
+    <wsdl:part name="parameters" element="tns:FindAdministrativeData" />
+  </wsdl:message>
+  <wsdl:message name="FindAdministrativeDataSoapOut">
+    <wsdl:part name="parameters" element="tns:FindAdministrativeDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="FindAdministrativeDataCredenziali">
+    <wsdl:part name="Credenziali" element="tns:Credenziali" />
+  </wsdl:message>
+  <wsdl:message name="SaveAdministrativeDataSoapIn">
+    <wsdl:part name="parameters" element="tns:SaveAdministrativeData" />
+  </wsdl:message>
+  <wsdl:message name="SaveAdministrativeDataSoapOut">
+    <wsdl:part name="parameters" element="tns:SaveAdministrativeDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="SaveAdministrativeDataCredenziali">
+    <wsdl:part name="Credenziali" element="tns:Credenziali" />
+  </wsdl:message>
+  <wsdl:message name="SaveOrganizativeDataSoapIn">
+    <wsdl:part name="parameters" element="tns:SaveOrganizativeData" />
+  </wsdl:message>
+  <wsdl:message name="SaveOrganizativeDataSoapOut">
+    <wsdl:part name="parameters" element="tns:SaveOrganizativeDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="SaveOrganizativeDataCredenziali">
+    <wsdl:part name="Credenziali" element="tns:Credenziali" />
+  </wsdl:message>
+  <wsdl:message name="FindDatiCasseEdiliByYearSoapIn">
+    <wsdl:part name="parameters" element="tns:FindDatiCasseEdiliByYear" />
+  </wsdl:message>
+  <wsdl:message name="FindDatiCasseEdiliByYearSoapOut">
+    <wsdl:part name="parameters" element="tns:FindDatiCasseEdiliByYearResponse" />
+  </wsdl:message>
+  <wsdl:message name="FindDatiCasseEdiliByYearCredenziali">
+    <wsdl:part name="Credenziali" element="tns:Credenziali" />
+  </wsdl:message>
+  <wsdl:message name="FindRisorseUmaneByYearSoapIn">
+    <wsdl:part name="parameters" element="tns:FindRisorseUmaneByYear" />
+  </wsdl:message>
+  <wsdl:message name="FindRisorseUmaneByYearSoapOut">
+    <wsdl:part name="parameters" element="tns:FindRisorseUmaneByYearResponse" />
+  </wsdl:message>
+  <wsdl:message name="FindRisorseUmaneByYearCredenziali">
+    <wsdl:part name="Credenziali" element="tns:Credenziali" />
+  </wsdl:message>
+  <wsdl:message name="FindOrganizzativeDataSoapIn">
+    <wsdl:part name="parameters" element="tns:FindOrganizzativeData" />
+  </wsdl:message>
+  <wsdl:message name="FindOrganizzativeDataSoapOut">
+    <wsdl:part name="parameters" element="tns:FindOrganizzativeDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="FindOrganizzativeDataCredenziali">
+    <wsdl:part name="Credenziali" element="tns:Credenziali" />
+  </wsdl:message>
+  <wsdl:portType name="SharetopIntegrationSoap">
+    <wsdl:operation name="findDuplicateRoles">
+      <wsdl:input message="tns:findDuplicateRolesSoapIn" />
+      <wsdl:output message="tns:findDuplicateRolesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveDatiCassaEdile">
+      <wsdl:input message="tns:SaveDatiCassaEdileSoapIn" />
+      <wsdl:output message="tns:SaveDatiCassaEdileSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveRisorseUmane">
+      <wsdl:input message="tns:SaveRisorseUmaneSoapIn" />
+      <wsdl:output message="tns:SaveRisorseUmaneSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveCongressoRegionale">
+      <wsdl:input message="tns:SaveCongressoRegionaleSoapIn" />
+      <wsdl:output message="tns:SaveCongressoRegionaleSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveCongressoTerritoriale">
+      <wsdl:input message="tns:SaveCongressoTerritorialeSoapIn" />
+      <wsdl:output message="tns:SaveCongressoTerritorialeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveStruttura">
+      <wsdl:input message="tns:SaveStrutturaSoapIn" />
+      <wsdl:output message="tns:SaveStrutturaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveRappresentanti">
+      <wsdl:input message="tns:SaveRappresentantiSoapIn" />
+      <wsdl:output message="tns:SaveRappresentantiSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveRappresentanze">
+      <wsdl:input message="tns:SaveRappresentanzeSoapIn" />
+      <wsdl:output message="tns:SaveRappresentanzeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="FindOrganizativeData">
+      <wsdl:input message="tns:FindOrganizativeDataSoapIn" />
+      <wsdl:output message="tns:FindOrganizativeDataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="FindAdministrativeData">
+      <wsdl:input message="tns:FindAdministrativeDataSoapIn" />
+      <wsdl:output message="tns:FindAdministrativeDataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveAdministrativeData">
+      <wsdl:input message="tns:SaveAdministrativeDataSoapIn" />
+      <wsdl:output message="tns:SaveAdministrativeDataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveOrganizativeData">
+      <wsdl:input message="tns:SaveOrganizativeDataSoapIn" />
+      <wsdl:output message="tns:SaveOrganizativeDataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="FindDatiCasseEdiliByYear">
+      <wsdl:input message="tns:FindDatiCasseEdiliByYearSoapIn" />
+      <wsdl:output message="tns:FindDatiCasseEdiliByYearSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="FindRisorseUmaneByYear">
+      <wsdl:input message="tns:FindRisorseUmaneByYearSoapIn" />
+      <wsdl:output message="tns:FindRisorseUmaneByYearSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="FindOrganizzativeData">
+      <wsdl:input message="tns:FindOrganizzativeDataSoapIn" />
+      <wsdl:output message="tns:FindOrganizzativeDataSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="SharetopIntegrationSoap" type="tns:SharetopIntegrationSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="findDuplicateRoles">
+      <soap:operation soapAction="http://tempuri.org/findDuplicateRoles" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:findDuplicateRolesCredenziali" part="Credenziali" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveDatiCassaEdile">
+      <soap:operation soapAction="http://tempuri.org/SaveDatiCassaEdile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:SaveDatiCassaEdileCredenziali" part="Credenziali" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveRisorseUmane">
+      <soap:operation soapAction="http://tempuri.org/SaveRisorseUmane" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:SaveRisorseUmaneCredenziali" part="Credenziali" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveCongressoRegionale">
+      <soap:operation soapAction="http://tempuri.org/SaveCongressoRegionale" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:SaveCongressoRegionaleCredenziali" part="Credenziali" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveCongressoTerritoriale">
+      <soap:operation soapAction="http://tempuri.org/SaveCongressoTerritoriale" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:SaveCongressoTerritorialeCredenziali" part="Credenziali" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveStruttura">
+      <soap:operation soapAction="http://tempuri.org/SaveStruttura" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:SaveStrutturaCredenziali" part="Credenziali" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveRappresentanti">
+      <soap:operation soapAction="http://tempuri.org/SaveRappresentanti" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:SaveRappresentantiCredenziali" part="Credenziali" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveRappresentanze">
+      <soap:operation soapAction="http://tempuri.org/SaveRappresentanze" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:SaveRappresentanzeCredenziali" part="Credenziali" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FindOrganizativeData">
+      <soap:operation soapAction="http://tempuri.org/FindOrganizativeData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:FindOrganizativeDataCredenziali" part="Credenziali" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FindAdministrativeData">
+      <soap:operation soapAction="http://tempuri.org/FindAdministrativeData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:FindAdministrativeDataCredenziali" part="Credenziali" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveAdministrativeData">
+      <soap:operation soapAction="http://tempuri.org/SaveAdministrativeData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:SaveAdministrativeDataCredenziali" part="Credenziali" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveOrganizativeData">
+      <soap:operation soapAction="http://tempuri.org/SaveOrganizativeData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:SaveOrganizativeDataCredenziali" part="Credenziali" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FindDatiCasseEdiliByYear">
+      <soap:operation soapAction="http://tempuri.org/FindDatiCasseEdiliByYear" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:FindDatiCasseEdiliByYearCredenziali" part="Credenziali" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FindRisorseUmaneByYear">
+      <soap:operation soapAction="http://tempuri.org/FindRisorseUmaneByYear" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:FindRisorseUmaneByYearCredenziali" part="Credenziali" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FindOrganizzativeData">
+      <soap:operation soapAction="http://tempuri.org/FindOrganizzativeData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:FindOrganizzativeDataCredenziali" part="Credenziali" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="SharetopIntegrationSoap12" type="tns:SharetopIntegrationSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="findDuplicateRoles">
+      <soap12:operation soapAction="http://tempuri.org/findDuplicateRoles" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:findDuplicateRolesCredenziali" part="Credenziali" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveDatiCassaEdile">
+      <soap12:operation soapAction="http://tempuri.org/SaveDatiCassaEdile" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:SaveDatiCassaEdileCredenziali" part="Credenziali" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveRisorseUmane">
+      <soap12:operation soapAction="http://tempuri.org/SaveRisorseUmane" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:SaveRisorseUmaneCredenziali" part="Credenziali" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveCongressoRegionale">
+      <soap12:operation soapAction="http://tempuri.org/SaveCongressoRegionale" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:SaveCongressoRegionaleCredenziali" part="Credenziali" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveCongressoTerritoriale">
+      <soap12:operation soapAction="http://tempuri.org/SaveCongressoTerritoriale" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:SaveCongressoTerritorialeCredenziali" part="Credenziali" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveStruttura">
+      <soap12:operation soapAction="http://tempuri.org/SaveStruttura" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:SaveStrutturaCredenziali" part="Credenziali" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveRappresentanti">
+      <soap12:operation soapAction="http://tempuri.org/SaveRappresentanti" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:SaveRappresentantiCredenziali" part="Credenziali" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveRappresentanze">
+      <soap12:operation soapAction="http://tempuri.org/SaveRappresentanze" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:SaveRappresentanzeCredenziali" part="Credenziali" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FindOrganizativeData">
+      <soap12:operation soapAction="http://tempuri.org/FindOrganizativeData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:FindOrganizativeDataCredenziali" part="Credenziali" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FindAdministrativeData">
+      <soap12:operation soapAction="http://tempuri.org/FindAdministrativeData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:FindAdministrativeDataCredenziali" part="Credenziali" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveAdministrativeData">
+      <soap12:operation soapAction="http://tempuri.org/SaveAdministrativeData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:SaveAdministrativeDataCredenziali" part="Credenziali" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveOrganizativeData">
+      <soap12:operation soapAction="http://tempuri.org/SaveOrganizativeData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:SaveOrganizativeDataCredenziali" part="Credenziali" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FindDatiCasseEdiliByYear">
+      <soap12:operation soapAction="http://tempuri.org/FindDatiCasseEdiliByYear" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:FindDatiCasseEdiliByYearCredenziali" part="Credenziali" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FindRisorseUmaneByYear">
+      <soap12:operation soapAction="http://tempuri.org/FindRisorseUmaneByYear" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:FindRisorseUmaneByYearCredenziali" part="Credenziali" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FindOrganizzativeData">
+      <soap12:operation soapAction="http://tempuri.org/FindOrganizzativeData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:FindOrganizzativeDataCredenziali" part="Credenziali" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="SharetopIntegration">
+    <wsdl:port name="SharetopIntegrationSoap" binding="tns:SharetopIntegrationSoap">
+      <soap:address location="http://www.fenealgest.it/servizi/WebServices/SharetopIntegration.asmx" />
+    </wsdl:port>
+    <wsdl:port name="SharetopIntegrationSoap12" binding="tns:SharetopIntegrationSoap12">
+      <soap12:address location="http://www.fenealgest.it/servizi/WebServices/SharetopIntegration.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,137 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="ReservedArea.Master.cs" Inherits="FenealgestWEB.ReservedArea" %>
+
+<%@ Register Assembly="DevExpress.Web.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"
+    Namespace="DevExpress.Web.ASPxTreeView" TagPrefix="dx" %>
+
+<%@ Register Assembly="DevExpress.Web.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"
+    Namespace="DevExpress.Web.ASPxMenu" TagPrefix="dx" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+    <head id="Head1" runat="server">
+        <title>Area riservata</title>
+        <link href="App_Themes/Default/Master.css" rel="stylesheet" type="text/css" />
+        <asp:ContentPlaceHolder ID="head" runat="server">
+        </asp:ContentPlaceHolder>
+    </head>
+    <body id="BodyFenealgestWeb">
+        <div align="center">
+            <form id="form1" runat="server"> 
+                <table id="Tabellaprincipale">
+                    <tr >
+                        <td colspan="2">
+                            <asp:Image ID="ImgHeaderReserved" runat="server" 
+                                ImageUrl="~/immagini/header/header_abruzzo.png" Width="985px"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td  id="TdMenuTabellaPrincipale">
+                            <table >
+                                <tr>
+                                    <td  id="TdTabellaMenu">
+                                    
+                                        <dx:ASPxTreeView ID="mainTree" runat="server">
+                                        </dx:ASPxTreeView>
+                                    
+                                        <dx:ASPxMenu ID="mainMenu" runat="server" Orientation="Vertical">
+                                        </dx:ASPxMenu>
+                                        <asp:ContentPlaceHolder ID="ContentPlaceHolderMenu" runat="server" />
+                                    </td>
+                                </tr>
+                                 <tr>
+                                    <td>
+                                        <asp:Image ID="ImgMenuBottom" runat="server" 
+                                            ImageUrl="~/immagini/menu_bottom.png" />
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td id="TdPrincipaleTabellaPrincipale">
+                             <table >
+                               <tr>
+                                    <td class="TrTabellaInformazioniCenter">
+                                        <span class="testoFissoReserved">Utente<br />
+                                        </span><span class="testoVariabileReserved">
+                                        <asp:Label ID="UtenteLabel" runat="server" Text="Label"></asp:Label>
+                                        </span>
+                                    </td>
+                                    <td class="TrTabellaInformazioniCenter">
+                                        <span class="testoFissoReserved">Strutt. - Ente<br />
+                                        </span><span class="testoVariabileReserved">
+                                        <asp:Label ID="StrutturaLabel" runat="server" Text="Label"></asp:Label>
+                                        </span>
+                                    </td>
+                                    <td class="TrTabellaInformazioniCenter">
+                                        <span class="testoFissoReserved">Regione<br />
+                                        </span><span class="testoVariabileReserved">
+                                        <asp:Label ID="RegioneLabel" runat="server" Text="Label"></asp:Label>
+                                        </span>
+                                    </td>
+                                    <td class="TrTabellaInformazioniCenter">
+                                        <span class="testoFissoReserved">Provincia<br />
+                                        </span><span class="testoVariabileReserved">
+                                        <asp:Label ID="ProvinciaLabel" runat="server" Text="Label"></asp:Label>
+                                        </span>        
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="TrTabellaInformazioniCenter">
+                                        <span class="testoFissoReserved">Mappa<br />
+                                        </span><span class="testoVariabileReserved">
+                                        <asp:Label ID="HomeLabel" runat="server" Text="Label"></asp:Label>
+                                        </span>
+                                    </td>
+                                    <td class="TrTabellaInformazioniCenter">
+                                        <span class="testoFissoReserved">Data<br />
+                                        </span><span class="testoVariabileReserved">
+                                        <asp:Label ID="DataLabel" runat="server" Text="Label"></asp:Label>
+                                        </span>
+                                    </td>
+                                    <td class="TrTabellaInformazioniCenter">
+                                        <span class="testoFissoReserved">Ora di accesso<br />
+                                        </span><span class="testoVariabileReserved">
+                                        <asp:Label ID="OraLabel" runat="server" Text="Label"></asp:Label>
+                                        </span>        
+                                    </td>
+                                    <td class="TrTabellaInformazioniCenter">
+                                        <span class="testoFissoReserved">Scadenza PW<br />
+                                        </span><span class="testoVariabileReserved">
+                                        <asp:Label ID="ScadenzaLabel" runat="server" Text="Label"></asp:Label>
+                                        </span>        
+                                    </td>
+                               </tr>
+                               <tr>
+                                    <td id="Esci" colspan ="4">
+                                         <asp:LinkButton ID="LinkButton1" CssClass="LinkEsci" runat="server" onclick="LinkButton1_Click"
+                                                Height="10px">Esci</asp:LinkButton>
+                                    </td>
+                               </tr>
+                               <tr>
+                                    <td  colspan ="4">
+                                     <div id="ChildContent">
+                                        <asp:ContentPlaceHolder ID="ChildContent1" runat="server">
+                                            </asp:ContentPlaceHolder>
+                                     </div>
+                                    </td>
+                               </tr>
+                             </table>  
+                        </td>
+                    </tr>
+                    <tr>
+                     <td>
+                     </td>
+                    <td id="TdFooterTabellaPrincipale">
+                       <div id="DivImgFooterTabellaPrincipale">
+                             <a href ="http://www.tecnoesis.it">
+                              <asp:Image ID="Image1" alt="footerimage" runat="server" 
+                                            ImageUrl="~/immagini/footer.png" />
+                             </a>
+                        </div>
+                    </td>
+                   </tr>
+                </table>
+            </form>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A7C54B56-1A2A-4D16-95B7-0174B44748BD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WIN.FENGEST_NAZIONALE.HANDLERS</RootNamespace>
+    <AssemblyName>WIN.FENGEST_NAZIONALE.HANDLERS</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>http://localhost/WIN.FENGEST_NAZIONALE.HANDLERS/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\WIN.FENGEST_NAZIONALE.DLLs\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WIN.BILANCIO, Version=8.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dlls\WIN.BILANCIO.dll</HintPath>
+    </Reference>
+    <Reference Include="WIN.TECHNICAL.MIDDLEWARE, Version=8.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dlls\WIN.TECHNICAL.MIDDLEWARE.dll</HintPath>
+    </Reference>
+    <Reference Include="WIN.TECHNICAL.SECURITY, Version=8.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dlls\WIN.TECHNICAL.SECURITY.dll</HintPath>
+    </Reference>
+    <Reference Include="WIN.TECHNICAL.SECURITY_NEW, Version=8.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dlls\WIN.TECHNICAL.SECURITY_NEW.dll</HintPath>
+    </Reference>
+    <Reference Include="WIN.TECHNICAL.SERVICE_PROCESSOR, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dlls\WIN.TECHNICAL.SERVICE_PROCESSOR.exe</HintPath>
+    </Reference>
+    <Reference Include="WIN.TECHNICAL.VB.PERSISTENCE, Version=8.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dlls\WIN.TECHNICAL.VB.PERSISTENCE.dll</HintPath>
+    </Reference>
+    <Reference Include="WIN.TECHNICAL.VB.UTILS, Version=8.6.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dlls\WIN.TECHNICAL.VB.UTILS.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ContactProvider.cs" />
+    <Compile Include="DeleteImportDataHandler\DocumentRemoveCommand.cs" />
+    <Compile Include="DeleteImportDataHandler\ExportRemoveCommand.cs" />
+    <Compile Include="DeleteImportDataHandler\ImportRemover.cs" />
+    <Compile Include="DeleteImportDataHandler\LiberiRemoveCommand.cs" />
+    <Compile Include="DeleteImportDataHandler\SubscriptionRemoveCommand.cs" />
+    <Compile Include="DocumentHandler.cs" />
+    <Compile Include="ExportHandler.cs" />
+    <Compile Include="ExportLiberiHandler.cs" />
+    <Compile Include="FenealWebImport\FenealwebImportHandler.cs" />
+    <Compile Include="FenealWebImport\FenealwebLiberiImportHandler.cs" />
+    <Compile Include="FenealWebImport\HttpRequestManager.cs" />
+    <Compile Include="Financial\BilancioHandler.cs" />
+    <Compile Include="Financial\HtmlRenderer\StatoPatrimonialeHtmlRenderer.cs" />
+    <Compile Include="Financial\HtmlRenderer\TabellaHtmlRenderer.cs" />
+    <Compile Include="Financial\SendCheck.cs" />
+    <Compile Include="FlowReporting.cs" />
+    <Compile Include="GeoHandler\GeoHandler.cs" />
+    <Compile Include="GestioneOrganizzativa\AdministrativeDataHandler.cs" />
+    <Compile Include="GestioneOrganizzativa\OrganizzativeDataHandler.cs" />
+    <Compile Include="ImportedDataPersisterSubsystem\DocumentByWorkerRemoveCommand.cs" />
+    <Compile Include="ImportedDataPersisterSubsystem\Exceptions\ExceptionType.cs" />
+    <Compile Include="ImportedDataPersisterSubsystem\Exceptions\InsertLiberoException.cs" />
+    <Compile Include="ImportedDataPersisterSubsystem\Exceptions\InsertOrUpdateExportException.cs" />
+    <Compile Include="ImportedDataPersisterSubsystem\Exceptions\InsertOrUpdateSubscriptionException.cs" />
+    <Compile Include="ImportedDataPersisterSubsystem\Exceptions\InsertOrUpdateWorkerException.cs" />
+    <Compile Include="ImportedDataPersisterSubsystem\Exceptions\UpdateDocumentException.cs" />
+    <Compile Include="ImportedDataPersisterSubsystem\ImportDataErrorHandling\ImportDataError.cs" />
+    <Compile Include="ImportedDataPersisterSubsystem\ImportDataErrorHandling\LogDescriptor.cs" />
+    <Compile Include="ImportedDataPersisterSubsystem\InsertExportLiberiDataCommand.cs" />
+    <Compile Include="ImportedDataPersisterSubsystem\InsertLiberoCommand.cs" />
+    <Compile Include="ImportedDataPersisterSubsystem\PersisterFacade.cs" />
+    <Compile Include="ImportedDataPersisterSubsystem\InsertDocumentsCommand.cs" />
+    <Compile Include="ImportedDataPersisterSubsystem\InsertExportCommand.cs" />
+    <Compile Include="ImportedDataPersisterSubsystem\InsertSubscriptionCommand.cs" />
+    <Compile Include="ImportedDataPersisterSubsystem\InsertWorkerCommand.cs" />
+    <Compile Include="ImportedDataPersisterSubsystem\UpdateExportCommand.cs" />
+    <Compile Include="ImportedDataPersisterSubsystem\UpdateSubscriptionCommand.cs" />
+    <Compile Include="ImportedDataPersisterSubsystem\UpdateWorkerCommand.cs" />
+    <Compile Include="ImportHandler\ImportHandler.cs" />
+    <Compile Include="ImportHandler\ImportOptions.cs" />
+    <Compile Include="ImportHandler\LiberiImportHandler.cs" />
+    <Compile Include="ImportHandler\QueueRetriever.cs" />
+    <Compile Include="ImportHandler\TraceFromQueueRetriever.cs" />
+    <Compile Include="LiberiQueryResult.cs" />
+    <Compile Include="LiberoHandler.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SecurityProviders\MailProvider.cs" />
+    <Compile Include="SecurityProviders\UserLocker.cs" />
+    <Compile Include="SecurityProviders\UserProvider.cs" />
+    <Compile Include="SharetopIntegration\CongressDataRetriever.cs" />
+    <Compile Include="SharetopIntegration\CongressoRegionaleDataHandler.cs" />
+    <Compile Include="SharetopIntegration\CongressoRegionaleDataRetriever.cs" />
+    <Compile Include="SharetopIntegration\CongressoTerritorialeDataHandler.cs" />
+    <Compile Include="SharetopIntegration\CongressoTerritorialeDataRetriever.cs" />
+    <Compile Include="SharetopIntegration\DatiCassaEdileDataHandler.cs" />
+    <Compile Include="SharetopIntegration\DatiCassaEdileDataRetriever.cs" />
+    <Compile Include="SharetopIntegration\RappresentanteDataHandler.cs" />
+    <Compile Include="SharetopIntegration\RappresentanteDataRetriever.cs" />
+    <Compile Include="SharetopIntegration\RappresentanzaDataHandler.cs" />
+    <Compile Include="SharetopIntegration\RappresentanzaDataRetriever.cs" />
+    <Compile Include="SharetopIntegration\RisorsaUmanaDatahandler.cs" />
+    <Compile Include="SharetopIntegration\RisorsaUmanaDataRetriever.cs" />
+    <Compile Include="SharetopIntegration\StrutturaDataHandler.cs" />
+    <Compile Include="SharetopIntegration\StrutturaDataRetriever.cs" />
+    <Compile Include="SubscriptionHandler.cs" />
+    <Compile Include="TraceProvider.cs" />
+    <Compile Include="WorkerHandler.cs" />
+    <Compile Include="WorkerQueryParameters.cs" />
+    <Compile Include="WorkerQueryResult.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WIN.FENGEST_NAZIONALE.DOMAIN\WIN.FENGEST_NAZIONALE.DOMAIN.csproj">
+      <Project>{CCD2CC47-18FD-4E95-B9CA-B81DED3D4E2F}</Project>
+      <Name>WIN.FENGEST_NAZIONALE.DOMAIN</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WIN.FENGEST_NAZIONALE.INTEGRATION_ENTITIES\WIN.FENGEST_NAZIONALE.INTEGRATION_ENTITIES.csproj">
+      <Project>{FEF19374-07AC-46F6-93A3-F7FB32E2428D}</Project>
+      <Name>WIN.FENGEST_NAZIONALE.INTEGRATION_ENTITIES</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="OpzioniImport.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

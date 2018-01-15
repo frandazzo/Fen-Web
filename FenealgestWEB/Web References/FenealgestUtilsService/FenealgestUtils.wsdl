@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.fenealgestweb.it/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:s1="www.fenealgestweb.it" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://www.fenealgestweb.it/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://www.fenealgestweb.it/">
+      <s:import namespace="www.fenealgestweb.it" />
+      <s:element name="CalcolaCodiceFiscale">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="nome" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="cognome" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="dataNascita" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="sesso" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nomeComuneNascita" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nomeNazione" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CalcolaCodiceFiscaleResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CalcolaCodiceFiscaleResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExportDocumentToExcel">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="document" type="tns:ExcelDocument" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ExcelDocument">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Rows" type="tns:ArrayOfExcelRow" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfExcelRow">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="ExcelRow" nillable="true" type="tns:ExcelRow" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ExcelRow">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Properties" type="tns:ArrayOfExcelProperty" />
+          <s:element minOccurs="0" maxOccurs="1" name="Document" type="tns:ExcelDocument" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfExcelProperty">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="ExcelProperty" nillable="true" type="tns:ExcelProperty" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ExcelProperty">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Priority" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Name" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Value" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ExportDocumentToExcelResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ExportDocumentToExcelResult" type="s:base64Binary" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CalcolaDatiFiscali">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="codiceFiscale" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CalcolaDatiFiscaliResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CalcolaDatiFiscaliResult" type="tns:FiscalData" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="FiscalData">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Provincia" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Comune" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Nazione" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="DataNascita" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="Sesso" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ExportTessere">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="settore" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="provincia" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="tesserati" type="tns:ArrayOfTesserato" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfTesserato">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Tesserato" nillable="true" type="tns:Tesserato" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Tesserato">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="IdUtente" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="StampataDa" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Indice" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="SettoreTessera" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Nome" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Cognome" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Azienda" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ProvinciaSindacale" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="AziendaOld" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Cap" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Via" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Comune" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Provincia" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ExportTessereResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ExportTessereResult" type="s:base64Binary" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ImportData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" ref="s1:ExportTrace" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ImportDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ImportDataResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+    <s:schema elementFormDefault="qualified" targetNamespace="www.fenealgestweb.it">
+      <s:element name="ExportTrace" type="s1:ExportTrace" />
+      <s:complexType name="ExportTrace">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Workers" type="s1:ArrayOfWorkerDTO" />
+          <s:element minOccurs="0" maxOccurs="1" name="Errore" type="s:string" />
+        </s:sequence>
+        <s:attribute name="ExportDate" type="s:dateTime" use="required" />
+        <s:attribute name="Province" type="s:string" />
+        <s:attribute name="ExporterMail" type="s:string" />
+        <s:attribute name="ExportNumber" type="s:int" use="required" />
+        <s:attribute name="UserName" type="s:string" />
+        <s:attribute name="Sector" type="s:string" />
+        <s:attribute name="ExporterName" type="s:string" />
+        <s:attribute name="Password" type="s:string" />
+        <s:attribute name="ExportType" type="s1:ExprtType" use="required" />
+        <s:attribute name="PeriodType" type="s1:PeriodType" use="required" />
+        <s:attribute name="InitialDate" type="s:dateTime" use="required" />
+        <s:attribute name="EndDate" type="s:dateTime" use="required" />
+        <s:attribute name="Year" type="s:int" use="required" />
+        <s:attribute name="Period" type="s:int" use="required" />
+        <s:attribute name="Transacted" type="s:boolean" use="required" />
+        <s:attribute name="Struttura" type="s:string" />
+        <s:attribute name="Area" type="s:string" />
+      </s:complexType>
+      <s:complexType name="ArrayOfWorkerDTO">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Worker" nillable="true" type="s1:WorkerDTO" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="WorkerDTO">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Subscription" type="s1:SubscriptionDTO" />
+          <s:element minOccurs="0" maxOccurs="1" name="Subscriptions" type="s1:ArrayOfSubscriptionDTO" />
+          <s:element minOccurs="0" maxOccurs="1" name="Documents" type="s1:ArrayOfDocumentDTO" />
+        </s:sequence>
+        <s:attribute name="RowNumber" type="s:int" use="required" />
+        <s:attribute name="IsValid" type="s:boolean" use="required" />
+        <s:attribute name="ExistBirthPlace" type="s:boolean" use="required" />
+        <s:attribute name="ExistLivingPlace" type="s:boolean" use="required" />
+        <s:attribute name="Nationality" type="s:string" />
+        <s:attribute name="LastModifer" type="s:string" />
+        <s:attribute name="Errors" type="s:string" />
+        <s:attribute name="Name" type="s:string" />
+        <s:attribute name="Surname" type="s:string" />
+        <s:attribute name="Fiscalcode" type="s:string" />
+        <s:attribute name="BirthDate" type="s:dateTime" use="required" />
+        <s:attribute name="LastUpdate" type="s:dateTime" use="required" />
+        <s:attribute name="BirthPlace" type="s:string" />
+        <s:attribute name="CurrentAzienda" type="s:string" />
+        <s:attribute name="IscrittoA" type="s:string" />
+        <s:attribute name="LiberoAl" type="s:dateTime" use="required" />
+        <s:attribute name="LivingPlace" type="s:string" />
+        <s:attribute name="Address" type="s:string" />
+        <s:attribute name="Cap" type="s:string" />
+        <s:attribute name="Phone" type="s:string" />
+      </s:complexType>
+      <s:complexType name="SubscriptionDTO">
+        <s:attribute name="Struttura" type="s:string" />
+        <s:attribute name="Area" type="s:string" />
+        <s:attribute name="Sector" type="s:string" />
+        <s:attribute name="Contract" type="s:string" />
+        <s:attribute name="Region" type="s:string" />
+        <s:attribute name="Entity" type="s:string" />
+        <s:attribute name="EmployCompany" type="s:string" />
+        <s:attribute name="FiscalCode" type="s:string" />
+        <s:attribute name="Quota" type="s:double" use="required" />
+        <s:attribute name="InitialDate" type="s:dateTime" use="required" />
+        <s:attribute name="EndDate" type="s:dateTime" use="required" />
+        <s:attribute name="Year" type="s:int" use="required" />
+        <s:attribute name="Semester" type="s:int" use="required" />
+        <s:attribute name="PeriodType" type="s1:PeriodType" use="required" />
+        <s:attribute name="Level" type="s:string" />
+        <s:attribute name="Province" type="s:string" />
+      </s:complexType>
+      <s:simpleType name="PeriodType">
+        <s:restriction base="s:string">
+          <s:enumeration value="Month" />
+          <s:enumeration value="Semester" />
+          <s:enumeration value="Interval" />
+        </s:restriction>
+      </s:simpleType>
+      <s:complexType name="ArrayOfSubscriptionDTO">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Subscription" nillable="true" type="s1:SubscriptionDTO" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfDocumentDTO">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Document" nillable="true" type="s1:DocumentDTO" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="DocumentDTO">
+        <s:attribute name="DocumentDate" type="s:dateTime" use="required" />
+        <s:attribute name="DocumentType" type="s:string" />
+        <s:attribute name="Struttura" type="s:string" />
+        <s:attribute name="Area" type="s:string" />
+        <s:attribute name="Province" type="s:string" />
+        <s:attribute name="City" type="s:string" />
+        <s:attribute name="Region" type="s:string" />
+        <s:attribute name="State" type="s:string" />
+        <s:attribute name="Notes" type="s:string" />
+      </s:complexType>
+      <s:simpleType name="ExprtType">
+        <s:restriction base="s:string">
+          <s:enumeration value="SimpleExport" />
+          <s:enumeration value="ProgramExport" />
+          <s:enumeration value="LiberiExport" />
+        </s:restriction>
+      </s:simpleType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="CalcolaCodiceFiscaleSoapIn">
+    <wsdl:part name="parameters" element="tns:CalcolaCodiceFiscale" />
+  </wsdl:message>
+  <wsdl:message name="CalcolaCodiceFiscaleSoapOut">
+    <wsdl:part name="parameters" element="tns:CalcolaCodiceFiscaleResponse" />
+  </wsdl:message>
+  <wsdl:message name="ExportDocumentToExcelSoapIn">
+    <wsdl:part name="parameters" element="tns:ExportDocumentToExcel" />
+  </wsdl:message>
+  <wsdl:message name="ExportDocumentToExcelSoapOut">
+    <wsdl:part name="parameters" element="tns:ExportDocumentToExcelResponse" />
+  </wsdl:message>
+  <wsdl:message name="CalcolaDatiFiscaliSoapIn">
+    <wsdl:part name="parameters" element="tns:CalcolaDatiFiscali" />
+  </wsdl:message>
+  <wsdl:message name="CalcolaDatiFiscaliSoapOut">
+    <wsdl:part name="parameters" element="tns:CalcolaDatiFiscaliResponse" />
+  </wsdl:message>
+  <wsdl:message name="ExportTessereSoapIn">
+    <wsdl:part name="parameters" element="tns:ExportTessere" />
+  </wsdl:message>
+  <wsdl:message name="ExportTessereSoapOut">
+    <wsdl:part name="parameters" element="tns:ExportTessereResponse" />
+  </wsdl:message>
+  <wsdl:message name="ImportDataSoapIn">
+    <wsdl:part name="parameters" element="tns:ImportData" />
+  </wsdl:message>
+  <wsdl:message name="ImportDataSoapOut">
+    <wsdl:part name="parameters" element="tns:ImportDataResponse" />
+  </wsdl:message>
+  <wsdl:portType name="FenealgestUtilsSoap">
+    <wsdl:operation name="CalcolaCodiceFiscale">
+      <wsdl:input message="tns:CalcolaCodiceFiscaleSoapIn" />
+      <wsdl:output message="tns:CalcolaCodiceFiscaleSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ExportDocumentToExcel">
+      <wsdl:input message="tns:ExportDocumentToExcelSoapIn" />
+      <wsdl:output message="tns:ExportDocumentToExcelSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CalcolaDatiFiscali">
+      <wsdl:input message="tns:CalcolaDatiFiscaliSoapIn" />
+      <wsdl:output message="tns:CalcolaDatiFiscaliSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ExportTessere">
+      <wsdl:input message="tns:ExportTessereSoapIn" />
+      <wsdl:output message="tns:ExportTessereSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ImportData">
+      <wsdl:input message="tns:ImportDataSoapIn" />
+      <wsdl:output message="tns:ImportDataSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="FenealgestUtilsSoap" type="tns:FenealgestUtilsSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CalcolaCodiceFiscale">
+      <soap:operation soapAction="http://www.fenealgestweb.it/CalcolaCodiceFiscale" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExportDocumentToExcel">
+      <soap:operation soapAction="http://www.fenealgestweb.it/ExportDocumentToExcel" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CalcolaDatiFiscali">
+      <soap:operation soapAction="http://www.fenealgestweb.it/CalcolaDatiFiscali" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExportTessere">
+      <soap:operation soapAction="http://www.fenealgestweb.it/ExportTessere" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ImportData">
+      <soap:operation soapAction="http://www.fenealgestweb.it/ImportData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="FenealgestUtilsSoap12" type="tns:FenealgestUtilsSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CalcolaCodiceFiscale">
+      <soap12:operation soapAction="http://www.fenealgestweb.it/CalcolaCodiceFiscale" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExportDocumentToExcel">
+      <soap12:operation soapAction="http://www.fenealgestweb.it/ExportDocumentToExcel" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CalcolaDatiFiscali">
+      <soap12:operation soapAction="http://www.fenealgestweb.it/CalcolaDatiFiscali" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExportTessere">
+      <soap12:operation soapAction="http://www.fenealgestweb.it/ExportTessere" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ImportData">
+      <soap12:operation soapAction="http://www.fenealgestweb.it/ImportData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="FenealgestUtils">
+    <wsdl:port name="FenealgestUtilsSoap" binding="tns:FenealgestUtilsSoap">
+      <soap:address location="http://www.fenealgest.it/servizi/WebServices/FenealgestUtils.asmx" />
+    </wsdl:port>
+    <wsdl:port name="FenealgestUtilsSoap12" binding="tns:FenealgestUtilsSoap12">
+      <soap12:address location="http://www.fenealgest.it/servizi/WebServices/FenealgestUtils.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
