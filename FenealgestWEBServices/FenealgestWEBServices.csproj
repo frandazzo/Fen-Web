@@ -100,6 +100,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Web.config" />
+    <Content Include="WebServices\FenealgestStats.asmx" />
     <Content Include="WebServices\FenealgestUtils.asmx" />
     <Content Include="WebServices\FenealgestwebServices.asmx" />
     <Content Include="WebServices\JoinAllWebService.asmx" />
@@ -110,12 +111,18 @@
     <Compile Include="WebServices\Credenziali.cs" />
     <Compile Include="WebServices\DTOWrappers\CrossDto.cs" />
     <Compile Include="WebServices\DTOWrappers\CrossDtoCreator.cs" />
+    <Compile Include="WebServices\DTOWrappers\DataExport.cs" />
+    <Compile Include="WebServices\DTOWrappers\DataExportResult.cs" />
     <Compile Include="WebServices\DTOWrappers\Utils\FiscalData.cs" />
     <Compile Include="WebServices\DTOWrappers\HtmlTransformer.cs" />
     <Compile Include="WebServices\DTOWrappers\LiberiData.cs" />
     <Compile Include="WebServices\DTOWrappers\MailData.cs" />
     <Compile Include="WebServices\DTOWrappers\QueryParameters.cs" />
     <Compile Include="WebServices\DTOWrappers\QueryResultDTO.cs" />
+    <Compile Include="WebServices\FenealgestStats.asmx.cs">
+      <DependentUpon>FenealgestStats.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="WebServices\FenealgestUtils.asmx.cs">
       <DependentUpon>FenealgestUtils.asmx</DependentUpon>
       <SubType>Component</SubType>
