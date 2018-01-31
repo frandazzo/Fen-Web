@@ -11,7 +11,7 @@ using System.Text;
 using WIN.FENGEST_NAZIONALE.HANDLERS.FenealWebImport;
 using WIN.FENGEST_NAZIONALE.HANDLERS.ImportHandler;
 using WIN.FENGEST_NAZIONALE.IMPORT_EXPORT;
-using WIN.TECHNICAL.MIDDLEWARE.Files;
+
 
 namespace ConsoleApplication1
 {
@@ -35,8 +35,8 @@ namespace ConsoleApplication1
             
             //serv.FindOrganizzativeData(1, 1, 1);
 
-            QueueRetriever ret = new QueueRetriever();
-            ret.Process();
+            //QueueRetriever ret = new QueueRetriever();
+            //ret.Process();
 
             //ServerSideSettings settings = new ServerSideSettings();
             //settings.ConnectionString = "connection string";

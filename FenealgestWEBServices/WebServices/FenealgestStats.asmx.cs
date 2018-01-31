@@ -37,7 +37,7 @@ namespace FenealgestWEB.WebServices
             if (!Directory.Exists(baseFolder))
                 return new DataExportResult();
 
-            baseFolderAnalisysData = baseFolderAnalisysData + "//ServerSideAnalisysData";
+            baseFolderAnalisysData = baseFolder + "//ServerSideAnalysisData";
             if (!Directory.Exists(baseFolderAnalisysData))
                 return new DataExportResult();
 
@@ -77,23 +77,23 @@ namespace FenealgestWEB.WebServices
 
             if (result.NumFeneal > 0 && (result.NumFilca > 0 || result.NumFillea > 0))
             {
-                result.RappresentativitaFeneal = result.NumFeneal / result.TotSindacalizzati;
+                result.RappresentativitaFeneal = Convert.ToDecimal(result.NumFeneal) / Convert.ToDecimal(result.TotSindacalizzati);
                 result.RappresentativitaFeneal = Math.Round(result.RappresentativitaFeneal * 100, 2);
 
                 if (result.NumFilca > 0)
                 {
-                    result.RappresentativitaFilca = result.NumFilca / result.TotSindacalizzati;
+                    result.RappresentativitaFilca = Convert.ToDecimal(result.NumFilca) / Convert.ToDecimal(result.TotSindacalizzati);
                     result.RappresentativitaFilca = Math.Round(result.RappresentativitaFilca * 100, 2);
                 }
 
                 if (result.NumFillea > 0)
                 {
-                    result.RappresentativitaFillea = result.NumFillea / result.TotSindacalizzati;
+                    result.RappresentativitaFillea = Convert.ToDecimal(result.NumFillea) / Convert.ToDecimal(result.TotSindacalizzati);
                     result.RappresentativitaFillea = Math.Round(result.RappresentativitaFillea * 100, 2);
                 }
             }
 
-            result.Sindacalizzazione = result.TotSindacalizzati / result.TotLavoratori;
+            result.Sindacalizzazione = Convert.ToDecimal(result.TotSindacalizzati) / Convert.ToDecimal(result.TotLavoratori);
             result.Sindacalizzazione = Math.Round(result.Sindacalizzazione * 100, 2);
 
             return result;
@@ -191,11 +191,11 @@ namespace FenealgestWEB.WebServices
         {
             string[] files1 = Directory.GetFiles(baseFolder,item);
             if (files1.Length == 1)
-                return CreateExportData(item);
+                return CreateExportData(files1[0]);
 
             string[] files2 = Directory.GetFiles(baseFolderAnalisysData, item);
             if (files2.Length == 1)
-                return CreateExportData(item);
+                return CreateExportData(files2[0]);
             return null;
         }
 
@@ -214,7 +214,7 @@ namespace FenealgestWEB.WebServices
             if (!Directory.Exists(baseFolder))
                 return data.ToArray();
 
-            baseFolderAnalisysData = baseFolderAnalisysData  + "//ServerSideAnalisysData";
+            baseFolderAnalisysData = baseFolder + "//ServerSideAnalysisData";
             if (!Directory.Exists(baseFolderAnalisysData))
                 return data.ToArray();
             //adesso posso cercare nella cartella di base o in quella dell'analisi
@@ -290,8 +290,10 @@ namespace FenealgestWEB.WebServices
             //mi è rimasto il nome del file nel formato:  2016_11_28_17_49_50 
 
             //estraggo la data dal nome del file
-            int[] splitted = cleanItem.Split(new char[] { '_' }).Cast<int>().ToArray();
-            DateTime t = new DateTime(splitted[0], splitted[1], splitted[2], splitted[3], splitted[4], splitted[5]);
+            string[] splitted = cleanItem.Split(new char[] { '_' }).ToArray();
+            DateTime t = new DateTime(Convert.ToInt32(splitted[0]), Convert.ToInt32(splitted[1]), 
+                Convert.ToInt32(splitted[2]), Convert.ToInt32(splitted[3]), 
+                Convert.ToInt32(splitted[4]), Convert.ToInt32(splitted[5]));
             exp.Date = t;
 
             return exp;

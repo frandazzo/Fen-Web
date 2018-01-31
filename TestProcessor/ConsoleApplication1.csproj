@@ -65,10 +65,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\WIN.TECHNICAL.MIDDLEWARE\WIN.TECHNICAL.MIDDLEWARE.csproj">
-      <Project>{7817938c-e1d1-435c-b124-5f40f430a46d}</Project>
-      <Name>WIN.TECHNICAL.MIDDLEWARE</Name>
-    </ProjectReference>
     <ProjectReference Include="..\WIN.FENGEST_NAZIONALE.IMPORT_EXPORT\WIN.FENGEST_NAZIONALE.IMPORT_EXPORT.csproj">
       <Project>{fa0dfc79-73b0-4b24-b8a4-def8f8b853a5}</Project>
       <Name>WIN.FENGEST_NAZIONALE.IMPORT_EXPORT</Name>
@@ -80,10 +76,6 @@
     <ProjectReference Include="..\WIN.FENGEST_NAZIONALE.INTEGRATION_ENTITIES\WIN.FENGEST_NAZIONALE.INTEGRATION_ENTITIES.csproj">
       <Project>{fef19374-07ac-46f6-93a3-f7fb32e2428d}</Project>
       <Name>WIN.FENGEST_NAZIONALE.INTEGRATION_ENTITIES</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\WIN.TECHNICAL.SERVICE_PROCESSOR\WIN.TECHNICAL.SERVICE_PROCESSOR.csproj">
-      <Project>{8e285472-7005-474c-a2ea-7cb4e25a4b66}</Project>
-      <Name>WIN.TECHNICAL.SERVICE_PROCESSOR</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
