@@ -58,19 +58,19 @@ namespace WIN.FENGEST_NAZIONALE.INTEGRATION_ENTITIES
                 if (worker.Fiscalcode.Length != 16)
                     b.AppendLine("Il codice fiscale deve essere di 16 caratteri");
 
-            try
-            {
-                if (!string.IsNullOrEmpty(worker.Fiscalcode))
-                {
-                    string cfError = checker.CheckFiscalCode (worker.Fiscalcode);
-                    if (!string.IsNullOrEmpty (cfError))
-                        b.AppendLine("Il codice fiscale è errato. " + cfError);
-                }
-            }
-            catch (Exception ex)
-            {
-                b.AppendLine("Il codice fiscale è errato. " + ex.Message);
-            }
+            //try
+            //{
+            //    if (!string.IsNullOrEmpty(worker.Fiscalcode))
+            //    {
+            //        string cfError = checker.CheckFiscalCode (worker.Fiscalcode);
+            //        if (!string.IsNullOrEmpty (cfError))
+            //            b.AppendLine("Il codice fiscale è errato. " + cfError);
+            //    }
+            //}
+            //catch (Exception ex)
+            //{
+            //    b.AppendLine("Il codice fiscale è errato. " + ex.Message);
+            //}
 
            
 
