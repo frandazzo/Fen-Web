@@ -7,10 +7,10 @@ namespace WIN.FENGEST_NAZIONALE.DOMAIN.Security
 {
     public class DevMenuConstructor : IMenuWidgetConstructor
     {
-        private DevExpress.Web.ASPxMenu.ASPxMenu _menu;
+        private DevExpress.Web.ASPxMenu _menu;
         private RepresentationHandler h;
 
-        public DevMenuConstructor(DevExpress.Web.ASPxMenu.ASPxMenu menu)
+        public DevMenuConstructor(DevExpress.Web.ASPxMenu menu)
         {
             if (menu == null)
                 throw new ArgumentException("Il widget Mennu non può essere nullo");
@@ -32,7 +32,7 @@ namespace WIN.FENGEST_NAZIONALE.DOMAIN.Security
 
             foreach (Node elem in nodes)
             {
-                DevExpress.Web.ASPxMenu.MenuItem i = new DevExpress.Web.ASPxMenu.MenuItem(elem.Text, "", elem.UrlImage , elem.Url);
+                DevExpress.Web.MenuItem i = new DevExpress.Web.MenuItem(elem.Text, "", elem.UrlImage , elem.Url);
                 i.DataItem = elem.Child;
                 _menu.Items.Add(i);
             }
@@ -40,7 +40,7 @@ namespace WIN.FENGEST_NAZIONALE.DOMAIN.Security
 
 
             //inserisco gli item degli altri livelli
-            foreach (DevExpress.Web.ASPxMenu.MenuItem elem in _menu.Items)
+            foreach (DevExpress.Web.MenuItem elem in _menu.Items)
             {
                 AddChild(elem, 1, elem.DataItem.ToString());
             }
@@ -50,7 +50,7 @@ namespace WIN.FENGEST_NAZIONALE.DOMAIN.Security
 
 
 
-        private void AddChild(DevExpress.Web.ASPxMenu.MenuItem item, int level, string parent)
+        private void AddChild(DevExpress.Web.MenuItem item, int level, string parent)
         {
             IList<Node> nodes = h.GetNodes(level, parent);
 
@@ -60,7 +60,7 @@ namespace WIN.FENGEST_NAZIONALE.DOMAIN.Security
             //inserisco gli item a livello 0;
             foreach (Node elem in nodes)
             {
-                DevExpress.Web.ASPxMenu.MenuItem i = new DevExpress.Web.ASPxMenu.MenuItem(elem.Text, "", elem.UrlImage, elem.Url);
+                DevExpress.Web.MenuItem i = new DevExpress.Web.MenuItem(elem.Text, "", elem.UrlImage, elem.Url);
                 i.DataItem = elem.Child;
                 item.Items.Add(i);
             }
@@ -68,7 +68,7 @@ namespace WIN.FENGEST_NAZIONALE.DOMAIN.Security
 
 
             ////inserisco gli item degli altri livelli
-            foreach (DevExpress.Web.ASPxMenu.MenuItem elem in item.Items)
+            foreach (DevExpress.Web.MenuItem elem in item.Items)
             {
                 AddChild(elem, level + 1, elem.DataItem.ToString());
             }

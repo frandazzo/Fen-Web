@@ -7,10 +7,10 @@ namespace WIN.FENGEST_NAZIONALE.DOMAIN.Security
 {
     public class DevTreeConstructor:IMenuWidgetConstructor
     {
-        private DevExpress.Web.ASPxTreeView.ASPxTreeView _menu;
+        private DevExpress.Web.ASPxTreeView _menu;
         private RepresentationHandler h;
 
-        public DevTreeConstructor(DevExpress.Web.ASPxTreeView.ASPxTreeView menu)
+        public DevTreeConstructor(DevExpress.Web.ASPxTreeView menu)
         {
             if (menu == null)
                 throw new ArgumentException("Il widget TreeView non può essere nullo");
@@ -32,7 +32,7 @@ namespace WIN.FENGEST_NAZIONALE.DOMAIN.Security
 
             foreach (Node elem in nodes)
             {
-                DevExpress.Web.ASPxTreeView.TreeViewNode i = new DevExpress.Web.ASPxTreeView.TreeViewNode(elem.Text, "",elem.UrlImage, elem.Url);
+                DevExpress.Web.TreeViewNode i = new DevExpress.Web.TreeViewNode(elem.Text, "",elem.UrlImage, elem.Url);
                 i.DataItem = elem.Child;
                 _menu.Nodes.Add(i);
             }
@@ -40,7 +40,7 @@ namespace WIN.FENGEST_NAZIONALE.DOMAIN.Security
 
 
             //inserisco gli item degli altri livelli
-            foreach (DevExpress.Web.ASPxTreeView.TreeViewNode elem in _menu.Nodes)
+            foreach (DevExpress.Web.TreeViewNode elem in _menu.Nodes)
             {
                 AddChild(elem, 1, elem.DataItem.ToString());
             }
@@ -50,7 +50,7 @@ namespace WIN.FENGEST_NAZIONALE.DOMAIN.Security
 
 
 
-        private void AddChild(DevExpress.Web.ASPxTreeView.TreeViewNode item, int level, string parent)
+        private void AddChild(DevExpress.Web.TreeViewNode item, int level, string parent)
         {
             IList<Node> nodes = h.GetNodes(level, parent);
 
@@ -60,7 +60,7 @@ namespace WIN.FENGEST_NAZIONALE.DOMAIN.Security
             //inserisco gli item a livello 0;
             foreach (Node elem in nodes)
             {
-                DevExpress.Web.ASPxTreeView.TreeViewNode i = new DevExpress.Web.ASPxTreeView.TreeViewNode(elem.Text, "", elem.UrlImage , elem.Url);
+                DevExpress.Web.TreeViewNode i = new DevExpress.Web.TreeViewNode(elem.Text, "", elem.UrlImage , elem.Url);
                 i.DataItem = elem.Child;
                 item.Nodes.Add(i);
             }
@@ -68,7 +68,7 @@ namespace WIN.FENGEST_NAZIONALE.DOMAIN.Security
 
 
             ////inserisco gli item degli altri livelli
-            foreach (DevExpress.Web.ASPxTreeView.TreeViewNode elem in item.Nodes)
+            foreach (DevExpress.Web.TreeViewNode elem in item.Nodes)
             {
                 AddChild(elem, level + 1, elem.DataItem.ToString());
             }

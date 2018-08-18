@@ -38,7 +38,7 @@ namespace FenealgestWEB.Reserved.AreaPubblica {
         /// Campo generato automaticamente.
         /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
         /// </remarks>
-        protected global::DevExpress.Web.ASPxEditors.ASPxDateEdit bdpData1;
+        protected global::DevExpress.Web.ASPxDateEdit bdpData1;
         
         /// <summary>
         /// Controllo cboSesso.

@@ -78,7 +78,7 @@ namespace WIN.FENGEST_NAZIONALE.HANDLERS.ImportHandler
                 {
                     _log.WriteEntry("Ho ottenuto una traccia di importazione quote", EventLogEntryType.Information);
                     //instanzio il servizio
-                    ImportHandler h = new ImportHandler(trace);
+                    ImportHandler h = new ImportHandler(trace, _log);
 
                     //avvio l'importazione dei dati
                     _log.WriteEntry("Ne avvio l'import!", EventLogEntryType.Information);

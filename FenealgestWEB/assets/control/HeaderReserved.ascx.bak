@@ -1,9 +1,9 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="HeaderReserved.ascx.cs" Inherits="FenealgestWEB.assets.control.HeaderReserved" %>
-<%@ Register Assembly="DevExpress.Web.v13.2, Version=13.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"
+<%@ Register Assembly="DevExpress.Web.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"
     Namespace="DevExpress.Web.ASPxCallback" TagPrefix="dx" %>
-<%@ Register Assembly="DevExpress.Web.v13.2, Version=13.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"
+<%@ Register Assembly="DevExpress.Web.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"
     Namespace="DevExpress.Web.ASPxPopupControl" TagPrefix="dx" %>
-<%@ Register Assembly="DevExpress.Web.v13.2, Version=13.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"
+<%@ Register Assembly="DevExpress.Web.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"
     Namespace="DevExpress.Web.ASPxEditors" TagPrefix="dx" %>
 
 
@@ -41,7 +41,7 @@
 		    <div class="bg">
 			    <div class="menu">	  
                     <dx:ASPxTextBox ID="ASPxTextBox1" runat="server" ClientInstanceName="mail" Width="170px" CssClass="newsletter" NullText="Iscriviti alla newsletter!" > <NullTextStyle ForeColor="#999999"> </NullTextStyle> </dx:ASPxTextBox>
-                    <asp:LinkButton ID="LinkButton2" runat="server" CssClass="invia" OnClientClick="RegisterMail();return false;">Registrati <asp:Image ID="Image1" runat="server" ImageUrl="~/images/right_arrow.png" /> &nbsp;&nbsp; </asp:LinkButton> <asp:LinkButton ID="LinkButton3" runat="server" CssClass="invia" OnClientClick="UnregisterMail();return false;">Deregistrati <asp:Image ID="Image3" runat="server" ImageUrl="~/images/down_arrow.png" /></asp:LinkButton>
+                    <asp:LinkButton ID="LinkButton2" runat="server" CssClass="invia" OnClientClick="RegisterMail();return false;">Registrati <asp:Image ID="Image11" runat="server" ImageUrl="~/images/right_arrow.png" /> &nbsp;&nbsp; </asp:LinkButton> <asp:LinkButton ID="LinkButton3" runat="server" CssClass="invia" OnClientClick="UnregisterMail();return false;">Deregistrati <asp:Image ID="Image3" runat="server" ImageUrl="~/images/down_arrow.png" /></asp:LinkButton>
 				    <ul>
 					    <%--<li>
 						    <a href="#">

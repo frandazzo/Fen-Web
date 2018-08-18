@@ -16,7 +16,7 @@ using WIN.TECHNICAL.PERSISTENCE;
 using System.Collections.Generic;
 using WIN.FENGEST_NAZIONALE.DOMAIN.Workers;
 using System.Web.Configuration;
-using DevExpress.Web.ASPxGridView;
+using DevExpress.Web;
 using WIN.FENGEST_NAZIONALE.INTEGRATION_ENTITIES;
 using DevExpress.XtraPrinting;
 
@@ -220,12 +220,12 @@ namespace FenealgestWEB.Reserved.AreaNazionale
         //{
         //    get { return ((ReservedArea)this.Master).MainMenu; }
         //}
-        protected override DevExpress.Web.ASPxTreeView.ASPxTreeView DevPageTree
+        protected override DevExpress.Web.ASPxTreeView DevPageTree
         {
             get { return null; }
         }
 
-        protected override DevExpress.Web.ASPxMenu.ASPxMenu DevPageMenu
+        protected override DevExpress.Web.ASPxMenu DevPageMenu
         {
             get { return ((FenealgestwebNew)this.Master).MainMenu; }
         }

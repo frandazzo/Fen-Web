@@ -52,12 +52,12 @@ namespace FenealgestWEB.Reserved.AreaNazionale
         //}
 
 
-        protected override DevExpress.Web.ASPxMenu.ASPxMenu DevPageMenu
+        protected override DevExpress.Web.ASPxMenu DevPageMenu
         {
             get { return ((FenealgestwebNew)this.Master).MainMenu; }
         }
 
-        protected override DevExpress.Web.ASPxTreeView.ASPxTreeView DevPageTree
+        protected override DevExpress.Web.ASPxTreeView DevPageTree
         {
             get { return null; }
         }

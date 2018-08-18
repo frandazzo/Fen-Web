@@ -127,6 +127,6 @@ namespace FenealgestWEB.Reserved.AreaNazionale {
         /// Campo generato automaticamente.
         /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
         /// </remarks>
-        protected global::DevExpress.Web.ASPxPivotGrid.Export.ASPxPivotGridExporter ASPxPivotGridExporter1;
+        protected global::DevExpress.Web.ASPxPivotGrid.ASPxPivotGridExporter ASPxPivotGridExporter1;
     }
 }

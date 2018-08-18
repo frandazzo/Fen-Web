@@ -19,7 +19,7 @@ namespace FenealgestWEB.Reserved.AreaNazionale {
         /// Campo generato automaticamente.
         /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
         /// </remarks>
-        protected global::DevExpress.Web.ASPxGridView.Export.ASPxGridViewExporter ASPxGridViewExporter1;
+        protected global::DevExpress.Web.ASPxGridViewExporter ASPxGridViewExporter1;
         
         /// <summary>
         /// Controllo ASPxHiddenField1.
@@ -28,7 +28,7 @@ namespace FenealgestWEB.Reserved.AreaNazionale {
         /// Campo generato automaticamente.
         /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
         /// </remarks>
-        protected global::DevExpress.Web.ASPxHiddenField.ASPxHiddenField ASPxHiddenField1;
+        protected global::DevExpress.Web.ASPxHiddenField ASPxHiddenField1;
         
         /// <summary>
         /// Controllo LinkButton4.
@@ -163,7 +163,7 @@ namespace FenealgestWEB.Reserved.AreaNazionale {
         /// Campo generato automaticamente.
         /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
         /// </remarks>
-        protected global::DevExpress.Web.ASPxEditors.ASPxDateEdit bdpNascita1;
+        protected global::DevExpress.Web.ASPxDateEdit bdpNascita1;
         
         /// <summary>
         /// Controllo bdpNascita2.
@@ -172,7 +172,7 @@ namespace FenealgestWEB.Reserved.AreaNazionale {
         /// Campo generato automaticamente.
         /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
         /// </remarks>
-        protected global::DevExpress.Web.ASPxEditors.ASPxDateEdit bdpNascita2;
+        protected global::DevExpress.Web.ASPxDateEdit bdpNascita2;
         
         /// <summary>
         /// Controllo cboNazionalita.
@@ -253,7 +253,7 @@ namespace FenealgestWEB.Reserved.AreaNazionale {
         /// Campo generato automaticamente.
         /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
         /// </remarks>
-        protected global::DevExpress.Web.ASPxMenu.ASPxPopupMenu ASPxPopupMenu1;
+        protected global::DevExpress.Web.ASPxPopupMenu ASPxPopupMenu1;
         
         /// <summary>
         /// Controllo ASPxGridView1.
@@ -262,7 +262,7 @@ namespace FenealgestWEB.Reserved.AreaNazionale {
         /// Campo generato automaticamente.
         /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
         /// </remarks>
-        protected global::DevExpress.Web.ASPxGridView.ASPxGridView ASPxGridView1;
+        protected global::DevExpress.Web.ASPxGridView ASPxGridView1;
         
         /// <summary>
         /// Controllo lblTotalResults.

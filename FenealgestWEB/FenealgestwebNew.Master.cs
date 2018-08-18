@@ -20,9 +20,9 @@ namespace FenealgestWEB
 
         }
 
-        public DevExpress.Web.ASPxMenu.ASPxMenu MainMenu
+        public DevExpress.Web.ASPxMenu MainMenu
         {
-            get { return this.homemenu1.FindControl("mainMenu") as DevExpress.Web.ASPxMenu.ASPxMenu; }
+            get { return this.homemenu1.FindControl("mainMenu") as DevExpress.Web.ASPxMenu; }
         }
 
 
@@ -32,7 +32,7 @@ namespace FenealgestWEB
         //}
 
 
-        //public DevExpress.Web.ASPxMenu.ASPxMenu DevMainMenu
+        //public DevExpress.Web.ASPxMenu DevMainMenu
         //{
         //    get { return this.mainMenu; }
         //}

@@ -13,10 +13,14 @@
     <RootNamespace>FenealgestWEB</RootNamespace>
     <AssemblyName>FenealgestWEB</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
-    <SccProjectName>SAK</SccProjectName>
-    <SccLocalPath>SAK</SccLocalPath>
-    <SccAuxPath>SAK</SccAuxPath>
-    <SccProvider>SAK</SccProvider>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
     <OldToolsVersion>4.0</OldToolsVersion>
@@ -38,6 +42,7 @@
     <WarningLevel>4</WarningLevel>
     <PlatformTarget>AnyCPU</PlatformTarget>
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -47,62 +52,26 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+    <PublishDatabases>false</PublishDatabases>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DevExpress.Printing.v11.1.Core, Version=11.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="DevExpress.Data.v11.1, Version=11.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="DevExpress.PivotGrid.v11.1.Adomd, Version=11.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="DevExpress.PivotGrid.v11.1.Core, Version=11.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="DevExpress.Utils.v11.1, Version=11.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="DevExpress.Web.ASPxEditors.v11.1, Version=11.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="DevExpress.Web.ASPxGridView.v11.1, Version=11.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="DevExpress.Web.ASPxHtmlEditor.v11.1, Version=11.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="DevExpress.Web.ASPxPivotGrid.v11.1, Version=11.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="DevExpress.Web.ASPxPivotGrid.v11.1.Export, Version=11.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="DevExpress.Web.ASPxSpellChecker.v11.1, Version=11.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="DevExpress.Web.ASPxTreeList.v11.1, Version=11.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="DevExpress.Web.ASPxTreeList.v11.1.Export, Version=11.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="DevExpress.Web.v11.1, Version=11.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="DevExpress.XtraEditors.v11.1, Version=11.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="DevExpress.XtraPivotGrid.v11.1, Version=11.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="DevExpress.XtraPrinting.v11.1, Version=11.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="DevExpress.XtraTreeList.v11.1, Version=11.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
-      <Private>True</Private>
-    </Reference>
+    <Reference Include="DevExpress.Data.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Office.v13.2.Core, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v13.2.Core, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v13.2.Core, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v13.2.Core, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.ASPxHtmlEditor.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.ASPxPivotGrid.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.ASPxSpellChecker.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.ASPxThemes.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.ASPxTreeList.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPivotGrid.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraTreeList.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="MySql.Data, Version=6.2.3.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\WIN.FENGEST_NAZIONALE.DLLs\MySql.Data.dll</HintPath>
@@ -110,38 +79,63 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
-    <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Messaging" />
     <Reference Include="System.Web" />
     <Reference Include="System.Web.ApplicationServices" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
-    <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Web.Services" />
     <Reference Include="System.EnterpriseServices" />
     <Reference Include="System.Web.Mobile" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="WIN.BILANCIO">
-      <HintPath>..\WIN.FENGEST_NAZIONALE.DLLs\WIN.BILANCIO.dll</HintPath>
-    </Reference>
-    <Reference Include="WIN.TECHNICAL.SECURITY, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+    <Reference Include="WIN.BILANCIO, Version=8.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\WIN.FENGEST_NAZIONALE.DLLs\WIN.TECHNICAL.SECURITY.dll</HintPath>
+      <HintPath>..\dlls\WIN.BILANCIO.dll</HintPath>
     </Reference>
-    <Reference Include="WIN.TECHNICAL.VB.PERSISTENCE, Version=5.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="WIN.TECHNICAL.MENU_CUSTOMIZER, Version=8.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\WIN.FENGEST_NAZIONALE.DLLs\WIN.TECHNICAL.VB.PERSISTENCE.dll</HintPath>
+      <HintPath>..\dlls\WIN.TECHNICAL.MENU_CUSTOMIZER.dll</HintPath>
     </Reference>
-    <Reference Include="WIN.TECHNICAL.VB.UTILS, Version=1.5.100.0, Culture=neutral, processorArchitecture=x86">
+    <Reference Include="WIN.TECHNICAL.MIDDLEWARE, Version=8.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\WIN.FENGEST_NAZIONALE.DLLs\WIN.TECHNICAL.VB.UTILS.dll</HintPath>
+      <HintPath>..\dlls\WIN.TECHNICAL.MIDDLEWARE.dll</HintPath>
+    </Reference>
+    <Reference Include="WIN.TECHNICAL.SECURITY, Version=8.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dlls\WIN.TECHNICAL.SECURITY.dll</HintPath>
+    </Reference>
+    <Reference Include="WIN.TECHNICAL.SECURITY_NEW, Version=8.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dlls\WIN.TECHNICAL.SECURITY_NEW.dll</HintPath>
+    </Reference>
+    <Reference Include="WIN.TECHNICAL.VB.PERSISTENCE, Version=8.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dlls\WIN.TECHNICAL.VB.PERSISTENCE.dll</HintPath>
+    </Reference>
+    <Reference Include="WIN.TECHNICAL.VB.UTILS, Version=8.6.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dlls\WIN.TECHNICAL.VB.UTILS.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="javascript\jqprint.js" />
+    <Content Include="Reserved\AreaNazionale\ReportFlussi.aspx" />
+    <Content Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </Content>
+    <None Include="Properties\PublishProfiles\produzioine.pubxml" />
+    <None Include="Web References\FenealgestUtilsService\FenealgestUtils.disco" />
     <Content Include="Web.config" />
+    <Content Include="Web References\FenealgestUtilsService\FiscalData.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </Content>
+    <None Include="Web References\FenealgestUtilsService\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="assets\control\Footer.ascx.cs">
@@ -239,6 +233,11 @@
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
     <Compile Include="ReservedArea.Master.cs">
       <DependentUpon>ReservedArea.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -322,6 +321,13 @@
     </Compile>
     <Compile Include="Reserved\AreaNazionale\ReportBilancioRlst.aspx.designer.cs">
       <DependentUpon>ReportBilancioRlst.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reserved\AreaNazionale\ReportFlussi.aspx.cs">
+      <DependentUpon>ReportFlussi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reserved\AreaNazionale\ReportFlussi.aspx.designer.cs">
+      <DependentUpon>ReportFlussi.aspx</DependentUpon>
     </Compile>
     <Compile Include="Reserved\AreaNazionale\ReportIscritti.aspx.cs">
       <DependentUpon>ReportIscritti.aspx</DependentUpon>
@@ -422,16 +428,13 @@
     <Compile Include="ReservedAreaHomePage.aspx.designer.cs">
       <DependentUpon>ReservedAreaHomePage.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Web References\FenealgestUtilsService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\WIN.TECHNICAL.MIDDLEWARE\WIN.TECHNICAL.MIDDLEWARE.csproj">
-      <Project>{7817938c-e1d1-435c-b124-5f40f430a46d}</Project>
-      <Name>WIN.TECHNICAL.MIDDLEWARE</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\WIN.TECHNICAL.SECURITY_NEW\WIN.TECHNICAL.SECURITY_NEW\WIN.TECHNICAL.SECURITY_NEW.csproj">
-      <Project>{0f298fbd-85d4-4726-bace-82df9ddcc9a2}</Project>
-      <Name>WIN.TECHNICAL.SECURITY_NEW</Name>
-    </ProjectReference>
     <ProjectReference Include="..\WIN.FENGEST_NAZIONALE.DOMAIN\WIN.FENGEST_NAZIONALE.DOMAIN.csproj">
       <Project>{CCD2CC47-18FD-4E95-B9CA-B81DED3D4E2F}</Project>
       <Name>WIN.FENGEST_NAZIONALE.DOMAIN</Name>
@@ -447,10 +450,6 @@
     <ProjectReference Include="..\WIN.FENGEST_NAZIONALE.VB.PERSISTENCE\WIN.FENGEST_NAZIONALE.VB.PERSISTENCE.vbproj">
       <Project>{9CF12BE4-D860-454C-9D57-FBEFAD968D66}</Project>
       <Name>WIN.FENGEST_NAZIONALE.VB.PERSISTENCE</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\WIN.TECHNICAL.MENU_CUSTOMIZER\WIN.TECHNICAL.MENU_CUSTOMIZER.csproj">
-      <Project>{8922EDC2-270C-430A-9171-9BB97779C1DD}</Project>
-      <Name>WIN.TECHNICAL.MENU_CUSTOMIZER</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
@@ -520,10 +519,6 @@
   <ItemGroup>
     <None Include="assets\docs\guida_installazione_rendiconto.doc" />
     <None Include="assets\docs\ManualeFenealgestWEB.doc" />
-    <None Include="assets\setups\ConnettoreFenealgestNazionale.zip" />
-    <None Include="assets\setups\RendicontoFeneal.zip" />
-    <None Include="assets\setups\RendicontoRlst.zip" />
-    <None Include="assets\setups\SqlServer2005 Express.zip" />
     <None Include="Configuration file\DBScript.sql" />
     <None Include="Configuration file\ManualeDeploymentFenealgestWEB.doc">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -534,10 +529,6 @@
     <Content Include="assets\control\HomePageMenu.ascx" />
     <Content Include="assets\control\LoggedUtilityMenu.ascx" />
     <Content Include="assets\control\UtilityMenu.ascx" />
-    <Content Include="assets\setups\ConnettoreFenealgestNazionale.exe" />
-    <Content Include="assets\setups\RendicontoFeneal.exe" />
-    <Content Include="assets\setups\RendicontoRlst.exe" />
-    <Content Include="assets\setups\Teleassistenza.exe" />
     <Content Include="css\DevexpressCSS.css" />
     <Content Include="ErrorHandling\ErrorPage.aspx" />
     <Content Include="FenealgestwebNew.Master" />
@@ -620,12 +611,33 @@
     <Content Include="Configuration file\Ruoli.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="Web References\FenealgestUtilsService\FenealgestUtils.wsdl" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Properties\licenses.licx" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="assets\setups\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://www.fenealgest.it/servizi/WebServices/FenealgestUtils.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\FenealgestUtilsService\</RelPath>
+      <UpdateFromURL>http://www.fenealgest.it/servizi/WebServices/FenealgestUtils.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>FenealgestWEB_FenealgestUtilsService_FenealgestUtils</CachedSettingsPropName>
+    </WebReferenceUrl>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -647,7 +659,7 @@
         <WebProjectProperties>
           <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>1198</DevelopmentServerPort>
+          <DevelopmentServerPort>53326</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>http://localhost/fenealweb</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>

@@ -28,7 +28,7 @@ namespace FenealgestWEB.assets.control {
         /// Campo generato automaticamente.
         /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
         /// </remarks>
-        protected global::DevExpress.Web.ASPxEditors.ASPxTextBox ASPxTextBox1;
+        protected global::DevExpress.Web.ASPxTextBox ASPxTextBox1;
         
         /// <summary>
         /// Controllo LinkButton2.
@@ -91,7 +91,7 @@ namespace FenealgestWEB.assets.control {
         /// Campo generato automaticamente.
         /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
         /// </remarks>
-        protected global::DevExpress.Web.ASPxPopupControl.ASPxPopupControl ASPxPopupControl1;
+        protected global::DevExpress.Web.ASPxPopupControl ASPxPopupControl1;
         
         /// <summary>
         /// Controllo PopupControlContentControl1.
@@ -100,7 +100,7 @@ namespace FenealgestWEB.assets.control {
         /// Campo generato automaticamente.
         /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
         /// </remarks>
-        protected global::DevExpress.Web.ASPxPopupControl.PopupControlContentControl PopupControlContentControl1;
+        protected global::DevExpress.Web.PopupControlContentControl PopupControlContentControl1;
         
         /// <summary>
         /// Controllo ASPxCallback1.
@@ -109,6 +109,6 @@ namespace FenealgestWEB.assets.control {
         /// Campo generato automaticamente.
         /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
         /// </remarks>
-        protected global::DevExpress.Web.ASPxCallback.ASPxCallback ASPxCallback1;
+        protected global::DevExpress.Web.ASPxCallback ASPxCallback1;
     }
 }

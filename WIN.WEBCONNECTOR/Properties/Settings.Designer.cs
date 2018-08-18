@@ -12,7 +12,7 @@ namespace WIN.WEBCONNECTOR.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "11.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "15.7.0.0")]
     internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
         
         private static Settings defaultInstance = ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())));
@@ -100,16 +100,6 @@ namespace WIN.WEBCONNECTOR.Properties {
         public string WIN_WEBCONNECTOR_SharetopServices_SharetopIntegration {
             get {
                 return ((string)(this["WIN_WEBCONNECTOR_SharetopServices_SharetopIntegration"]));
-            }
-        }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.WebServiceUrl)]
-        [global::System.Configuration.DefaultSettingValueAttribute("https://www.fenealgest.it/servizi/WebServices/FenealgestwebServices.asmx")]
-        public string WIN_WEBCONNECTOR_FenealgestServices_FenealgestwebServices {
-            get {
-                return ((string)(this["WIN_WEBCONNECTOR_FenealgestServices_FenealgestwebServices"]));
             }
         }
     }

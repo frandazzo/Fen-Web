@@ -19,7 +19,7 @@ namespace FenealgestWEB.Reserved.AreaNazionale {
         /// Campo generato automaticamente.
         /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
         /// </remarks>
-        protected global::DevExpress.Web.ASPxTreeList.Export.ASPxTreeListExporter treeListExporter1;
+        protected global::DevExpress.Web.ASPxTreeList.ASPxTreeListExporter treeListExporter1;
         
         /// <summary>
         /// Controllo cboRegioni.

@@ -26,12 +26,60 @@ namespace WIN.FENGEST_NAZIONALE.HANDLERS.ImportHandler
         private ImportOptions _op;
 
         private Export currentExport;
-        
+        public ImportHandler(ExportTrace trace, EventLog _log)
+        {
+            try
+            {
+                _log.WriteEntry("Entro nel costruttore di ImportHandler: Sto per instanziare il persistenceFacade", EventLogEntryType.Warning);
+                //instanzio il servizio di persistenza e quello per la gestione geografica
+                _persistence = DataAccessServices.Instance().PersistenceFacade;
+                _log.WriteEntry("Sto per instanziare il geoFacade", EventLogEntryType.Warning);
+
+                GeoLocationFacade.InitializeInstance(new GeoHandler.GeoHandler(_persistence));
+                _geo = WIN.BASEREUSE.GeoLocationFacade.Instance();
+
+
+                _log.WriteEntry("Sto per recuperare il file delle opzioni", EventLogEntryType.Warning);
+
+                //Recupero il file delle opzioni di importazione
+                string path = Assembly.GetExecutingAssembly().CodeBase.Replace("file:///", "");
+                FileInfo f = new FileInfo(path);
+                path = Path.Combine(f.DirectoryName, "OpzioniImport.xml");
+
+                //recupero le opzioni
+                _op = ObjectXMLSerializer<ImportOptions>.Load(path);
+
+                if (_op != null)
+                {
+                    _errorLogDir = _op.ErrorLogDir;
+                    _validator = _op.Validator;
+                }
+                else
+                {
+                    throw new Exception("File opzioni non trovato!");
+                }
+
+                _trace = trace;
+            }
+            catch (Exception ex)
+            {
+                StringBuilder b = new StringBuilder();
+                b.AppendLine(ex.Message);
+                b.AppendLine(ex.StackTrace);
+                if (ex.InnerException != null)
+                    b.AppendLine(ex.InnerException.Message);
+                _log.WriteEntry(b.ToString(), EventLogEntryType.Error);
+
+                throw ex;
+            }
+           
+
+        }
 
 
         public ImportHandler(ExportTrace trace)
         {
-
+          
             //instanzio il servizio di persistenza e quello per la gestione geografica
             _persistence = DataAccessServices.Instance().PersistenceFacade;
             GeoLocationFacade.InitializeInstance(new GeoHandler.GeoHandler(_persistence ));

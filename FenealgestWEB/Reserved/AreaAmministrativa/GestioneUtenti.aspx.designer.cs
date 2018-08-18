@@ -191,7 +191,7 @@ namespace FenealgestWEB.Reserved.AreaAmministrativa {
         /// Campo generato automaticamente.
         /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
         /// </remarks>
-        protected global::DevExpress.Web.ASPxEditors.ASPxDateEdit bdpPass1;
+        protected global::DevExpress.Web.ASPxDateEdit bdpPass1;
         
         /// <summary>
         /// Controllo lblDataDeclay.

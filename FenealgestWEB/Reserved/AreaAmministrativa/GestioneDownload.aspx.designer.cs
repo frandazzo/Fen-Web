@@ -47,7 +47,7 @@ namespace FenealgestWEB.Reserved.AreaAmministrativa {
         /// Campo generato automaticamente.
         /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
         /// </remarks>
-        protected global::DevExpress.Web.ASPxEditors.ASPxDateEdit ASPxDateEdit1;
+        protected global::DevExpress.Web.ASPxDateEdit ASPxDateEdit1;
         
         /// <summary>
         /// Controllo Label1.

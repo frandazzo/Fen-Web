@@ -60,9 +60,9 @@ namespace FenealgestWEB
 
 
 
-            DevExpress.Web.ASPxMenu.ASPxMenu m = ((Fenealgestweb)this.Master).DevMainMenu;
-            DevExpress.Web.ASPxMenu.MenuItem i = new DevExpress.Web.ASPxMenu.MenuItem();
-            DevExpress.Web.ASPxMenu.MenuItem q = new DevExpress.Web.ASPxMenu.MenuItem();
+            DevExpress.Web.ASPxMenu m = ((Fenealgestweb)this.Master).DevMainMenu;
+            DevExpress.Web.MenuItem i = new DevExpress.Web.MenuItem();
+            DevExpress.Web.MenuItem q = new DevExpress.Web.MenuItem();
 
 
             i.Text = "Rinnova Password";

@@ -47,7 +47,7 @@ namespace FenealgestWEB {
         /// Campo generato automaticamente.
         /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
         /// </remarks>
-        protected global::DevExpress.Web.ASPxTreeView.ASPxTreeView mainTree;
+        protected global::DevExpress.Web.ASPxTreeView mainTree;
         
         /// <summary>
         /// Controllo mainMenu.
@@ -56,7 +56,7 @@ namespace FenealgestWEB {
         /// Campo generato automaticamente.
         /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
         /// </remarks>
-        protected global::DevExpress.Web.ASPxMenu.ASPxMenu mainMenu;
+        protected global::DevExpress.Web.ASPxMenu mainMenu;
         
         /// <summary>
         /// Controllo Image1.

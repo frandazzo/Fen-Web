@@ -19,7 +19,7 @@ namespace FenealgestWEB.assets.control
 
         }
 
-        protected void ASPxCallback1_Callback(object source, DevExpress.Web.ASPxCallback.CallbackEventArgs e)
+        protected void ASPxCallback1_Callback(object source, DevExpress.Web.CallbackEventArgs e)
         {
             string elle = e.Parameter;
 
@@ -96,7 +96,7 @@ namespace FenealgestWEB.assets.control
             
         }
 
-        private void Deregister(string elle, DevExpress.Web.ASPxCallback.CallbackEventArgs e)
+        private void Deregister(string elle, DevExpress.Web.CallbackEventArgs e)
         {
             try
             {

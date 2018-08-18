@@ -19,8 +19,8 @@ namespace FenealgestWEB.Utility
         protected abstract string FunctionHeaderTitle { get; }
 
         //protected abstract Menu PageMenu { get; }
-        protected abstract DevExpress.Web.ASPxMenu.ASPxMenu DevPageMenu { get; }
-        protected abstract DevExpress.Web.ASPxTreeView.ASPxTreeView DevPageTree { get; }
+        protected abstract DevExpress.Web.ASPxMenu DevPageMenu { get; }
+        protected abstract DevExpress.Web.ASPxTreeView DevPageTree { get; }
 
 
         protected abstract Image ImageHeader { get; }

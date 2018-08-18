@@ -61,7 +61,7 @@ namespace WIN.WEBCONNECTOR.controls
         {
             if (e.Column.Name == "colDataElezione")
             {
-                Rappresentanza app = gridView1.GetRow(e.RowHandle) as Rappresentanza;
+                Rappresentanza app = gridView1.GetRow(e.ListSourceRowIndex) as Rappresentanza;
                 if (app != null)
                 {
                     if (app.DataElezione == DateTime.MinValue )

@@ -58,14 +58,14 @@ namespace FenealgestWEB.Utility
             //i.NavigateUrl = LinkHandler.LinkHomepage;
             //MainMenu.Items.Add(
 
-            DevExpress.Web.ASPxMenu.MenuItem  i = new DevExpress.Web.ASPxMenu.MenuItem();
+            DevExpress.Web.MenuItem  i = new DevExpress.Web.MenuItem();
             i.Text = "HOME PAGE";
             i.DataItem = "ViewSHomepage";
             i.NavigateUrl = LinkHandler.LinkHomepage;
             MainMenu.Items.Add (i);
         }
 
-        public virtual DevExpress.Web.ASPxMenu.ASPxMenu MainMenu
+        public virtual DevExpress.Web.ASPxMenu MainMenu
         {
             get
             {
@@ -74,7 +74,7 @@ namespace FenealgestWEB.Utility
         }
 
 
-        public virtual DevExpress.Web.ASPxTreeView.ASPxTreeView   MainTree
+        public virtual DevExpress.Web.ASPxTreeView   MainTree
         {
             get
             {

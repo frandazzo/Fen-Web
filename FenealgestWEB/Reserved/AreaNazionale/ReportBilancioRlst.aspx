@@ -1,9 +1,8 @@
 ﻿<%@ Page Title="Reportistica rendiconti RLST provinciali" Language="C#" MasterPageFile="~/FenealgestwebNew.Master" AutoEventWireup="true" CodeBehind="ReportBilancioRlst.aspx.cs" Inherits="FenealgestWEB.Reserved.AreaNazionale.ReportBilancioRlst" %>
-<%@ Register Assembly="DevExpress.Web.ASPxPivotGrid.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"
+<%@ Register Assembly="DevExpress.Web.ASPxPivotGrid.v18.1, Version=18.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"
     Namespace="DevExpress.Web.ASPxPivotGrid" TagPrefix="dx" %>
 
-<%@ Register Assembly="DevExpress.Web.ASPxPivotGrid.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"
-    Namespace="DevExpress.Web.ASPxPivotGrid.Export" TagPrefix="dx" %>
+
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolderPrincipale" runat="server">
 <div class="content">

@@ -1,13 +1,13 @@
 ﻿<%@ Page Title="Analisi iscritti" Language="C#" MasterPageFile="~/FenealgestwebNew.Master" AutoEventWireup="true" CodeBehind="ReportIscritti.aspx.cs" Inherits="FenealgestWEB.Reserved.AreaNazionale.ReportIscritti" %>
 
-<%@ Register Assembly="DevExpress.Web.ASPxPivotGrid.v13.2, Version=13.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"
+<%@ Register Assembly="DevExpress.Web.ASPxPivotGrid.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"
     Namespace="DevExpress.Web.ASPxPivotGrid" TagPrefix="dx" %>
 
-<%@ Register Assembly="DevExpress.Web.ASPxPivotGrid.v13.2, Version=13.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"
+<%@ Register Assembly="DevExpress.Web.ASPxPivotGrid.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"
     Namespace="DevExpress.Web.ASPxPivotGrid.Export" TagPrefix="dx" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolderPrincipale" runat="server">
- <div class="content">
+    <div class="content">
     <div class="login">
 				<h2>Analisi iscritti</h2>
 				<br/>
@@ -65,6 +65,8 @@
 
 
 <div style="width:100%; overflow:auto">
+
+            <asp:LinkButton ID="LinkButton2" runat="server" Font-Bold="True" OnClick="LinkButton2_Click">Scarica report invii al database nazionale</asp:LinkButton>
 
             <dx:ASPxPivotGrid ID="ASPxPivotGrid1" runat="server" 
                     DataSourceID="SqlDataSource1" Caption="Report">

@@ -25,11 +25,11 @@ namespace FenealgestWEB
         //}
 
 
-        public DevExpress.Web.ASPxMenu.ASPxMenu DevMainMenu
+        public DevExpress.Web.ASPxMenu DevMainMenu
         {
             get { return this.mainMenu; }
         }
-        public DevExpress.Web.ASPxTreeView.ASPxTreeView DevMainTree
+        public DevExpress.Web.ASPxTreeView DevMainTree
         {
             get { return this.mainTree; }
         }

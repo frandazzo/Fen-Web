@@ -12,10 +12,14 @@
     <AssemblyName>WIN.WEBCONNECTOR</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <SccProjectName>SAK</SccProjectName>
-    <SccLocalPath>SAK</SccLocalPath>
-    <SccAuxPath>SAK</SccAuxPath>
-    <SccProvider>SAK</SccProvider>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
     <ApplicationIcon>Fenealgest.ico</ApplicationIcon>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
@@ -63,64 +67,67 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DevExpress.Charts.v13.2.Core, Version=13.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    <Reference Include="DevExpress.Charts.v13.2.Core, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <Private>True</Private>
     </Reference>
-    <Reference Include="DevExpress.PivotGrid.v13.2.Core, Version=13.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    <Reference Include="DevExpress.PivotGrid.v13.2.Core, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <Private>True</Private>
     </Reference>
-    <Reference Include="DevExpress.Printing.v13.2.Core, Version=13.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+    <Reference Include="DevExpress.Printing.v13.2.Core, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
       <Private>True</Private>
     </Reference>
-    <Reference Include="DevExpress.Data.v13.2, Version=13.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+    <Reference Include="DevExpress.Data.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
       <Private>True</Private>
     </Reference>
-    <Reference Include="DevExpress.Sparkline.v13.2.Core, Version=13.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    <Reference Include="DevExpress.Sparkline.v13.2.Core, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <Private>True</Private>
     </Reference>
-    <Reference Include="DevExpress.Utils.v13.2, Version=13.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+    <Reference Include="DevExpress.Utils.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
       <Private>True</Private>
     </Reference>
-    <Reference Include="DevExpress.Utils.v13.2.UI, Version=13.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    <Reference Include="DevExpress.Utils.v13.2.UI, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <Private>True</Private>
     </Reference>
-    <Reference Include="DevExpress.XtraBars.v13.2, Version=13.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+    <Reference Include="DevExpress.XtraBars.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
       <Private>True</Private>
     </Reference>
-    <Reference Include="DevExpress.XtraCharts.v13.2, Version=13.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    <Reference Include="DevExpress.XtraCharts.v13.2.Wizard, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <Private>True</Private>
     </Reference>
-    <Reference Include="DevExpress.XtraEditors.v13.2, Version=13.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+    <Reference Include="DevExpress.XtraCharts.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <Private>True</Private>
     </Reference>
-    <Reference Include="DevExpress.XtraGrid.v13.2, Version=13.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    <Reference Include="DevExpress.XtraEditors.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
       <Private>True</Private>
     </Reference>
-    <Reference Include="DevExpress.XtraLayout.v13.2, Version=13.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+    <Reference Include="DevExpress.XtraGrid.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <Private>True</Private>
     </Reference>
-    <Reference Include="DevExpress.XtraNavBar.v13.2, Version=13.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    <Reference Include="DevExpress.XtraLayout.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
       <Private>True</Private>
     </Reference>
-    <Reference Include="DevExpress.XtraPrinting.v13.2, Version=13.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    <Reference Include="DevExpress.XtraNavBar.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <Private>True</Private>
     </Reference>
-    <Reference Include="DevExpress.Office.v13.2.Core, Version=13.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+    <Reference Include="DevExpress.XtraPrinting.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <Private>True</Private>
     </Reference>
-    <Reference Include="DevExpress.RichEdit.v13.2.Core, Version=13.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+    <Reference Include="DevExpress.Office.v13.2.Core, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
       <Private>True</Private>
     </Reference>
-    <Reference Include="DevExpress.XtraReports.v13.2, Version=13.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    <Reference Include="DevExpress.RichEdit.v13.2.Core, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
       <Private>True</Private>
     </Reference>
-    <Reference Include="DevExpress.XtraReports.v13.2.Extensions, Version=13.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    <Reference Include="DevExpress.XtraReports.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <Private>True</Private>
     </Reference>
-    <Reference Include="DevExpress.XtraRichEdit.v13.2, Version=13.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+    <Reference Include="DevExpress.XtraReports.v13.2.Extensions, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <Private>True</Private>
     </Reference>
-    <Reference Include="DevExpress.XtraTreeList.v13.2, Version=13.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+    <Reference Include="DevExpress.XtraRichEdit.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeList.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp">
@@ -134,15 +141,32 @@
     <Reference Include="System.Web.Services" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
-    <Reference Include="WIN.TECHNICAL.SECURITY">
-      <HintPath>..\..\..\..\WIN.EXTERNAL_COMPONENTS\WIN.TECHNICAL.SECURITY.dll</HintPath>
-    </Reference>
-    <Reference Include="WIN.TECHNICAL.VB.GUI.UTILITY">
-      <HintPath>..\..\..\..\WIN.EXTERNAL_COMPONENTS\WIN.TECHNICAL.VB.GUI.UTILITY.dll</HintPath>
-    </Reference>
-    <Reference Include="WIN.TECHNICAL.VB.PERSISTENCE, Version=4.9.0.0, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="WIN.BILANCIO, Version=8.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\WIN.FENGEST_NAZIONALE.DLLs\WIN.TECHNICAL.VB.PERSISTENCE.dll</HintPath>
+      <HintPath>..\dlls\WIN.BILANCIO.dll</HintPath>
+    </Reference>
+    <Reference Include="WIN.TECHNICAL.MIDDLEWARE, Version=8.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dlls\WIN.TECHNICAL.MIDDLEWARE.dll</HintPath>
+    </Reference>
+    <Reference Include="WIN.TECHNICAL.SECURITY, Version=8.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dlls\WIN.TECHNICAL.SECURITY.dll</HintPath>
+    </Reference>
+    <Reference Include="WIN.TECHNICAL.SECURITY_NEW">
+      <HintPath>..\dlls\WIN.TECHNICAL.SECURITY_NEW.dll</HintPath>
+    </Reference>
+    <Reference Include="WIN.TECHNICAL.VB.GUI.UTILITY, Version=8.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dlls\WIN.TECHNICAL.VB.GUI.UTILITY.dll</HintPath>
+    </Reference>
+    <Reference Include="WIN.TECHNICAL.VB.PERSISTENCE, Version=8.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dlls\WIN.TECHNICAL.VB.PERSISTENCE.dll</HintPath>
+    </Reference>
+    <Reference Include="WIN.TECHNICAL.VB.UTILS, Version=8.6.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dlls\WIN.TECHNICAL.VB.UTILS.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -191,6 +215,18 @@
     </Compile>
     <Compile Include="controls\ReportDatiCasseEdiuli.Designer.cs">
       <DependentUpon>ReportDatiCasseEdiuli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="controls\ReportDatiEconomiciControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controls\ReportDatiEconomiciControl.Designer.cs">
+      <DependentUpon>ReportDatiEconomiciControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="controls\ReportDatiOrganizzativiControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controls\ReportDatiOrganizzativiControl.Designer.cs">
+      <DependentUpon>ReportDatiOrganizzativiControl.cs</DependentUpon>
     </Compile>
     <Compile Include="controls\ReportRisorseUmane.cs">
       <SubType>UserControl</SubType>
@@ -247,6 +283,12 @@
     </Compile>
     <Compile Include="FrmNomeAzienda.Designer.cs">
       <DependentUpon>FrmNomeAzienda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOnlyLiberi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmOnlyLiberi.Designer.cs">
+      <DependentUpon>FrmOnlyLiberi.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmsendFiles.cs">
       <SubType>Form</SubType>
@@ -448,6 +490,12 @@
     <EmbeddedResource Include="controls\ReportDatiCasseEdiuli.resx">
       <DependentUpon>ReportDatiCasseEdiuli.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="controls\ReportDatiEconomiciControl.resx">
+      <DependentUpon>ReportDatiEconomiciControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="controls\ReportDatiOrganizzativiControl.resx">
+      <DependentUpon>ReportDatiOrganizzativiControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="controls\ReportRisorseUmane.resx">
       <DependentUpon>ReportRisorseUmane.cs</DependentUpon>
     </EmbeddedResource>
@@ -465,6 +513,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmNomeAzienda.resx">
       <DependentUpon>FrmNomeAzienda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOnlyLiberi.resx">
+      <DependentUpon>FrmOnlyLiberi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmsendFiles.resx">
       <DependentUpon>FrmsendFiles.cs</DependentUpon>
@@ -563,6 +614,9 @@
     </Compile>
     <Compile Include="ServiceAgents\ExportBilancioServiceAgent.cs" />
     <Compile Include="TraceExporter.cs" />
+    <None Include="Template\TemplateImportLiberi.xlt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Web References\FenealgestServices\FenealgestwebServices.wsdl" />
     <None Include="Web References\FenealgestServices\QueryResultDTO.datasource">
       <DependentUpon>Reference.map</DependentUpon>
@@ -576,10 +630,16 @@
       <Generator>MSDiscoCodeGenerator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
+    <None Include="Web References\SharetopServices\AdministrativeRecord.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
     <None Include="Web References\SharetopServices\CongressPresence.datasource">
       <DependentUpon>Reference.map</DependentUpon>
     </None>
     <None Include="Web References\SharetopServices\DatiCassaEdile.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SharetopServices\OrganizativeRecord.datasource">
       <DependentUpon>Reference.map</DependentUpon>
     </None>
     <None Include="Web References\SharetopServices\OrganizzativeData.datasource">
@@ -598,25 +658,9 @@
     <None Include="Resources\sfondo_area_riservata_italia.png" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\WIN.FENGEST.BILANCIO\WIN.BILANCIO\WIN.BILANCIO.csproj">
-      <Project>{8da88464-6ffa-4cc7-8474-8c98c6d1736f}</Project>
-      <Name>WIN.BILANCIO</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\..\WIN.TECHNICAL.MIDDLEWARE\WIN.TECHNICAL.MIDDLEWARE.csproj">
-      <Project>{7817938C-E1D1-435C-B124-5F40F430A46D}</Project>
-      <Name>WIN.TECHNICAL.MIDDLEWARE</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\..\WIN.TECHNICAL.VB.UTILS\WIN.TECHNICAL.VB.UTILS.vbproj">
-      <Project>{466a883d-893e-46fd-a2c0-d4257b63a6c0}</Project>
-      <Name>WIN.TECHNICAL.VB.UTILS</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\WIN.FENGEST_NAZIONALE.INTEGRATION_ENTITIES\WIN.FENGEST_NAZIONALE.INTEGRATION_ENTITIES.csproj">
+    <ProjectReference Include="..\WIN.FENGEST_NAZIONALE.INTEGRATION_ENTITIES\WIN.FENGEST_NAZIONALE.INTEGRATION_ENTITIES.csproj">
       <Project>{FEF19374-07AC-46F6-93A3-F7FB32E2428D}</Project>
       <Name>WIN.FENGEST_NAZIONALE.INTEGRATION_ENTITIES</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\WIN.TECHNICAL.SERVICE_PROCESSOR\WIN.TECHNICAL.SERVICE_PROCESSOR.csproj">
-      <Project>{8E285472-7005-474C-A2EA-7CB4E25A4B66}</Project>
-      <Name>WIN.TECHNICAL.SERVICE_PROCESSOR</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
@@ -924,11 +968,11 @@
     <Content Include="it\DevExpress.XtraWizard.v13.2.resources.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="Web References\FenealgestServices\FenealgestwebServices.disco" />
+    <None Include="Web References\SharetopServices\SharetopIntegration.disco" />
     <None Include="Resources\logoFeneal.png" />
     <None Include="Resources\logoFeneal.jpg" />
     <None Include="Resources\fenealGest.png" />
-    <None Include="Web References\FenealgestServices\FenealgestwebServices.disco" />
-    <None Include="Web References\SharetopServices\SharetopIntegration.disco" />
     <None Include="Web References\JoinAllServices\JoinAllWebService.disco" />
     <None Include="Properties\DataSources\WIN.FENGEST_NAZIONALE.INTEGRATION_ENTITIES.WorkerDTO.datasource" />
     <None Include="Resources\Immagine.PNG" />
@@ -962,10 +1006,10 @@
       <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
       <CachedSettingsPropName>WIN_WEBCONNECTOR_FenealgestServices_FenealgestwebServices</CachedSettingsPropName>
     </WebReferenceUrl>
-    <WebReferenceUrl Include="https://www.fenealgest.it/servizi/WebServices/SharetopIntegration.asmx">
+    <WebReferenceUrl Include="http://www.fenealgest.it/servizi/WebServices/SharetopIntegration.asmx">
       <UrlBehavior>Dynamic</UrlBehavior>
       <RelPath>Web References\SharetopServices\</RelPath>
-      <UpdateFromURL>https://www.fenealgest.it/servizi/WebServices/SharetopIntegration.asmx</UpdateFromURL>
+      <UpdateFromURL>http://www.fenealgest.it/servizi/WebServices/SharetopIntegration.asmx</UpdateFromURL>
       <ServiceLocationURL>
       </ServiceLocationURL>
       <CachedDynamicPropName>
