@@ -21,9 +21,9 @@ namespace WIN.WEBCONNECTOR
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-           //Inizializzazione indipendente dal tipo di comando
+            //Inizializzazione indipendente dal tipo di comando
 
-            Initialize(cmdArgs);
+
 
             //try
             //{
@@ -38,7 +38,7 @@ namespace WIN.WEBCONNECTOR
             //    MessageBox.Show("Impossibile inizializzare i servizi per la localizzazione geografica e validazione certificati!" + Environment.NewLine + "Eccezione di base: " + ex.Message, "Errore irreversibile", MessageBoxButtons.OK, MessageBoxIcon.Error);
             //    return;
             //}
-
+            Initialize(cmdArgs);
             bool regional = Properties.Settings.Default.RegionalDeploy;
 
 
@@ -117,7 +117,7 @@ namespace WIN.WEBCONNECTOR
 
                 }
             }
-       
+
         }
 
         private static string CreateParamsList(string[] cmdArgs)

@@ -96,10 +96,20 @@ namespace WIN.WEBCONNECTOR.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.WebServiceUrl)]
-        [global::System.Configuration.DefaultSettingValueAttribute("http://www.fenealgest.it/servizi/WebServices/SharetopIntegration.asmx")]
+        [global::System.Configuration.DefaultSettingValueAttribute("https://www.fenealweb.it/servizi/WebServices/SharetopIntegration.asmx")]
         public string WIN_WEBCONNECTOR_SharetopServices_SharetopIntegration {
             get {
                 return ((string)(this["WIN_WEBCONNECTOR_SharetopServices_SharetopIntegration"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.WebServiceUrl)]
+        [global::System.Configuration.DefaultSettingValueAttribute("https://www.fenealweb.it/servizi/WebServices/FenealgestwebServices.asmx")]
+        public string WIN_WEBCONNECTOR_FenealgestServices_FenealgestwebServices {
+            get {
+                return ((string)(this["WIN_WEBCONNECTOR_FenealgestServices_FenealgestwebServices"]));
             }
         }
     }

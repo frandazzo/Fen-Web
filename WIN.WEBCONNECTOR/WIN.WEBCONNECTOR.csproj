@@ -469,6 +469,11 @@
     <Compile Include="TestSharetoIntegration.Designer.cs">
       <DependentUpon>TestSharetoIntegration.cs</DependentUpon>
     </Compile>
+    <Compile Include="Web References\FenealgestServices\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
     <Compile Include="Web References\JoinAllServices\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -623,6 +628,14 @@
     <Compile Include="TraceExporter.cs" />
     <None Include="Template\TemplateImportLiberi.xlt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Web References\FenealgestServices\FenealgestwebServices.wsdl" />
+    <None Include="Web References\FenealgestServices\QueryResultDTO.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\FenealgestServices\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
     <None Include="Web References\JoinAllServices\JoinAllWebService.wsdl" />
     <None Include="Web References\JoinAllServices\Reference.map">
@@ -967,6 +980,7 @@
     <Content Include="it\DevExpress.XtraWizard.v13.2.resources.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="Web References\FenealgestServices\FenealgestwebServices.disco" />
     <None Include="Web References\SharetopServices\SharetopIntegration.disco" />
     <None Include="Resources\logoFeneal.png" />
     <None Include="Resources\logoFeneal.jpg" />
@@ -993,28 +1007,6 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <WebReferenceUrl Include="http://www.fenealgest.it/servizi/WebServices/SharetopIntegration.asmx">
-      <UrlBehavior>Dynamic</UrlBehavior>
-      <RelPath>Web References\SharetopServices\</RelPath>
-      <UpdateFromURL>http://www.fenealgest.it/servizi/WebServices/SharetopIntegration.asmx</UpdateFromURL>
-      <ServiceLocationURL>
-      </ServiceLocationURL>
-      <CachedDynamicPropName>
-      </CachedDynamicPropName>
-      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
-      <CachedSettingsPropName>WIN_WEBCONNECTOR_SharetopServices_SharetopIntegration</CachedSettingsPropName>
-    </WebReferenceUrl>
-    <WebReferenceUrl Include="https://www.fenealgest.it/servizi/WebServices/JoinAllWebService.asmx">
-      <UrlBehavior>Dynamic</UrlBehavior>
-      <RelPath>Web References\JoinAllServices\</RelPath>
-      <UpdateFromURL>https://www.fenealgest.it/servizi/WebServices/JoinAllWebService.asmx</UpdateFromURL>
-      <ServiceLocationURL>
-      </ServiceLocationURL>
-      <CachedDynamicPropName>
-      </CachedDynamicPropName>
-      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
-      <CachedSettingsPropName>WIN_WEBCONNECTOR_JoinAllServices_JoinAllWebService</CachedSettingsPropName>
-    </WebReferenceUrl>
     <WebReferenceUrl Include="https://www.fenealweb.it/servizi/WebServices/FenealgestwebServices.asmx">
       <UrlBehavior>Dynamic</UrlBehavior>
       <RelPath>Web References\FenealgestServices\</RelPath>
@@ -1023,10 +1015,30 @@
       </ServiceLocationURL>
       <CachedDynamicPropName>
       </CachedDynamicPropName>
-      <CachedAppSettingsObjectName>
-      </CachedAppSettingsObjectName>
-      <CachedSettingsPropName>
-      </CachedSettingsPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>WIN_WEBCONNECTOR_FenealgestServices_FenealgestwebServices</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://www.fenealweb.it/servizi/WebServices/SharetopIntegration.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\SharetopServices\</RelPath>
+      <UpdateFromURL>https://www.fenealweb.it/servizi/WebServices/SharetopIntegration.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>WIN_WEBCONNECTOR_SharetopServices_SharetopIntegration</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://www.fenealweb.it/servizi/WebServices/JoinAllWebService.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\JoinAllServices\</RelPath>
+      <UpdateFromURL>https://www.fenealweb.it/servizi/WebServices/JoinAllWebService.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>WIN_WEBCONNECTOR_JoinAllServices_JoinAllWebService</CachedSettingsPropName>
     </WebReferenceUrl>
   </ItemGroup>
   <ItemGroup>
