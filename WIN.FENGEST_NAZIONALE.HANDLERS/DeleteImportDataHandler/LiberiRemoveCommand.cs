@@ -30,8 +30,6 @@ namespace WIN.FENGEST_NAZIONALE.HANDLERS.DeleteImportDataHandler
             {
                 _persistence.BeginTransaction();
 
-                _persistence.ExecuteNonQuery(string.Format("Delete from lavoratori_liberi_copy where Id_ProvinciaFeneal = {0} and Ente = '{1}'", _provinceId, _ente));
-              
 
                 _persistence.ExecuteNonQuery(string.Format("insert into lavoratori_liberi_copy select * from lavoratori_liberi where Id_ProvinciaFeneal = {0} and Ente = '{1}'", _provinceId, _ente));
 
