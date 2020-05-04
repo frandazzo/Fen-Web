@@ -212,7 +212,7 @@ namespace WIN.FENGEST_NAZIONALE.HANDLERS.ImportHandler
             }
             catch (Exception ex)
             {
-                //non fa nulla
+                EventLog.WriteEntry("Invio mail notifica","ERRORE NELL'INVIO DELLA MAIL: " + ex.Message, EventLogEntryType.Error);
             }
         }
 
