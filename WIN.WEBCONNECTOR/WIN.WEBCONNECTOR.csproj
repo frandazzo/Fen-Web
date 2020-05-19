@@ -302,6 +302,12 @@
     <Compile Include="FrmOnlyLiberi.Designer.cs">
       <DependentUpon>FrmOnlyLiberi.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmSelectAziende.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSelectAziende.Designer.cs">
+      <DependentUpon>FrmSelectAziende.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmsendFiles.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -528,6 +534,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmOnlyLiberi.resx">
       <DependentUpon>FrmOnlyLiberi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSelectAziende.resx">
+      <DependentUpon>FrmSelectAziende.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmsendFiles.resx">
       <DependentUpon>FrmsendFiles.cs</DependentUpon>

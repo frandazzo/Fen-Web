@@ -946,35 +946,35 @@ namespace FenealgestWEB.WebServices
 
 
                 //recupero gli iscritti dell'azienda
-               // SubscriptionHandler h = new SubscriptionHandler(f, g);
-                IList<Worker> workers1 = h.FindWorkersByAzienda(azienda, p.Id);
+              
+                //IList<Worker> workers1 = h.FindWorkersByAzienda(azienda, p.Id);
 
-                //ciclo sui codici fiscali
-                foreach (Worker item in workers1)
-                {
-                    WorkerDTO w;
-                    w = item.ToWorkerDTO();
-                    //imposto inoltre il campo iscritto_a a feneal in modo da identificare lato client gli iscritti alla feneal "Feneal"
-                    w.IscrittoA = "FENEAL";
+                ////ciclo sui codici fiscali
+                //foreach (Worker item in workers1)
+                //{
+                //    WorkerDTO w;
+                //    w = item.ToWorkerDTO();
+                //    //imposto inoltre il campo iscritto_a a feneal in modo da identificare lato client gli iscritti alla feneal "Feneal"
+                //    w.IscrittoA = "FENEAL";
                     
-                    Array.Resize<WorkerDTO>(ref wks, wks.Length + 1);
-                    wks[wks.Length - 1] = w;
+                //    Array.Resize<WorkerDTO>(ref wks, wks.Length + 1);
+                //    wks[wks.Length - 1] = w;
 
-                }
+                //}
 
                 //recupero i liberi dell'azienda
-                LiberoHandler h1 = new LiberoHandler(f, g);
-                IList<Libero> libeir = h1.FindLiberiData(azienda, p.Id);
-                foreach (Libero item in libeir)
-                {
-                    WorkerDTO w;
-                    w = item.ToWorkerDTO();
+                //LiberoHandler h1 = new LiberoHandler(f, g);
+                //IList<Libero> libeir = h1.FindLiberiData(azienda, p.Id);
+                //foreach (Libero item in libeir)
+                //{
+                //    WorkerDTO w;
+                //    w = item.ToWorkerDTO();
                    
 
-                    Array.Resize<WorkerDTO>(ref wks, wks.Length + 1);
-                    wks[wks.Length - 1] = w;
+                //    Array.Resize<WorkerDTO>(ref wks, wks.Length + 1);
+                //    wks[wks.Length - 1] = w;
 
-                }
+                //}
 
 
 

@@ -211,5 +211,13 @@ namespace WIN.WEBCONNECTOR
             frm.ShowDialog();
             frm.Dispose();
         }
+
+        private void linkLabel10_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            FrmSelectAziende frm = new FrmSelectAziende();
+            frm.ShowDialog();
+            frm.Dispose();
+
+        }
     }
 }
